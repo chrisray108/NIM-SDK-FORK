@@ -95,7 +95,7 @@ git commit -m "commit version"$SDK_VERSION
 
 git remote add origin $ORIGIN_ADDRESS
 
-git push origin master --tag $SDK_VERSION
+git push --tag $SDK_VERSION origin master 
 
 cd ..
 
