@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMUserRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMUserRequest</TokenIdentifier>
+			<Abstract type="html">好友请求</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMUserRequest/setUserId:</TokenIdentifier>
+			<Abstract type="html">目标用户ID</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMUserRequest/userId</TokenIdentifier>
+			<Abstract type="html">目标用户ID</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMUserRequest/userId</TokenIdentifier>
+			<Abstract type="html">目标用户ID</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMUserRequest/setOperation:</TokenIdentifier>
+			<Abstract type="html">操作类型</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMUserOperation operation</Declaration>
+			
+			
+			<Anchor>//api/name/operation</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMUserRequest/operation</TokenIdentifier>
+			<Abstract type="html">操作类型</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMUserOperation operation</Declaration>
+			
+			
+			<Anchor>//api/name/operation</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMUserRequest/operation</TokenIdentifier>
+			<Abstract type="html">操作类型</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMUserOperation operation</Declaration>
+			
+			
+			<Anchor>//api/name/operation</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMUserRequest/setMessage:</TokenIdentifier>
+			<Abstract type="html">附言
+@dicussion</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMUserRequest/message</TokenIdentifier>
+			<Abstract type="html">附言
+@dicussion</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMUserRequest/message</TokenIdentifier>
+			<Abstract type="html">附言
+@dicussion</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

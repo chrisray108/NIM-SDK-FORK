@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMResourceManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMResourceManager</TokenIdentifier>
+			<Abstract type="html">资源管理</Abstract>
+			<DeclaredIn>NIMResourceManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="67"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMResourceManager/upload:progress:completion:</TokenIdentifier>
+			<Abstract type="html">上传文件</Abstract>
+			<DeclaredIn>NIMResourceManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)upload:(NSString *)filepath progress:(NIMHttpProgressBlock)progress completion:(NIMUploadCompleteBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filepath</Name>
+					<Abstract type="html">上传文件路径</Abstract>
+				</Parameter><Parameter>
+					<Name>progress</Name>
+					<Abstract type="html">进度Block</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">上传Block</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/upload:progress:completion:</Anchor>
+            <NodeRef refid="67"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMResourceManager/download:filepath:progress:completion:</TokenIdentifier>
+			<Abstract type="html">下载文件</Abstract>
+			<DeclaredIn>NIMResourceManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)download:(NSString *)urlString filepath:(NSString *)filepath progress:(NIMHttpProgressBlock)progress completion:(NIMDownloadCompleteBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlString</Name>
+					<Abstract type="html">下载的RL</Abstract>
+				</Parameter><Parameter>
+					<Name>filepath</Name>
+					<Abstract type="html">下载路径</Abstract>
+				</Parameter><Parameter>
+					<Name>progress</Name>
+					<Abstract type="html">进度Block</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">完成Block</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/download:filepath:progress:completion:</Anchor>
+            <NodeRef refid="67"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMResourceManager/cancelTask:</TokenIdentifier>
+			<Abstract type="html">取消上传/下载任务</Abstract>
+			<DeclaredIn>NIMResourceManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelTask:(NSString *)filepath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filepath</Name>
+					<Abstract type="html">上传/下载任务对应的文件路径</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cancelTask:</Anchor>
+            <NodeRef refid="67"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

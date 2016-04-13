@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMCustomObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMCustomObject</TokenIdentifier>
+			<Abstract type="html">用户自定义消息对象</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomObject/setAttachment:</TokenIdentifier>
+			<Abstract type="html">用户自定义附件</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;NIMCustomAttachment&gt; attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomObject/attachment</TokenIdentifier>
+			<Abstract type="html">用户自定义附件</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;NIMCustomAttachment&gt; attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCustomObject/attachment</TokenIdentifier>
+			<Abstract type="html">用户自定义附件</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;NIMCustomAttachment&gt; attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NIMCustomObject/registerCustomDecoder:</TokenIdentifier>
+			<Abstract type="html">注册自定义消息解析器</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)registerCustomDecoder:(id&lt;NIMCustomAttachmentCoding&gt;)decoder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>decoder</Name>
+					<Abstract type="html">自定义消息解析器
+@disucssion 如果用户使用自定义消息类型,就需要注册自定义消息解析器，负责将透传过来的自定义消息反序列化成上层应用可识别的对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerCustomDecoder:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

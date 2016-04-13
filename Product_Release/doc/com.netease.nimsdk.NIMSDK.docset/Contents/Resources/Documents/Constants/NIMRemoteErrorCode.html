@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NIMRemoteErrorCode Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">NIMSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Netease</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NIMRemoteErrorCode Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>NIMGlobalDefs.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">NIMRemoteErrorCode</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>服务器错误码</p><p>更多错误详见 <a href="http://dev.netease.im/docs/index.php?index=6&amp;title=%E5%85%A8%E5%B1%80%E8%BF%94%E5%9B%9E%E7%A0%81%E8%AF%B4%E6%98%8E">http://dev.netease.im/docs/index.php?index=6&amp;title=%E5%85%A8%E5%B1%80%E8%BF%94%E5%9B%9E%E7%A0%81%E8%AF%B4%E6%98%8E</a></p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, NIMRemoteErrorCode ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeInvalidVersion</a> = 201,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeInvalidPass</a> = 302,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeInvalidCRC</a> = 402,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeForbidden</a> = 403,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeNotExist</a> = 404,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeReadOnly</a> = 406,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeTimeoutError</a> = 408,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeParameterError</a> = 414,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeConnectionError</a> = 415,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeFrequently</a> = 416,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeExist</a> = 417,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeUnknownError</a> = 500,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeServerDataError</a> = 501,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeNotEnough</a> = 507,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeDomainExpireOld</a> = 508,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeInvalidProtocol</a> = 509,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeUserNotExist</a> = 510,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeServiceUnavailable</a> = 514,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeTeamAccessError</a> = 802,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeTeamNotExists</a> = 803,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeNotInTeam</a> = 804,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeTeamInvaildType</a> = 805,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeTeamMemberLimit</a> = 806,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeTeamAlreadyIn</a> = 809,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeTeamNotMember</a> = 810,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeTeamBlackList</a> = 812,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeEUnpacket</a> = 998,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeEPacket</a> = 999,<br>
+                            
+                            &nbsp;&nbsp; <a href="">NIMRemoteErrorCodeCalleeOffline</a> = 11001,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeInvalidVersion"></a><code>NIMRemoteErrorCodeInvalidVersion</code></dt>
+<dd>
+
+
+<p>客户端版本错误</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeInvalidPass"></a><code>NIMRemoteErrorCodeInvalidPass</code></dt>
+<dd>
+
+
+<p>密码错误</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeInvalidCRC"></a><code>NIMRemoteErrorCodeInvalidCRC</code></dt>
+<dd>
+
+
+<p>CheckSum校验失败</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeForbidden"></a><code>NIMRemoteErrorCodeForbidden</code></dt>
+<dd>
+
+
+<p>非法操作或没有权限</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeNotExist"></a><code>NIMRemoteErrorCodeNotExist</code></dt>
+<dd>
+
+
+<p>请求的目标（用户或对象）不存在</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeReadOnly"></a><code>NIMRemoteErrorCodeReadOnly</code></dt>
+<dd>
+
+
+<p>对象只读</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeTimeoutError"></a><code>NIMRemoteErrorCodeTimeoutError</code></dt>
+<dd>
+
+
+<p>请求过程超时</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeParameterError"></a><code>NIMRemoteErrorCodeParameterError</code></dt>
+<dd>
+
+
+<p>参数错误</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeConnectionError"></a><code>NIMRemoteErrorCodeConnectionError</code></dt>
+<dd>
+
+
+<p>网络连接出现错误</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeFrequently"></a><code>NIMRemoteErrorCodeFrequently</code></dt>
+<dd>
+
+
+<p>操作太过频繁</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeExist"></a><code>NIMRemoteErrorCodeExist</code></dt>
+<dd>
+
+
+<p>对象已经存在</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeUnknownError"></a><code>NIMRemoteErrorCodeUnknownError</code></dt>
+<dd>
+
+
+<p>未知错误</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeServerDataError"></a><code>NIMRemoteErrorCodeServerDataError</code></dt>
+<dd>
+
+
+<p>服务器数据错误</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeNotEnough"></a><code>NIMRemoteErrorCodeNotEnough</code></dt>
+<dd>
+
+
+<p>不足</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeDomainExpireOld"></a><code>NIMRemoteErrorCodeDomainExpireOld</code></dt>
+<dd>
+
+
+<p>超过期限</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeInvalidProtocol"></a><code>NIMRemoteErrorCodeInvalidProtocol</code></dt>
+<dd>
+
+
+<p>无效协议</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeUserNotExist"></a><code>NIMRemoteErrorCodeUserNotExist</code></dt>
+<dd>
+
+
+<p>用户不存在</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeServiceUnavailable"></a><code>NIMRemoteErrorCodeServiceUnavailable</code></dt>
+<dd>
+
+
+<p>服务不可用</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeTeamAccessError"></a><code>NIMRemoteErrorCodeTeamAccessError</code></dt>
+<dd>
+
+
+<p>没有操作群的权限</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeTeamNotExists"></a><code>NIMRemoteErrorCodeTeamNotExists</code></dt>
+<dd>
+
+
+<p>群组不存在</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeNotInTeam"></a><code>NIMRemoteErrorCodeNotInTeam</code></dt>
+<dd>
+
+
+<p>用户不在兴趣组内</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeTeamInvaildType"></a><code>NIMRemoteErrorCodeTeamInvaildType</code></dt>
+<dd>
+
+
+<p>群类型错误</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeTeamMemberLimit"></a><code>NIMRemoteErrorCodeTeamMemberLimit</code></dt>
+<dd>
+
+
+<p>超出群成员个数限制</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeTeamAlreadyIn"></a><code>NIMRemoteErrorCodeTeamAlreadyIn</code></dt>
+<dd>
+
+
+<p>已经在群里</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeTeamNotMember"></a><code>NIMRemoteErrorCodeTeamNotMember</code></dt>
+<dd>
+
+
+<p>不是群成员</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeTeamBlackList"></a><code>NIMRemoteErrorCodeTeamBlackList</code></dt>
+<dd>
+
+
+<p>在群黑名单中</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeEUnpacket"></a><code>NIMRemoteErrorCodeEUnpacket</code></dt>
+<dd>
+
+
+<p>解包错误</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeEPacket"></a><code>NIMRemoteErrorCodeEPacket</code></dt>
+<dd>
+
+
+<p>打包错误</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="NIMRemoteErrorCodeCalleeOffline"></a><code>NIMRemoteErrorCodeCalleeOffline</code></dt>
+<dd>
+
+
+<p>被叫离线(无可送达的被叫方)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NIMGlobalDefs.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">NIMGlobalDefs.h</code></p>
+                    </div>
+                    
+                    
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Netease. All rights reserved. Updated: 2016-04-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

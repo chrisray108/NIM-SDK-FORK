@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMImageObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMImageObject</TokenIdentifier>
+			<Abstract type="html">图片实例对象</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/initWithImage:</TokenIdentifier>
+			<Abstract type="html">图片实例对象初始化方法</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithImage:(UIImage *)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">要发送的图片</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片实例对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithImage:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/initWithFilepath:</TokenIdentifier>
+			<Abstract type="html">图片实例对象初始化方法</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithFilepath:(NSString *)filepath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filepath</Name>
+					<Abstract type="html">要发送的图片路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片实例对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFilepath:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/initWithData:extension:</TokenIdentifier>
+			<Abstract type="html">图片实例对象初始化方法</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithData:(NSData *)data extension:(NSString *)extension</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">图片数据</Abstract>
+				</Parameter><Parameter>
+					<Name>extension</Name>
+					<Abstract type="html">推荐使用的图片数据后缀名</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片实例对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:extension:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/setDisplayName:</TokenIdentifier>
+			<Abstract type="html">文件展示名</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *displayName</Declaration>
+			
+			
+			<Anchor>//api/name/displayName</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/displayName</TokenIdentifier>
+			<Abstract type="html">文件展示名</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *displayName</Declaration>
+			
+			
+			<Anchor>//api/name/displayName</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMImageObject/displayName</TokenIdentifier>
+			<Abstract type="html">文件展示名</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *displayName</Declaration>
+			
+			
+			<Anchor>//api/name/displayName</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/setPath:</TokenIdentifier>
+			<Abstract type="html">图片本地路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/path</TokenIdentifier>
+			<Abstract type="html">图片本地路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMImageObject/path</TokenIdentifier>
+			<Abstract type="html">图片本地路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/setThumbPath:</TokenIdentifier>
+			<Abstract type="html">缩略图本地路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *thumbPath</Declaration>
+			
+			
+			<Anchor>//api/name/thumbPath</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/thumbPath</TokenIdentifier>
+			<Abstract type="html">缩略图本地路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *thumbPath</Declaration>
+			
+			
+			<Anchor>//api/name/thumbPath</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMImageObject/thumbPath</TokenIdentifier>
+			<Abstract type="html">缩略图本地路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *thumbPath</Declaration>
+			
+			
+			<Anchor>//api/name/thumbPath</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/setUrl:</TokenIdentifier>
+			<Abstract type="html">图片远程路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/url</TokenIdentifier>
+			<Abstract type="html">图片远程路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMImageObject/url</TokenIdentifier>
+			<Abstract type="html">图片远程路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/setThumbUrl:</TokenIdentifier>
+			<Abstract type="html">缩略图远程路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *thumbUrl</Declaration>
+			
+			
+			<Anchor>//api/name/thumbUrl</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/thumbUrl</TokenIdentifier>
+			<Abstract type="html">缩略图远程路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *thumbUrl</Declaration>
+			
+			
+			<Anchor>//api/name/thumbUrl</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMImageObject/thumbUrl</TokenIdentifier>
+			<Abstract type="html">缩略图远程路径</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *thumbUrl</Declaration>
+			
+			
+			<Anchor>//api/name/thumbUrl</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/setSize:</TokenIdentifier>
+			<Abstract type="html">图片尺寸</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/size</TokenIdentifier>
+			<Abstract type="html">图片尺寸</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMImageObject/size</TokenIdentifier>
+			<Abstract type="html">图片尺寸</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/setOption:</TokenIdentifier>
+			<Abstract type="html">图片选项</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NIMImageOption *option</Declaration>
+			
+			
+			<Anchor>//api/name/option</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/option</TokenIdentifier>
+			<Abstract type="html">图片选项</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NIMImageOption *option</Declaration>
+			
+			
+			<Anchor>//api/name/option</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMImageObject/option</TokenIdentifier>
+			<Abstract type="html">图片选项</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NIMImageOption *option</Declaration>
+			
+			
+			<Anchor>//api/name/option</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/setFileLength:</TokenIdentifier>
+			<Abstract type="html">文件大小</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) long long fileLength</Declaration>
+			
+			
+			<Anchor>//api/name/fileLength</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageObject/fileLength</TokenIdentifier>
+			<Abstract type="html">文件大小</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) long long fileLength</Declaration>
+			
+			
+			<Anchor>//api/name/fileLength</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMImageObject/fileLength</TokenIdentifier>
+			<Abstract type="html">文件大小</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) long long fileLength</Declaration>
+			
+			
+			<Anchor>//api/name/fileLength</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

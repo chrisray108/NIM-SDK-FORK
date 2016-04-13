@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMSessionType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMSessionType</TokenIdentifier>
+			<Abstract type="html">会话类型</Abstract>
+			<DeclaredIn>NIMSession.h</DeclaredIn>
+            
+			
+			<NodeRef refid="100"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMSessionTypeP2P</TokenIdentifier>
+            <Abstract type="html">点对点
+     </Abstract>
+            <Declaration>NIMSessionTypeP2P</Declaration>
+            
+            <DeclaredIn>NIMSession.h</DeclaredIn>
+            
+            <NodeRef refid="100"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMSessionTypeTeam</TokenIdentifier>
+            <Abstract type="html">群组
+     </Abstract>
+            <Declaration>NIMSessionTypeTeam</Declaration>
+            
+            <DeclaredIn>NIMSession.h</DeclaredIn>
+            
+            <NodeRef refid="100"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMSessionTypeChatroom</TokenIdentifier>
+            <Abstract type="html">聊天室
+     </Abstract>
+            <Declaration>NIMSessionTypeChatroom</Declaration>
+            
+            <DeclaredIn>NIMSession.h</DeclaredIn>
+            
+            <NodeRef refid="100"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

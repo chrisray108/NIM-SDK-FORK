@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMChatroomManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMChatroomManagerDelegate</TokenIdentifier>
+			<Abstract type="html">聊天室管理器回调</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManagerDelegate/chatroom:beKicked:</TokenIdentifier>
+			<Abstract type="html">被踢回调</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)chatroom:(NSString *)roomId beKicked:(NIMChatroomKickReason)reason</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>roomId</Name>
+					<Abstract type="html">被踢的聊天室Id</Abstract>
+				</Parameter><Parameter>
+					<Name>reason</Name>
+					<Abstract type="html">被踢原因</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/chatroom:beKicked:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManagerDelegate/chatroom:connectionStateChanged:</TokenIdentifier>
+			<Abstract type="html">聊天室连接状态变化</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)chatroom:(NSString *)roomId connectionStateChanged:(NIMChatroomConnectionState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>roomId</Name>
+					<Abstract type="html">聊天室Id</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">当前状态</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/chatroom:connectionStateChanged:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

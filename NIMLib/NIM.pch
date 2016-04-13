@@ -1,0 +1,20 @@
+//
+//  NIM.pch
+//  NIMLib
+//
+//  Created by amao on 1/20/15.
+//  Copyright (c) 2015 Netease. All rights reserved.
+//
+
+#ifndef NIMLib_NIM_pch
+#define NIMLib_NIM_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "NIMMacros.h"
+#import "NIMLogger.h"
+#endif
+
+
+#endif

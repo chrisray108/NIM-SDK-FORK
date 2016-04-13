@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMUpdateTeamInfoAttachment.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMUpdateTeamInfoAttachment</TokenIdentifier>
+			<Abstract type="html">更新群信息的额外信息</Abstract>
+			<DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMUpdateTeamInfoAttachment/setValues:</TokenIdentifier>
+			<Abstract type="html">群内修改的信息键值对</Abstract>
+			<DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDictionary *values</Declaration>
+			
+			
+			<Anchor>//api/name/values</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMUpdateTeamInfoAttachment/values</TokenIdentifier>
+			<Abstract type="html">群内修改的信息键值对</Abstract>
+			<DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDictionary *values</Declaration>
+			
+			
+			<Anchor>//api/name/values</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMUpdateTeamInfoAttachment/values</TokenIdentifier>
+			<Abstract type="html">群内修改的信息键值对</Abstract>
+			<DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDictionary *values</Declaration>
+			
+			
+			<Anchor>//api/name/values</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

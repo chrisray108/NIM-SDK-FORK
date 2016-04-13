@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appKey</key>
+	<string>fe416640c8e8a72734219e1847ad2547</string>
+	<key>appSecret</key>
+	<string>1ed09990d13a</string>
+	<key>webServer</key>
+	<string>http://223.252.220.223/nimserver</string>
+	<key>cerName</key>
+	<string>DEVELOPER</string>
+	<key>account</key>
+	<string>utestsender4dev</string>
+	<key>token</key>
+	<string>123456</string>
+	<key>friendIds</key>
+	<array>
+		<string>utestreceiver4dev</string>
+		<string>utestreceiver4dev2</string>
+	</array>
+	<key>teamIds</key>
+	<array>
+		<string>11508</string>
+		<string>11480</string>
+	</array>
+	<key>chatroomIds</key>
+	<array>
+		<string>101</string>
+	</array>
+	<key>serverSetting</key>
+	<dict>
+		<key>lbs</key>
+		<string>http://223.252.220.223/lbs/conf</string>
+		<key>link</key>
+		<string>223.252.220.222:2001</string>
+		<key>rsa</key>
+		<string>00e3afe7487e6ac9ba69654672672ceddc05d5b6d45850859f11004d30c63e3691afd55722bdd2c75232b2a3561776201f84def8e38c508870ca7692b4228b0478e104460d7800dee3b6c3d8f89746ed48ee94f268f42b9c911437083d3815624e50de3fec3c0ec8ab3e71d5bdce3f4291d20538893cacdc00da9d1390ee39440d</string>
+	</dict>
+</dict>
+</plist>

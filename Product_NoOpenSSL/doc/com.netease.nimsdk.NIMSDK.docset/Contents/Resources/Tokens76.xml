@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMChatroomConnectionState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMChatroomConnectionState</TokenIdentifier>
+			<Abstract type="html">聊天室连接状态</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="76"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMChatroomConnectionStateEntering</TokenIdentifier>
+            <Abstract type="html">正在进入
+     </Abstract>
+            <Declaration>NIMChatroomConnectionStateEntering</Declaration>
+            
+            <DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="76"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMChatroomConnectionStateEnterOK</TokenIdentifier>
+            <Abstract type="html">进入聊天室成功
+     </Abstract>
+            <Declaration>NIMChatroomConnectionStateEnterOK</Declaration>
+            
+            <DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="76"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMChatroomConnectionStateEnterFailed</TokenIdentifier>
+            <Abstract type="html">进入聊天室失败
+     </Abstract>
+            <Declaration>NIMChatroomConnectionStateEnterFailed</Declaration>
+            
+            <DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="76"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMChatroomConnectionStateLoseConnection</TokenIdentifier>
+            <Abstract type="html">和聊天室失去连接
+     </Abstract>
+            <Declaration>NIMChatroomConnectionStateLoseConnection</Declaration>
+            
+            <DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="76"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMChatroomConnectionStateFatalError</TokenIdentifier>
+            <Abstract type="html">发生严重错误,需要用户手动进行重连</Abstract>
+            <Declaration>NIMChatroomConnectionStateFatalError</Declaration>
+            
+            <DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="76"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

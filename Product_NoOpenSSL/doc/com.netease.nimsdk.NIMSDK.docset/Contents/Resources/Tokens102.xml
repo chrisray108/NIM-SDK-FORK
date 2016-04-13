@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMTeamApplyStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMTeamApplyStatus</TokenIdentifier>
+			<Abstract type="html">申请入群状态</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+            
+			
+			<NodeRef refid="102"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamApplyStatusInvalid</TokenIdentifier>
+            <Abstract type="html">无效状态
+     </Abstract>
+            <Declaration>NIMTeamApplyStatusInvalid</Declaration>
+            
+            <DeclaredIn>NIMTeam.h</DeclaredIn>
+            
+            <NodeRef refid="102"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamApplyStatusAlreadyInTeam</TokenIdentifier>
+            <Abstract type="html">已经在群里
+     </Abstract>
+            <Declaration>NIMTeamApplyStatusAlreadyInTeam</Declaration>
+            
+            <DeclaredIn>NIMTeam.h</DeclaredIn>
+            
+            <NodeRef refid="102"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamApplyStatusWaitForPass</TokenIdentifier>
+            <Abstract type="html">申请等待通过
+     </Abstract>
+            <Declaration>NIMTeamApplyStatusWaitForPass</Declaration>
+            
+            <DeclaredIn>NIMTeam.h</DeclaredIn>
+            
+            <NodeRef refid="102"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

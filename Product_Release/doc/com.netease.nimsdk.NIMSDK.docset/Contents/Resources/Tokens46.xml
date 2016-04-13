@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMUserAddAttachment.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMUserAddAttachment</TokenIdentifier>
+			<Abstract type="html">添加好友附件</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+            
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMUserAddAttachment/setOperationType:</TokenIdentifier>
+			<Abstract type="html">好友操作类型</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMUserOperation operationType</Declaration>
+			
+			
+			<Anchor>//api/name/operationType</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMUserAddAttachment/operationType</TokenIdentifier>
+			<Abstract type="html">好友操作类型</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMUserOperation operationType</Declaration>
+			
+			
+			<Anchor>//api/name/operationType</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMUserAddAttachment/operationType</TokenIdentifier>
+			<Abstract type="html">好友操作类型</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMUserOperation operationType</Declaration>
+			
+			
+			<Anchor>//api/name/operationType</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

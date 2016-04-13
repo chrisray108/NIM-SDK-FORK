@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMSystemNotificationManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMSystemNotificationManager</TokenIdentifier>
+			<Abstract type="html">系统通知协议</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="68"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/fetchSystemNotifications:limit:</TokenIdentifier>
+			<Abstract type="html">获取本地存储的系统通知</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)fetchSystemNotifications:(NIMSystemNotification *)notification limit:(NSInteger)limit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">当前最早系统消息,没有则传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>limit</Name>
+					<Abstract type="html">最大获取数</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">系统消息列表</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchSystemNotifications:limit:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/fetchSystemNotifications:limit:filter:</TokenIdentifier>
+			<Abstract type="html">获取本地存储的系统通知</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)fetchSystemNotifications:(NIMSystemNotification *)notification limit:(NSInteger)limit filter:(NIMSystemNotificationFilter *)filter</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">当前最早系统消息,没有则传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>limit</Name>
+					<Abstract type="html">最大获取数</Abstract>
+				</Parameter><Parameter>
+					<Name>filter</Name>
+					<Abstract type="html">过滤器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">系统消息列表</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchSystemNotifications:limit:filter:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/allUnreadCount</TokenIdentifier>
+			<Abstract type="html">未读系统消息数</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)allUnreadCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">未读系统消息数</Abstract></ReturnValue>
+			<Anchor>//api/name/allUnreadCount</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/allUnreadCount:</TokenIdentifier>
+			<Abstract type="html">未读系统消息数</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)allUnreadCount:(NIMSystemNotificationFilter *)filter</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filter</Name>
+					<Abstract type="html">过滤器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">未读系统消息数</Abstract></ReturnValue>
+			<Anchor>//api/name/allUnreadCount:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/deleteNotification:</TokenIdentifier>
+			<Abstract type="html">删除单条系统消息</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteNotification:(NIMSystemNotification *)notification</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">系统消息</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteNotification:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/deleteAllNotifications</TokenIdentifier>
+			<Abstract type="html">删除所有系统消息</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteAllNotifications</Declaration>
+			
+			
+			<Anchor>//api/name/deleteAllNotifications</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/deleteAllNotifications:</TokenIdentifier>
+			<Abstract type="html">删除所有命中过滤器的系统消息</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteAllNotifications:(NIMSystemNotificationFilter *)filter</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filter</Name>
+					<Abstract type="html">过滤器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteAllNotifications:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/markNotificationsAsRead:</TokenIdentifier>
+			<Abstract type="html">标记单条系统消息为已读</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)markNotificationsAsRead:(NIMSystemNotification *)notification</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">系统消息</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/markNotificationsAsRead:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/markAllNotificationsAsRead</TokenIdentifier>
+			<Abstract type="html">标记所有系统消息为已读</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)markAllNotificationsAsRead</Declaration>
+			
+			
+			<Anchor>//api/name/markAllNotificationsAsRead</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/markAllNotificationsAsRead:</TokenIdentifier>
+			<Abstract type="html">标记所有命中过滤器的系统消息为已读</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)markAllNotificationsAsRead:(NIMSystemNotificationFilter *)filter</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filter</Name>
+					<Abstract type="html">过滤器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/markAllNotificationsAsRead:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/sendCustomNotification:toSession:completion:</TokenIdentifier>
+			<Abstract type="html">发送自定义系统通知</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)sendCustomNotification:(NIMCustomSystemNotification *)notification toSession:(NIMSession *)session completion:(NIMSystemNotificationHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">系统通知</Abstract>
+				</Parameter><Parameter>
+					<Name>session</Name>
+					<Abstract type="html">接收方</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">发送结果回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendCustomNotification:toSession:completion:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/addDelegate:</TokenIdentifier>
+			<Abstract type="html">添加系统消息通知委托</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)addDelegate:(id&lt;NIMSystemNotificationManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">系统通知回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDelegate:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMSystemNotificationManager/removeDelegate:</TokenIdentifier>
+			<Abstract type="html">移除系统消息通知委托</Abstract>
+			<DeclaredIn>NIMSystemNotificationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)removeDelegate:(id&lt;NIMSystemNotificationManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">系统通知回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeDelegate:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

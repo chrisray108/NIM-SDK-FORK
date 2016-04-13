@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMNetCallVideoQuality.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMNetCallVideoQuality</TokenIdentifier>
+			<Abstract type="html">网络通话视频质量</Abstract>
+			<DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+			
+			<NodeRef refid="94"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallVideoQualityDefault</TokenIdentifier>
+            <Abstract type="html">默认视频质量
+     </Abstract>
+            <Declaration>NIMNetCallVideoQualityDefault</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="94"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallVideoQualityLow</TokenIdentifier>
+            <Abstract type="html">低视频质量
+     </Abstract>
+            <Declaration>NIMNetCallVideoQualityLow</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="94"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallVideoQualityMedium</TokenIdentifier>
+            <Abstract type="html">中等视频质量
+     </Abstract>
+            <Declaration>NIMNetCallVideoQualityMedium</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="94"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallVideoQualityHigh</TokenIdentifier>
+            <Abstract type="html">高视频质量
+     </Abstract>
+            <Declaration>NIMNetCallVideoQualityHigh</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="94"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

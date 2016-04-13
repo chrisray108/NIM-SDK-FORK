@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMUserManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMUserManagerDelegate</TokenIdentifier>
+			<Abstract type="html">好友协议委托</Abstract>
+			<DeclaredIn>NIMUserManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="73"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMUserManagerDelegate/onFriendChanged:</TokenIdentifier>
+			<Abstract type="html">好友状态发生变化 (在线)</Abstract>
+			<DeclaredIn>NIMUserManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onFriendChanged:(NIMUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">用户对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onFriendChanged:</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMUserManagerDelegate/onBlackListChanged</TokenIdentifier>
+			<Abstract type="html">黑名单列表发生变化 (在线)</Abstract>
+			<DeclaredIn>NIMUserManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onBlackListChanged</Declaration>
+			
+			
+			<Anchor>//api/name/onBlackListChanged</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMUserManagerDelegate/onUserInfoChanged:</TokenIdentifier>
+			<Abstract type="html">用户个人信息发生变化 (在线)</Abstract>
+			<DeclaredIn>NIMUserManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onUserInfoChanged:(NIMUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">用户对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onUserInfoChanged:</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

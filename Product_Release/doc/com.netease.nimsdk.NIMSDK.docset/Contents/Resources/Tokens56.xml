@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMCustomAttachment.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMCustomAttachment</TokenIdentifier>
+			<Abstract type="html">自定义消息对象附件协议</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="56"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMCustomAttachment/encodeAttachment</TokenIdentifier>
+			<Abstract type="html">序列化attachment</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)encodeAttachment</Declaration>
+			
+			<ReturnValue><Abstract type="html">序列化后的结果，将用于透传</Abstract></ReturnValue>
+			<Anchor>//api/name/encodeAttachment</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMCustomAttachment/attachmentNeedsUpload</TokenIdentifier>
+			<Abstract type="html">是否需要上传附件</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)attachmentNeedsUpload</Declaration>
+			
+			<ReturnValue><Abstract type="html">是否需要上传附件</Abstract></ReturnValue>
+			<Anchor>//api/name/attachmentNeedsUpload</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMCustomAttachment/attachmentPathForUploading</TokenIdentifier>
+			<Abstract type="html">需要上传的附件路径</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)attachmentPathForUploading</Declaration>
+			
+			<ReturnValue><Abstract type="html">路径</Abstract></ReturnValue>
+			<Anchor>//api/name/attachmentPathForUploading</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMCustomAttachment/updateAttachmentURL:</TokenIdentifier>
+			<Abstract type="html">更新附件URL</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>- (void)updateAttachmentURL:(NSString *)urlString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlString</Name>
+					<Abstract type="html">附件url</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateAttachmentURL:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMCustomAttachment/attachmentNeedsDownload</TokenIdentifier>
+			<Abstract type="html">是否需要下载附件</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)attachmentNeedsDownload</Declaration>
+			
+			<ReturnValue><Abstract type="html">是否需要上传附件</Abstract></ReturnValue>
+			<Anchor>//api/name/attachmentNeedsDownload</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMCustomAttachment/attachmentURLStringForDownloading</TokenIdentifier>
+			<Abstract type="html">需要下载的附件url</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)attachmentURLStringForDownloading</Declaration>
+			
+			<ReturnValue><Abstract type="html">附件url</Abstract></ReturnValue>
+			<Anchor>//api/name/attachmentURLStringForDownloading</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMCustomAttachment/attachmentPathForDownloading</TokenIdentifier>
+			<Abstract type="html">需要下载的附件本地路径</Abstract>
+			<DeclaredIn>NIMCustomObject.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)attachmentPathForDownloading</Declaration>
+			
+			<ReturnValue><Abstract type="html">附件本地路径</Abstract></ReturnValue>
+			<Anchor>//api/name/attachmentPathForDownloading</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

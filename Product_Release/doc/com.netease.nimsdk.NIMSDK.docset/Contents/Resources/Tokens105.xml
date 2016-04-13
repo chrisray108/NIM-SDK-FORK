@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMTeamOperationType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMTeamOperationType</TokenIdentifier>
+			<Abstract type="html">群操作类型</Abstract>
+			<DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+			
+			<NodeRef refid="105"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamOperationTypeInvite</TokenIdentifier>
+            <Abstract type="html">邀请成员
+     </Abstract>
+            <Declaration>NIMTeamOperationTypeInvite</Declaration>
+            
+            <DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+            <NodeRef refid="105"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamOperationTypeKick</TokenIdentifier>
+            <Abstract type="html">移除成员
+     </Abstract>
+            <Declaration>NIMTeamOperationTypeKick</Declaration>
+            
+            <DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+            <NodeRef refid="105"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamOperationTypeLeave</TokenIdentifier>
+            <Abstract type="html">离开群
+     </Abstract>
+            <Declaration>NIMTeamOperationTypeLeave</Declaration>
+            
+            <DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+            <NodeRef refid="105"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamOperationTypeUpdate</TokenIdentifier>
+            <Abstract type="html">更新群信息
+     </Abstract>
+            <Declaration>NIMTeamOperationTypeUpdate</Declaration>
+            
+            <DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+            <NodeRef refid="105"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamOperationTypeDismiss</TokenIdentifier>
+            <Abstract type="html">解散群
+     </Abstract>
+            <Declaration>NIMTeamOperationTypeDismiss</Declaration>
+            
+            <DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+            <NodeRef refid="105"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamOperationTypeApplyPass</TokenIdentifier>
+            <Abstract type="html">高级群申请加入成功
+     </Abstract>
+            <Declaration>NIMTeamOperationTypeApplyPass</Declaration>
+            
+            <DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+            <NodeRef refid="105"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamOperationTypeTransferOwner</TokenIdentifier>
+            <Abstract type="html">高级群群主转移群主身份
+     </Abstract>
+            <Declaration>NIMTeamOperationTypeTransferOwner</Declaration>
+            
+            <DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+            <NodeRef refid="105"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamOperationTypeAddManager</TokenIdentifier>
+            <Abstract type="html">添加管理员
+     </Abstract>
+            <Declaration>NIMTeamOperationTypeAddManager</Declaration>
+            
+            <DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+            <NodeRef refid="105"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamOperationTypeRemoveManager</TokenIdentifier>
+            <Abstract type="html">移除管理员
+     </Abstract>
+            <Declaration>NIMTeamOperationTypeRemoveManager</Declaration>
+            
+            <DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+            <NodeRef refid="105"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMTeamOperationTypeAcceptInvitation</TokenIdentifier>
+            <Abstract type="html">高级群接受邀请进群
+     </Abstract>
+            <Declaration>NIMTeamOperationTypeAcceptInvitation</Declaration>
+            
+            <DeclaredIn>NIMTeamNotificationContent.h</DeclaredIn>
+            
+            <NodeRef refid="105"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMUserOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMUserOperation</TokenIdentifier>
+			<Abstract type="html">好友操作类型</Abstract>
+			<DeclaredIn>NIMUser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="110"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMUserOperationAdd</TokenIdentifier>
+            <Abstract type="html">添加好友</Abstract>
+            <Declaration>NIMUserOperationAdd</Declaration>
+            
+            <DeclaredIn>NIMUser.h</DeclaredIn>
+            
+            <NodeRef refid="110"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMUserOperationRequest</TokenIdentifier>
+            <Abstract type="html">请求添加好友
+     </Abstract>
+            <Declaration>NIMUserOperationRequest</Declaration>
+            
+            <DeclaredIn>NIMUser.h</DeclaredIn>
+            
+            <NodeRef refid="110"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMUserOperationVerify</TokenIdentifier>
+            <Abstract type="html">通过添加好友请求
+     </Abstract>
+            <Declaration>NIMUserOperationVerify</Declaration>
+            
+            <DeclaredIn>NIMUser.h</DeclaredIn>
+            
+            <NodeRef refid="110"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMUserOperationReject</TokenIdentifier>
+            <Abstract type="html">拒绝添加好友请求
+     </Abstract>
+            <Declaration>NIMUserOperationReject</Declaration>
+            
+            <DeclaredIn>NIMUser.h</DeclaredIn>
+            
+            <NodeRef refid="110"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NIMTeamManager Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">NIMSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Netease</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/acceptInviteWithTeam:invitorId:completion:">- acceptInviteWithTeam:invitorId:completion:</option>
+		
+		<option value="//api/name/addDelegate:">- addDelegate:</option>
+		
+		<option value="//api/name/addManagersToTeam:users:completion:">- addManagersToTeam:users:completion:</option>
+		
+		<option value="//api/name/addUsers:toTeam:postscript:completion:">- addUsers:toTeam:postscript:completion:</option>
+		
+		<option value="//api/name/allMyTeams">- allMyTeams</option>
+		
+		<option value="//api/name/applyToTeam:message:completion:">- applyToTeam:message:completion:</option>
+		
+		<option value="//api/name/createTeam:users:completion:">- createTeam:users:completion:</option>
+		
+		<option value="//api/name/dismissTeam:completion:">- dismissTeam:completion:</option>
+		
+		<option value="//api/name/fetchTeamInfo:completion:">- fetchTeamInfo:completion:</option>
+		
+		<option value="//api/name/fetchTeamMembers:completion:">- fetchTeamMembers:completion:</option>
+		
+		<option value="//api/name/fetchTeamMembersFromServer:completion:">- fetchTeamMembersFromServer:completion:</option>
+		
+		<option value="//api/name/isMyTeam:">- isMyTeam:</option>
+		
+		<option value="//api/name/kickUsers:fromTeam:completion:">- kickUsers:fromTeam:completion:</option>
+		
+		<option value="//api/name/notifyForNewMsg:">- notifyForNewMsg:</option>
+		
+		<option value="//api/name/passApplyToTeam:userId:completion:">- passApplyToTeam:userId:completion:</option>
+		
+		<option value="//api/name/quitTeam:completion:">- quitTeam:completion:</option>
+		
+		<option value="//api/name/rejectApplyToTeam:userId:rejectReason:completion:">- rejectApplyToTeam:userId:rejectReason:completion:</option>
+		
+		<option value="//api/name/rejectInviteWithTeam:invitorId:rejectReason:completion:">- rejectInviteWithTeam:invitorId:rejectReason:completion:</option>
+		
+		<option value="//api/name/removeDelegate:">- removeDelegate:</option>
+		
+		<option value="//api/name/removeManagersFromTeam:users:completion:">- removeManagersFromTeam:users:completion:</option>
+		
+		<option value="//api/name/teamById:">- teamById:</option>
+		
+		<option value="//api/name/teamMember:inTeam:">- teamMember:inTeam:</option>
+		
+		<option value="//api/name/transferManagerWithTeam:newOwnerId:isLeave:completion:">- transferManagerWithTeam:newOwnerId:isLeave:completion:</option>
+		
+		<option value="//api/name/updateNotifyState:inTeam:completion:">- updateNotifyState:inTeam:completion:</option>
+		
+		<option value="//api/name/updateTeamAnnouncement:teamId:completion:">- updateTeamAnnouncement:teamId:completion:</option>
+		
+		<option value="//api/name/updateTeamCustomInfo:teamId:completion:">- updateTeamCustomInfo:teamId:completion:</option>
+		
+		<option value="//api/name/updateTeamInfos:teamId:completion:">- updateTeamInfos:teamId:completion:</option>
+		
+		<option value="//api/name/updateTeamIntro:teamId:completion:">- updateTeamIntro:teamId:completion:</option>
+		
+		<option value="//api/name/updateTeamJoinMode:teamId:completion:">- updateTeamJoinMode:teamId:completion:</option>
+		
+		<option value="//api/name/updateTeamName:teamId:completion:">- updateTeamName:teamId:completion:</option>
+		
+		<option value="//api/name/updateUserNick:newNick:inTeam:completion:">- updateUserNick:newNick:inTeam:completion:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NIMTeamManager Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>NIMTeamManagerProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>群组协议</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/allMyTeams" title="allMyTeams"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allMyTeams">&ndash;&nbsp;allMyTeams</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取所有群组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)allMyTeams</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回所有群组</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取所有群组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/teamById:" title="teamById:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/teamById:">&ndash;&nbsp;teamById:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据群组ID获取具体的群组信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NIMTeam *)teamById:(NSString *)<em>teamId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>群组信息</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据群组ID获取具体的群组信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isMyTeam:" title="isMyTeam:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isMyTeam:">&ndash;&nbsp;isMyTeam:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据群组ID判断是否是我所在的群</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isMyTeam:(NSString *)<em>teamId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>是否在此群组</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据群组ID判断是否是我所在的群</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createTeam:users:completion:" title="createTeam:users:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createTeam:users:completion:">&ndash;&nbsp;createTeam:users:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建群组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createTeam:(NIMCreateTeamOption *)<em>option</em> users:(NSArray *)<em>users</em> completion:(NIMTeamCreateHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>option</code></th>
+						<td><p>创建群选项</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>用户ID列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>创建群组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dismissTeam:completion:" title="dismissTeam:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dismissTeam:completion:">&ndash;&nbsp;dismissTeam:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>解散群组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)dismissTeam:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>解散群组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/quitTeam:completion:" title="quitTeam:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/quitTeam:completion:">&ndash;&nbsp;quitTeam:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>退出群组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)quitTeam:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>退出群组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addUsers:toTeam:postscript:completion:" title="addUsers:toTeam:postscript:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addUsers:toTeam:postscript:completion:">&ndash;&nbsp;addUsers:toTeam:postscript:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>邀请用户入群</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addUsers:(NSArray *)<em>users</em> toTeam:(NSString *)<em>teamId</em> postscript:(NSString *)<em>postscript</em> completion:(NIMTeamMemberHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>用户ID列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>postscript</code></th>
+						<td><p>邀请附言</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>邀请用户入群</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/kickUsers:fromTeam:completion:" title="kickUsers:fromTeam:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/kickUsers:fromTeam:completion:">&ndash;&nbsp;kickUsers:fromTeam:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>从群组内移除成员</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)kickUsers:(NSArray *)<em>users</em> fromTeam:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>需要移除的用户ID列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>从群组内移除成员</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateTeamName:teamId:completion:" title="updateTeamName:teamId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateTeamName:teamId:completion:">&ndash;&nbsp;updateTeamName:teamId:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新群组名称</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateTeamName:(NSString *)<em>teamName</em> teamId:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamName</code></th>
+						<td><p>群组名称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新群组名称</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateTeamJoinMode:teamId:completion:" title="updateTeamJoinMode:teamId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateTeamJoinMode:teamId:completion:">&ndash;&nbsp;updateTeamJoinMode:teamId:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新群组验证方式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateTeamJoinMode:(NIMTeamJoinMode)<em>joinMode</em> teamId:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>joinMode</code></th>
+						<td><p>验证方式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新群组验证方式</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateTeamIntro:teamId:completion:" title="updateTeamIntro:teamId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateTeamIntro:teamId:completion:">&ndash;&nbsp;updateTeamIntro:teamId:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新群介绍</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateTeamIntro:(NSString *)<em>intro</em> teamId:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>intro</code></th>
+						<td><p>群介绍</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新群介绍</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateTeamAnnouncement:teamId:completion:" title="updateTeamAnnouncement:teamId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateTeamAnnouncement:teamId:completion:">&ndash;&nbsp;updateTeamAnnouncement:teamId:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新群公告</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateTeamAnnouncement:(NSString *)<em>announcement</em> teamId:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>announcement</code></th>
+						<td><p>群公告</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新群公告</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateTeamCustomInfo:teamId:completion:" title="updateTeamCustomInfo:teamId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateTeamCustomInfo:teamId:completion:">&ndash;&nbsp;updateTeamCustomInfo:teamId:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新群自定义信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateTeamCustomInfo:(NSString *)<em>info</em> teamId:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>info</code></th>
+						<td><p>群自定义信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新群自定义信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateTeamInfos:teamId:completion:" title="updateTeamInfos:teamId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateTeamInfos:teamId:completion:">&ndash;&nbsp;updateTeamInfos:teamId:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新群信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateTeamInfos:(NSDictionary *)<em>values</em> teamId:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>values</code></th>
+						<td><p>需要更新的群信息键值对</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新群信息</p><p>这个接口可以一次性修改群的多个属性,如名称,公告等,传入的数据键值对是 {@(<a href="../Constants/NIMTeamUpdateTag.html">NIMTeamUpdateTag</a>) : NSString},无效数据将被过滤</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/applyToTeam:message:completion:" title="applyToTeam:message:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/applyToTeam:message:completion:">&ndash;&nbsp;applyToTeam:message:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>群申请</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)applyToTeam:(NSString *)<em>teamId</em> message:(NSString *)<em>message</em> completion:(NIMTeamApplyHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>申请消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>群申请</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/passApplyToTeam:userId:completion:" title="passApplyToTeam:userId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/passApplyToTeam:userId:completion:">&ndash;&nbsp;passApplyToTeam:userId:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通过群申请</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)passApplyToTeam:(NSString *)<em>teamId</em> userId:(NSString *)<em>userId</em> completion:(NIMTeamApplyHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>申请的用户ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通过群申请</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rejectApplyToTeam:userId:rejectReason:completion:" title="rejectApplyToTeam:userId:rejectReason:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rejectApplyToTeam:userId:rejectReason:completion:">&ndash;&nbsp;rejectApplyToTeam:userId:rejectReason:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>拒绝群申请</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)rejectApplyToTeam:(NSString *)<em>teamId</em> userId:(NSString *)<em>userId</em> rejectReason:(NSString *)<em>rejectReason</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>申请的用户ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rejectReason</code></th>
+						<td><p>拒绝理由</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>拒绝群申请</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateUserNick:newNick:inTeam:completion:" title="updateUserNick:newNick:inTeam:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateUserNick:newNick:inTeam:completion:">&ndash;&nbsp;updateUserNick:newNick:inTeam:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新成员群昵称</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateUserNick:(NSString *)<em>userId</em> newNick:(NSString *)<em>newNick</em> inTeam:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>群成员ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newNick</code></th>
+						<td><p>新的群成员昵称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群主ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新成员群昵称</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addManagersToTeam:users:completion:" title="addManagersToTeam:users:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addManagersToTeam:users:completion:">&ndash;&nbsp;addManagersToTeam:users:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加管理员</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addManagersToTeam:(NSString *)<em>teamId</em> users:(NSArray *)<em>users</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>需要添加为管理员的用户ID列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加管理员</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeManagersFromTeam:users:completion:" title="removeManagersFromTeam:users:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeManagersFromTeam:users:completion:">&ndash;&nbsp;removeManagersFromTeam:users:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除管理员</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeManagersFromTeam:(NSString *)<em>teamId</em> users:(NSArray *)<em>users</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>需要移除管理员的用户ID列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>移除管理员</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transferManagerWithTeam:newOwnerId:isLeave:completion:" title="transferManagerWithTeam:newOwnerId:isLeave:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transferManagerWithTeam:newOwnerId:isLeave:completion:">&ndash;&nbsp;transferManagerWithTeam:newOwnerId:isLeave:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移交群主</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)transferManagerWithTeam:(NSString *)<em>teamId</em> newOwnerId:(NSString *)<em>newOwnerId</em> isLeave:(BOOL)<em>isLeave</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newOwnerId</code></th>
+						<td><p>新群主ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isLeave</code></th>
+						<td><p>是否同时离开群组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>移交群主</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/acceptInviteWithTeam:invitorId:completion:" title="acceptInviteWithTeam:invitorId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/acceptInviteWithTeam:invitorId:completion:">&ndash;&nbsp;acceptInviteWithTeam:invitorId:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>接受入群邀请</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)acceptInviteWithTeam:(NSString *)<em>teamId</em> invitorId:(NSString *)<em>invitorId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>invitorId</code></th>
+						<td><p>邀请者ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>接受入群邀请</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rejectInviteWithTeam:invitorId:rejectReason:completion:" title="rejectInviteWithTeam:invitorId:rejectReason:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rejectInviteWithTeam:invitorId:rejectReason:completion:">&ndash;&nbsp;rejectInviteWithTeam:invitorId:rejectReason:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>拒绝入群邀请</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)rejectInviteWithTeam:(NSString *)<em>teamId</em> invitorId:(NSString *)<em>invitorId</em> rejectReason:(NSString *)<em>rejectReason</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>invitorId</code></th>
+						<td><p>邀请者ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rejectReason</code></th>
+						<td><p>拒绝原因</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>拒绝入群邀请</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateNotifyState:inTeam:completion:" title="updateNotifyState:inTeam:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateNotifyState:inTeam:completion:">&ndash;&nbsp;updateNotifyState:inTeam:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改群通知状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateNotifyState:(BOOL)<em>notify</em> inTeam:(NSString *)<em>teamId</em> completion:(NIMTeamHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notify</code></th>
+						<td><p>是否通知</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改群通知状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyForNewMsg:" title="notifyForNewMsg:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyForNewMsg:">&ndash;&nbsp;notifyForNewMsg:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否需要消息通知</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)notifyForNewMsg:(NSString *)<em>teamId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群Id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>是否需要消息通知</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否需要消息通知</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchTeamMembers:completion:" title="fetchTeamMembers:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchTeamMembers:completion:">&ndash;&nbsp;fetchTeamMembers:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取群组成员</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchTeamMembers:(NSString *)<em>teamId</em> completion:(NIMTeamMemberHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取群组成员</p><p>绝大多数情况这个请求都是从本地读取缓存并同步返回，但是由于群成员信息量较大， SDK 采取的是登录后延迟拉取的策略
+考虑到用户网络等问题, SDK 有可能没有及时缓存群成员信息,那么这个请求将是个带网络请求的异步操作(增量请求)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchTeamMembersFromServer:completion:" title="fetchTeamMembersFromServer:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchTeamMembersFromServer:completion:">&ndash;&nbsp;fetchTeamMembersFromServer:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通过网络请求获取群组成员</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchTeamMembersFromServer:(NSString *)<em>teamId</em> completion:(NIMTeamMemberHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通过网络请求获取群组成员</p><p>通过网络请求获取群成员列表,不同于fetchTeamMembers:completion这个接口是个必然带网络请求的异步操作(增量请求)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchTeamInfo:completion:" title="fetchTeamInfo:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchTeamInfo:completion:">&ndash;&nbsp;fetchTeamInfo:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取群信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchTeamInfo:(NSString *)<em>teamId</em> completion:(NIMTeamFetchInfoHandler)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成后的block回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取群信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/teamMember:inTeam:" title="teamMember:inTeam:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/teamMember:inTeam:">&ndash;&nbsp;teamMember:inTeam:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取单个群成员信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NIMTeamMember *)teamMember:(NSString *)<em>userId</em> inTeam:(NSString *)<em>teamId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>用户ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>teamId</code></th>
+						<td><p>群组ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回成员信息</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取单个群成员信息</p><p>返回本地缓存的群成员信息，如果本地没有相应数据则返回 nil。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addDelegate:" title="addDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addDelegate:">&ndash;&nbsp;addDelegate:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加群组委托</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addDelegate:(id&lt;NIMTeamManagerDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>群组委托</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加群组委托</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeDelegate:">&ndash;&nbsp;removeDelegate:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除群组委托</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeDelegate:(id&lt;NIMTeamManagerDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>群组委托</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>移除群组委托</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMTeamManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Netease. All rights reserved. Updated: 2016-04-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

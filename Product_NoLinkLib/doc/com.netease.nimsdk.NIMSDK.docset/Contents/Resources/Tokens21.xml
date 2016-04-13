@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMLocationObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMLocationObject</TokenIdentifier>
+			<Abstract type="html">位置实例对象</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLocationObject/initWithLatitude:longitude:title:</TokenIdentifier>
+			<Abstract type="html">位置实例对象初始化方法</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithLatitude:(double)latitude longitude:(double)longitude title:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>latitude</Name>
+					<Abstract type="html">纬度</Abstract>
+				</Parameter><Parameter>
+					<Name>longitude</Name>
+					<Abstract type="html">经度</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">地理位置描述</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">位置实例对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithLatitude:longitude:title:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLocationObject/setLatitude:</TokenIdentifier>
+			<Abstract type="html">维度</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLocationObject/latitude</TokenIdentifier>
+			<Abstract type="html">维度</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMLocationObject/latitude</TokenIdentifier>
+			<Abstract type="html">维度</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLocationObject/setLongitude:</TokenIdentifier>
+			<Abstract type="html">经度</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLocationObject/longitude</TokenIdentifier>
+			<Abstract type="html">经度</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMLocationObject/longitude</TokenIdentifier>
+			<Abstract type="html">经度</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLocationObject/setTitle:</TokenIdentifier>
+			<Abstract type="html">标题</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLocationObject/title</TokenIdentifier>
+			<Abstract type="html">标题</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMLocationObject/title</TokenIdentifier>
+			<Abstract type="html">标题</Abstract>
+			<DeclaredIn>NIMLocationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

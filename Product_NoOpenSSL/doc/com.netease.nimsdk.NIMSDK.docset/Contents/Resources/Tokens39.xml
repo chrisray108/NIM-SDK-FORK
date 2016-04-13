@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMSystemNotification.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMSystemNotification</TokenIdentifier>
+			<Abstract type="html">系统通知</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+            
+			
+			<NodeRef refid="39"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/setType:</TokenIdentifier>
+			<Abstract type="html">通知类型</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMSystemNotificationType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/type</TokenIdentifier>
+			<Abstract type="html">通知类型</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMSystemNotificationType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSystemNotification/type</TokenIdentifier>
+			<Abstract type="html">通知类型</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMSystemNotificationType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">时间戳</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/timestamp</TokenIdentifier>
+			<Abstract type="html">时间戳</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSystemNotification/timestamp</TokenIdentifier>
+			<Abstract type="html">时间戳</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/setSourceID:</TokenIdentifier>
+			<Abstract type="html">操作者</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *sourceID</Declaration>
+			
+			
+			<Anchor>//api/name/sourceID</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/sourceID</TokenIdentifier>
+			<Abstract type="html">操作者</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *sourceID</Declaration>
+			
+			
+			<Anchor>//api/name/sourceID</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSystemNotification/sourceID</TokenIdentifier>
+			<Abstract type="html">操作者</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *sourceID</Declaration>
+			
+			
+			<Anchor>//api/name/sourceID</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/setTargetID:</TokenIdentifier>
+			<Abstract type="html">目标ID,群ID或者是用户ID</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *targetID</Declaration>
+			
+			
+			<Anchor>//api/name/targetID</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/targetID</TokenIdentifier>
+			<Abstract type="html">目标ID,群ID或者是用户ID</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *targetID</Declaration>
+			
+			
+			<Anchor>//api/name/targetID</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSystemNotification/targetID</TokenIdentifier>
+			<Abstract type="html">目标ID,群ID或者是用户ID</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *targetID</Declaration>
+			
+			
+			<Anchor>//api/name/targetID</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/setPostscript:</TokenIdentifier>
+			<Abstract type="html">附言</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *postscript</Declaration>
+			
+			
+			<Anchor>//api/name/postscript</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/postscript</TokenIdentifier>
+			<Abstract type="html">附言</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *postscript</Declaration>
+			
+			
+			<Anchor>//api/name/postscript</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSystemNotification/postscript</TokenIdentifier>
+			<Abstract type="html">附言</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *postscript</Declaration>
+			
+			
+			<Anchor>//api/name/postscript</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/setRead:</TokenIdentifier>
+			<Abstract type="html">是否已读</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL read</Declaration>
+			
+			
+			<Anchor>//api/name/read</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/read</TokenIdentifier>
+			<Abstract type="html">是否已读</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL read</Declaration>
+			
+			
+			<Anchor>//api/name/read</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSystemNotification/read</TokenIdentifier>
+			<Abstract type="html">是否已读</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL read</Declaration>
+			
+			
+			<Anchor>//api/name/read</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/setHandleStatus:</TokenIdentifier>
+			<Abstract type="html">消息处理状态</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger handleStatus</Declaration>
+			
+			
+			<Anchor>//api/name/handleStatus</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/handleStatus</TokenIdentifier>
+			<Abstract type="html">消息处理状态</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger handleStatus</Declaration>
+			
+			
+			<Anchor>//api/name/handleStatus</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSystemNotification/handleStatus</TokenIdentifier>
+			<Abstract type="html">消息处理状态</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger handleStatus</Declaration>
+			
+			
+			<Anchor>//api/name/handleStatus</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/setAttachment:</TokenIdentifier>
+			<Abstract type="html">附件</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotification/attachment</TokenIdentifier>
+			<Abstract type="html">附件</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSystemNotification/attachment</TokenIdentifier>
+			<Abstract type="html">附件</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMNetCallManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMNetCallManager</TokenIdentifier>
+			<Abstract type="html">网络通话协议</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="63"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/start:type:option:completion:</TokenIdentifier>
+			<Abstract type="html">主叫发起通话 - 新接口</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)start:(NSArray *)callees type:(NIMNetCallType)type option:(NIMNetCallOption *)option completion:(NIMNetCallStartHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callees</Name>
+					<Abstract type="html">被叫帐号列表, 现在只支持传入一个被叫</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">呼叫类型</Abstract>
+				</Parameter><Parameter>
+					<Name>option</Name>
+					<Abstract type="html">开始通话附带的选项, 可以为空</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">发起通话结果回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/start:type:option:completion:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/response:accept:option:completion:</TokenIdentifier>
+			<Abstract type="html">被叫响应呼叫</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)response:(UInt64)callID accept:(BOOL)accept option:(NIMNetCallOption *)option completion:(NIMNetCallResponseHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">call id</Abstract>
+				</Parameter><Parameter>
+					<Name>accept</Name>
+					<Abstract type="html">是否接听</Abstract>
+				</Parameter><Parameter>
+					<Name>option</Name>
+					<Abstract type="html">开始通话附带的选项, 可以为空</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">响应呼叫结果回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/response:accept:option:completion:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/hangup:</TokenIdentifier>
+			<Abstract type="html">挂断通话</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)hangup:(UInt64)callID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">需要挂断电话的call id, 如果尚未获取到call id就填0</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/hangup:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/control:type:</TokenIdentifier>
+			<Abstract type="html">发送网络通话的控制信息，用于方便通话双方沟通信息</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)control:(UInt64)callID type:(NIMNetCallControlType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">控制信息相关通话的call id</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">控制类型</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/control:type:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/setMute:</TokenIdentifier>
+			<Abstract type="html">设置网络通话静音模式</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)setMute:(BOOL)mute</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mute</Name>
+					<Abstract type="html">是否开启静音</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">开启静音是否成功</Abstract></ReturnValue>
+			<Anchor>//api/name/setMute:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/setSpeaker:</TokenIdentifier>
+			<Abstract type="html">设置网络通话扬声器模式</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)setSpeaker:(BOOL)useSpeaker</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>useSpeaker</Name>
+					<Abstract type="html">是否开启扬声器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">开启扬声器是否成功</Abstract></ReturnValue>
+			<Anchor>//api/name/setSpeaker:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/switchCamera:</TokenIdentifier>
+			<Abstract type="html">切换网络通话摄像头</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)switchCamera:(NIMNetCallCamera)camera</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>camera</Name>
+					<Abstract type="html">选择的摄像头</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/switchCamera:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/setCameraDisable:</TokenIdentifier>
+			<Abstract type="html">设置摄像头关闭</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)setCameraDisable:(BOOL)disable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>disable</Name>
+					<Abstract type="html">是否关闭</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">设置是否成功</Abstract></ReturnValue>
+			<Anchor>//api/name/setCameraDisable:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/switchType:</TokenIdentifier>
+			<Abstract type="html">切换网络通话类型</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)switchType:(NIMNetCallType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">通话类型</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/switchType:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/localPreviewLayer</TokenIdentifier>
+			<Abstract type="html">获得当前视频通话的本地预览层</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (CALayer *)localPreviewLayer</Declaration>
+			
+			<ReturnValue><Abstract type="html">预览层</Abstract></ReturnValue>
+			<Anchor>//api/name/localPreviewLayer</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/currentCallID</TokenIdentifier>
+			<Abstract type="html">获取正在进行中的网络通话call id</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (UInt64)currentCallID</Declaration>
+			
+			<ReturnValue><Abstract type="html">call id, 如果没有正在进行中的通话则返回0</Abstract></ReturnValue>
+			<Anchor>//api/name/currentCallID</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/netStatus</TokenIdentifier>
+			<Abstract type="html">获取当前网络通话的网络状态</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NIMNetCallNetStatus)netStatus</Declaration>
+			
+			<ReturnValue><Abstract type="html">网络状态</Abstract></ReturnValue>
+			<Anchor>//api/name/netStatus</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/startLocalRecording:videoBitrate:</TokenIdentifier>
+			<Abstract type="html">开始本地MP4文件录制, 录制通话过程中自己的音视频内容到MP4文件</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)startLocalRecording:(NSURL *)filePath videoBitrate:(UInt32)videoBitrate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">录制文件路径, SDK不负责创建目录, 请确保文件路径的合法性,
+也可以传入nil, 由SDK自己选择文件路径</Abstract>
+				</Parameter><Parameter>
+					<Name>videoBitrate</Name>
+					<Abstract type="html">录制文件视频码率设置, 可以不指定, 由SDK自己选择合适的码率</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">是否允许开始录制</Abstract></ReturnValue>
+			<Anchor>//api/name/startLocalRecording:videoBitrate:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/stopLocalRecording</TokenIdentifier>
+			<Abstract type="html">停止本地MP4文件录制</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)stopLocalRecording</Declaration>
+			
+			<ReturnValue><Abstract type="html">是否接受停止录制请求</Abstract></ReturnValue>
+			<Anchor>//api/name/stopLocalRecording</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/addDelegate:</TokenIdentifier>
+			<Abstract type="html">添加网络通话委托</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)addDelegate:(id&lt;NIMNetCallManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">网络通话委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDelegate:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManager/removeDelegate:</TokenIdentifier>
+			<Abstract type="html">移除网络通话委托</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)removeDelegate:(id&lt;NIMNetCallManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">网络通话委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeDelegate:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

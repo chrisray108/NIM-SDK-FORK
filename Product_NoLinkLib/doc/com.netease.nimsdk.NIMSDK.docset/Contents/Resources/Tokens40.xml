@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMSystemNotificationFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMSystemNotificationFilter</TokenIdentifier>
+			<Abstract type="html">系统通知过滤器</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+            
+			
+			<NodeRef refid="40"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotificationFilter/setNotificationTypes:</TokenIdentifier>
+			<Abstract type="html">类型列表</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *notificationTypes</Declaration>
+			
+			
+			<Anchor>//api/name/notificationTypes</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSystemNotificationFilter/notificationTypes</TokenIdentifier>
+			<Abstract type="html">类型列表</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *notificationTypes</Declaration>
+			
+			
+			<Anchor>//api/name/notificationTypes</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSystemNotificationFilter/notificationTypes</TokenIdentifier>
+			<Abstract type="html">类型列表</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *notificationTypes</Declaration>
+			
+			
+			<Anchor>//api/name/notificationTypes</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMCreateTeamOption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMCreateTeamOption</TokenIdentifier>
+			<Abstract type="html">创建群选项</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/setName:</TokenIdentifier>
+			<Abstract type="html">群名</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/name</TokenIdentifier>
+			<Abstract type="html">群名</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCreateTeamOption/name</TokenIdentifier>
+			<Abstract type="html">群名</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/setType:</TokenIdentifier>
+			<Abstract type="html">群类型</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMTeamType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/type</TokenIdentifier>
+			<Abstract type="html">群类型</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMTeamType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCreateTeamOption/type</TokenIdentifier>
+			<Abstract type="html">群类型</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMTeamType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/setIntro:</TokenIdentifier>
+			<Abstract type="html">群简介</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *intro</Declaration>
+			
+			
+			<Anchor>//api/name/intro</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/intro</TokenIdentifier>
+			<Abstract type="html">群简介</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *intro</Declaration>
+			
+			
+			<Anchor>//api/name/intro</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCreateTeamOption/intro</TokenIdentifier>
+			<Abstract type="html">群简介</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *intro</Declaration>
+			
+			
+			<Anchor>//api/name/intro</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/setAnnouncement:</TokenIdentifier>
+			<Abstract type="html">群公告</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *announcement</Declaration>
+			
+			
+			<Anchor>//api/name/announcement</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/announcement</TokenIdentifier>
+			<Abstract type="html">群公告</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *announcement</Declaration>
+			
+			
+			<Anchor>//api/name/announcement</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCreateTeamOption/announcement</TokenIdentifier>
+			<Abstract type="html">群公告</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *announcement</Declaration>
+			
+			
+			<Anchor>//api/name/announcement</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/setClientCustomInfo:</TokenIdentifier>
+			<Abstract type="html">客户端自定义信息</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *clientCustomInfo</Declaration>
+			
+			
+			<Anchor>//api/name/clientCustomInfo</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/clientCustomInfo</TokenIdentifier>
+			<Abstract type="html">客户端自定义信息</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *clientCustomInfo</Declaration>
+			
+			
+			<Anchor>//api/name/clientCustomInfo</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCreateTeamOption/clientCustomInfo</TokenIdentifier>
+			<Abstract type="html">客户端自定义信息</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *clientCustomInfo</Declaration>
+			
+			
+			<Anchor>//api/name/clientCustomInfo</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/setPostscript:</TokenIdentifier>
+			<Abstract type="html">邀请他人的附言</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *postscript</Declaration>
+			
+			
+			<Anchor>//api/name/postscript</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/postscript</TokenIdentifier>
+			<Abstract type="html">邀请他人的附言</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *postscript</Declaration>
+			
+			
+			<Anchor>//api/name/postscript</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCreateTeamOption/postscript</TokenIdentifier>
+			<Abstract type="html">邀请他人的附言</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *postscript</Declaration>
+			
+			
+			<Anchor>//api/name/postscript</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/setJoinMode:</TokenIdentifier>
+			<Abstract type="html">群验证模式</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMTeamJoinMode joinMode</Declaration>
+			
+			
+			<Anchor>//api/name/joinMode</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCreateTeamOption/joinMode</TokenIdentifier>
+			<Abstract type="html">群验证模式</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMTeamJoinMode joinMode</Declaration>
+			
+			
+			<Anchor>//api/name/joinMode</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCreateTeamOption/joinMode</TokenIdentifier>
+			<Abstract type="html">群验证模式</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMTeamJoinMode joinMode</Declaration>
+			
+			
+			<Anchor>//api/name/joinMode</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

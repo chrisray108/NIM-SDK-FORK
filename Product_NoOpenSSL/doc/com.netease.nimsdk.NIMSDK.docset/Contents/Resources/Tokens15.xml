@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMCustomSystemNotification.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMCustomSystemNotification</TokenIdentifier>
+			<Abstract type="html">自定义系统消息</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">时间戳</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/timestamp</TokenIdentifier>
+			<Abstract type="html">时间戳</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCustomSystemNotification/timestamp</TokenIdentifier>
+			<Abstract type="html">时间戳</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/setSender:</TokenIdentifier>
+			<Abstract type="html">通知发起者id</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *sender</Declaration>
+			
+			
+			<Anchor>//api/name/sender</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/sender</TokenIdentifier>
+			<Abstract type="html">通知发起者id</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *sender</Declaration>
+			
+			
+			<Anchor>//api/name/sender</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCustomSystemNotification/sender</TokenIdentifier>
+			<Abstract type="html">通知发起者id</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *sender</Declaration>
+			
+			
+			<Anchor>//api/name/sender</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/setReceiver:</TokenIdentifier>
+			<Abstract type="html">通知接受者id</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *receiver</Declaration>
+			
+			
+			<Anchor>//api/name/receiver</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/receiver</TokenIdentifier>
+			<Abstract type="html">通知接受者id</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *receiver</Declaration>
+			
+			
+			<Anchor>//api/name/receiver</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCustomSystemNotification/receiver</TokenIdentifier>
+			<Abstract type="html">通知接受者id</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *receiver</Declaration>
+			
+			
+			<Anchor>//api/name/receiver</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/setReceiverType:</TokenIdentifier>
+			<Abstract type="html">通知接受者类型</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMSessionType receiverType</Declaration>
+			
+			
+			<Anchor>//api/name/receiverType</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/receiverType</TokenIdentifier>
+			<Abstract type="html">通知接受者类型</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMSessionType receiverType</Declaration>
+			
+			
+			<Anchor>//api/name/receiverType</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCustomSystemNotification/receiverType</TokenIdentifier>
+			<Abstract type="html">通知接受者类型</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMSessionType receiverType</Declaration>
+			
+			
+			<Anchor>//api/name/receiverType</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/setContent:</TokenIdentifier>
+			<Abstract type="html">透传的消息体内容</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/content</TokenIdentifier>
+			<Abstract type="html">透传的消息体内容</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCustomSystemNotification/content</TokenIdentifier>
+			<Abstract type="html">透传的消息体内容</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/setSendToOnlineUsersOnly:</TokenIdentifier>
+			<Abstract type="html">是否只发送给在线用户</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sendToOnlineUsersOnly</Declaration>
+			
+			
+			<Anchor>//api/name/sendToOnlineUsersOnly</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/sendToOnlineUsersOnly</TokenIdentifier>
+			<Abstract type="html">是否只发送给在线用户</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sendToOnlineUsersOnly</Declaration>
+			
+			
+			<Anchor>//api/name/sendToOnlineUsersOnly</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCustomSystemNotification/sendToOnlineUsersOnly</TokenIdentifier>
+			<Abstract type="html">是否只发送给在线用户</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sendToOnlineUsersOnly</Declaration>
+			
+			
+			<Anchor>//api/name/sendToOnlineUsersOnly</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/setApnsContent:</TokenIdentifier>
+			<Abstract type="html">apns推送文案</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsContent</Declaration>
+			
+			
+			<Anchor>//api/name/apnsContent</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/apnsContent</TokenIdentifier>
+			<Abstract type="html">apns推送文案</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsContent</Declaration>
+			
+			
+			<Anchor>//api/name/apnsContent</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCustomSystemNotification/apnsContent</TokenIdentifier>
+			<Abstract type="html">apns推送文案</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsContent</Declaration>
+			
+			
+			<Anchor>//api/name/apnsContent</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/setApnsPayload:</TokenIdentifier>
+			<Abstract type="html">apns推送Payload</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *apnsPayload</Declaration>
+			
+			
+			<Anchor>//api/name/apnsPayload</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/apnsPayload</TokenIdentifier>
+			<Abstract type="html">apns推送Payload</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *apnsPayload</Declaration>
+			
+			
+			<Anchor>//api/name/apnsPayload</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCustomSystemNotification/apnsPayload</TokenIdentifier>
+			<Abstract type="html">apns推送Payload</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *apnsPayload</Declaration>
+			
+			
+			<Anchor>//api/name/apnsPayload</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/setSetting:</TokenIdentifier>
+			<Abstract type="html">自定义系统通知设置</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NIMCustomSystemNotificationSetting *setting</Declaration>
+			
+			
+			<Anchor>//api/name/setting</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMCustomSystemNotification/setting</TokenIdentifier>
+			<Abstract type="html">自定义系统通知设置</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NIMCustomSystemNotificationSetting *setting</Declaration>
+			
+			
+			<Anchor>//api/name/setting</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMCustomSystemNotification/setting</TokenIdentifier>
+			<Abstract type="html">自定义系统通知设置</Abstract>
+			<DeclaredIn>NIMSystemNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NIMCustomSystemNotificationSetting *setting</Declaration>
+			
+			
+			<Anchor>//api/name/setting</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

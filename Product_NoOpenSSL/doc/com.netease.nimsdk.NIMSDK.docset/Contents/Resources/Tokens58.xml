@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMLoginManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMLoginManager</TokenIdentifier>
+			<Abstract type="html">登录协议</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="58"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManager/login:token:completion:</TokenIdentifier>
+			<Abstract type="html">登录</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)login:(NSString *)account token:(NSString *)token completion:(NIMLoginHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>account</Name>
+					<Abstract type="html">帐号</Abstract>
+				</Parameter><Parameter>
+					<Name>token</Name>
+					<Abstract type="html">令牌 (在后台绑定的登录token)</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">完成回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/login:token:completion:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManager/autoLogin:token:</TokenIdentifier>
+			<Abstract type="html">自动登录</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)autoLogin:(NSString *)account token:(NSString *)token</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>account</Name>
+					<Abstract type="html">帐号</Abstract>
+				</Parameter><Parameter>
+					<Name>token</Name>
+					<Abstract type="html">令牌 (在后台绑定的登录token)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/autoLogin:token:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManager/autoLogin:</TokenIdentifier>
+			<Abstract type="html">自动登录</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)autoLogin:(NIMAutoLoginData *)loginData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>loginData</Name>
+					<Abstract type="html">自动登录参数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/autoLogin:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManager/logout:</TokenIdentifier>
+			<Abstract type="html">登出</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)logout:(NIMLoginHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">完成回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logout:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManager/kickOtherClient:completion:</TokenIdentifier>
+			<Abstract type="html">踢人</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)kickOtherClient:(NIMLoginClient *)client completion:(NIMLoginHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">当前登录的其他客户端</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">完成回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/kickOtherClient:completion:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManager/currentAccount</TokenIdentifier>
+			<Abstract type="html">返回当前登录帐号</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)currentAccount</Declaration>
+			
+			<ReturnValue><Abstract type="html">当前登录帐号,如果没有登录成功,这个地方会返回nil</Abstract></ReturnValue>
+			<Anchor>//api/name/currentAccount</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManager/isLogined</TokenIdentifier>
+			<Abstract type="html">当前登录状态</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isLogined</Declaration>
+			
+			<ReturnValue><Abstract type="html">当前登录状态</Abstract></ReturnValue>
+			<Anchor>//api/name/isLogined</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManager/currentLoginClients</TokenIdentifier>
+			<Abstract type="html">返回当前登录的设备列表</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)currentLoginClients</Declaration>
+			
+			<ReturnValue><Abstract type="html">当前登录设备列表 内部是NIMLoginClient,不包括自己</Abstract></ReturnValue>
+			<Anchor>//api/name/currentLoginClients</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManager/addDelegate:</TokenIdentifier>
+			<Abstract type="html">添加登录委托</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)addDelegate:(id&lt;NIMLoginManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">登录委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDelegate:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManager/removeDelegate:</TokenIdentifier>
+			<Abstract type="html">移除登录委托</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)removeDelegate:(id&lt;NIMLoginManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">登录委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeDelegate:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,1502 @@
+网易云信  
+开发手册
+Document
+  功能开发指南  Server  iOS  Android  Windows(PC)  web  更多   
+云信文档搜索
+  管理中心
+SDK 概述
+开发准备
+初始化 SDK
+登录与登出
+基础消息功能
+历史记录
+语音录制及播放
+群组功能
+聊天室
+系统通知
+内置
+自定义
+APNS 推送
+用户资料托管
+用户关系托管
+音视频网络通话
+实时会话 (白板)
+API 文档
+NIM SDK 使用指南
+
+SDK 概述
+网易云信 SDK (NIM SDK) 为移动应用提供完善的 IM 开发框架，屏蔽其内部复杂细节，对外提供较为简洁的 API 接口，方便第三方应用快速集成 IM 功能。
+
+开发准备
+NIM SDK 提供两种集成方式：您既可以通过官网下载 SDK, 然后手动添加到您的项目中，也可以通过 CocoaPods 自动集成我们的 SDK。
+
+手动添加 SDK
+
+下载 NIM SDK，得到一个 NIMSDK.a 文件和 ExportHeaders 文件夹，将他们导入工程
+添加 NIM SDK 依赖库
+
+MobileCoreServices.framework
+SystemConfiguration.framework
+AVFoundation.framwork
+CoreTelephony.framework
+CoreMedia.framework
+AudioToolbox.framework
+libstdc++.6.0.9.tbd 注1
+libsqlite3.0.tbd 注1
+libz.tbd 注1
+注1 ：在 XCode7 以上版本中后缀为 tbd , XCode6 及以下均为 dylib。
+
+在 Build Settings -> Other Linker Flags 里，添加选项 -ObjC。
+
+如果您的工程需要使用 C++ ，在 Build Setting -> Apple LLVM 7.0 - Language - C++ -> C++ Standard Library 里， 设置值为 libstdc++ (GNU C++ standard library)。
+
+在工程配置 info.plist 文件中，添加条目 NSAppTransportSecurity ，属性设为 Dictionary。在此条目下添加键值对，key 为 NSAllowsArbitraryLoads, 值为 YES。
+
+在需要使用 SDK 的地方 import "NIMSDK.h" 。
+
+由于 SDK 是静态库，为方便开发者使用，我们将 armv7 i386 x86_64 arm64 平台的静态库合并成一个 Fat Library ，导致整个 SDK 比较大。但实际编译时会根据调用功能多少增加 ipa 文件大小，实测大约只会增加 2-3M 左右。
+
+通过 CocoaPods 集成
+
+在 Podfile 文件中加入
+
+复制pod 'NIMSDK'
+然后安装
+
+复制pod install
+SDK 类说明
+
+NIM SDK 主要提供了如下类(协议)与方法
+
+NIMSDK 整个SDK的主入口，单例，主要提供初始化，注册，内部管理类管理的功能
+NIMLoginManager 登录管理类，负责登录，注销和相应的回调收发
+NIMChatManager 聊天管理类，负责消息的收发
+NIMConversationManager 会话管理类，负责消息，最近会话的管理
+NIMTeamManager 群组管理类，负责群组各种操作
+NIMMediaManager 媒体管理类，负责多媒体相关的接口，比如录音
+NIMSystemNotificationManager 系统通知管理类，负责系统消息的接收和存储
+NIMApnsManager 推送管理类，负责推送的设置和接收
+NIMResourceManager 资源管理类，负责文件的上传和下载
+NIMNetCallManager 音视频网络通话管理类，提供音视频网络通话功能
+NIMRTSManager 实时会话管理类，提供数据通道 (TCP/语音通道) 来满足实时会话的需求
+NIMUserManager 好友管理类，负责对好友的增删查，以及对其会话的消息设置
+NIMChatroomManager 聊天室管理类，负责聊天室状态管理和数据拉取及设置
+初始化 SDK
+在需要使用 SDK 的地方导入头文件 NIMSDK.h
+添加 SDK 初始化方法
+
+复制-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+      [[NIMSDK sharedSDK] registerWithAppID:您的APPKEY
+                                    cerName:您的推送证书名];
+      return YES;
+  }
+推荐在 APP 启动时尽快注册 NIM SDK。
+
+登录与登出
+手动登录
+
+调用
+
+复制[[[NIMSDK sharedSDK] loginManager] login:account
+                                   token:token
+                              completion:^(NSError *error) {}];
+error为登录错误信息，成功则为nil。不要在登录完成的回调中直接获取 SDK 缓存数据，而应该在 同步完成的回调里获取数据 或者 监听相应的数据变动回调后获取 。
+
+注：在不特殊说明的情况下，SDK 的所有回调都是在主线程中发起，无论是以 block 还是 delegate 的形式，也推荐开发者仅在主线程调用 SDK 相关接口。
+
+获取登录帐号的云信 id:
+
+复制NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
+SDK 不支持直接添加云信用户，请参考这里，在您的应用服务器上使用 Http 接口进行添加。
+
+自动登录
+
+NIM SDK 有两种自动登录的场景：
+
+1.SDK 发起的自动登录：登录完毕后因网络发生切换，断网等情况发生而需要重连，SDK 将自动进行重连重登，无需 APP 干预。
+
+2.APP 发起的自动登录：APP 启动时，如果已保存用户名和密码可以选择调用自动登录接口，并立刻打开主界面。此时 APP 可以在无网络，未登录成功的状态下直接访问用户本地数据。
+
+复制//APP主动发起自动登录
+- (void)autoLogin:(NIMAutoLoginData *)loginData
+NIMAutoLoginData 中的 forcedMode 为强制模式开关。非强制模式下的自动登录，服务器将检查当前登录设备是否为上一次登录设备，如果不是，服务器将拒绝这次自动登录(返回 error code 为 417 的错误)；强制模式下的自动登录，服务器将不检查当前登录设备是否为上一次登录设备，安全性较低，但较为便捷。
+
+和手动登录不同，自动登录通过委托通知登录状态。 APP 需要实现如下回调 (手动登录也会收到同样的委托回调)
+
+复制- (void)onLogin:(NIMLoginStep)step
+自动登录过程不需要 APP 加以干预，SDK 会在有网络的情况下有策略地不断重试直到登录为止。但下面两种异常情况需要 APP 处理：被踢和特殊的登录错误。
+
+被踢的回调
+复制-(void)onKick:(NIMKickReason)code 
+   clientType:(NIMLoginClientType)clientType
+APP收到被踢回调后需要进行注销并切换到登录界面。
+
+自动登录失败的回调
+复制- (void)onAutoLoginFailed:(NSError *)error
+大部分自动登录回调错误 APP 并不需要关心，只需注意如下两种情况：
+
+1.用户名密码错误导致自动登录失败，error code 为 302。这种情况一般发生于用户在其他设备上修改了密码。
+
+2.已有一端登录导致自动登录失败，error code 为 417。这种情况发生于非强制登录模式下已有一端在线而当前设备进行自动登录(设置为只允许一端同时登录时)，出于安全方面的考虑，云信服务器判定当前端需要重新手动输入用户密码进行登录，故拒绝登录。
+
+一旦发生如上情况，APP 同样需要进行注销并切换到登录界面。
+
+登出
+
+调用
+
+复制[[[NIMSDK sharedSDK] loginManager] logout:^(NSError *error){}];
+应用层登出/注销自己的账号时需要调用 SDK 的登出操作，该操作会通知云信服务器进行 APNS 推送信息的解绑操作，避免用户已登出但推送依然发送到当前设备的情况发生。
+
+考虑到用户体验，登出的超时时间会比其他请求短一些。上层应用不管登出请求是否成功，UI 表现上都应该做出登出行为。
+
+多端登录
+
+当用户在某个客户端登录时，其他没有被踢掉的端会触发回调:
+
+复制- (void)onMultiLoginClientsChanged;
+同时，可以查询当前时间登录的设备列表:
+
+复制- (NSArray *)currentLoginClients;
+云信内置踢人策略为：移动端(Android,iOS)互踢，桌面端(PC,Web)互踢，移动端和桌面端共存。
+
+如果当前的互踢策略无法满足业务需求的话，可以联系我们取消内置互踢，根据多端登录的回调和当前的设备列表，判断本设备是否需要被踢出。如果需要踢出，直接调用登出接口并在界面上给出相关提示即可。
+
+登录与用户信息同步
+
+NIM SDK 的登录一共有大约十个步骤，包括正在连接，连接成功，正在登录等。详见 NIMLoginStep 枚举。其中重要的两个步骤为：登录成功 (NIMLoginStepLoginOK) 和 同步成功 (NIMLoginStepSyncOK)。
+
+登录成功 SDK 已成功登录，获取到基本信息，并开始同步数据
+同步成功 SDK 已同步完成所有 IM 信息
+NIM SDK 在登录后会同步群信息，离线消息，漫游消息，系统通知等数据。
+
+基础消息功能
+消息功能概述
+
+SDK 中用户与同一个对象的聊天信息集合，称为一个会话，用 NIMSession 来表示。会话有单人会话，群组会话，聊天室会话等类型。
+
+SDK 中用于表示消息的结构为 NIMMessage，目前提供如下几种消息类型，不同的消息类型对应不同的 MessageObject
+
+消息格式	MessageObject
+文本消息	nil
+图片消息	NIMImageObject
+音频消息	NIMAudioObject
+视频消息	NIMVideoObject
+地理位置消息	NIMLocationObject
+通知消息	NIMNotificationObject
+提醒消息	NIMTipObject
+自定义消息	NIMCustomObject
+消息 NIMMessage 定义了一些额外的状态属性，推荐只在主线程对这些属性进行读写：
+
+消息的接收状态 isReceivedMsg
+
+由于漫游消息的存在，所以自己发出的消息漫游下来后仍旧是 收到的消息 ，这个字段用于消息出错时，判断需要重发还是重收。
+
+消息的排版状态 isOutgoingMsg
+
+用于鉴别是否为发出去的消息。用户可以选择和自己发起对话，所以并不是所有来源是自己的消息都是往外发的消息，这个字段主要用于判断头像排版位置，往外发的消息气泡放右边，其他消息气泡放左边。
+
+消息的投递状态 deliveryState
+
+此状态仅对发送的消息有效。消息的投递状态有 发送中 ， 发送失败 ， 发送成功 三种。
+
+消息附件的下载状态 attachmentDownloadState
+
+此状态仅对收到的且带有附件的消息有效。 下载状态有 下载失败 ， 下载中 ， 下载成功 三种。
+
+消息的删除状态 isDeleted
+
+消息是否标记为已删除,已删除的消息在获取本地消息列表时会被过滤掉，只有根据messageId获取消息的接口可能会返回已删除消息。
+
+消息的播放状态 isPlayed
+
+用于鉴别音频类的消息是否播放过。 上层应用可以根据业务修改这个属性。注意不要频繁修改这个属性值，每次对这个属性做出修改，就会自动更新一次数据库。
+
+消息服务器扩展字段 remoteExt
+
+此字段会发送到其他端,上层需要保证 NSDictionary 可以转换为 JSON。
+
+消息本地扩展字段 localExt
+
+此字段只在本地存储，不会发送至对端,上层需要保证 NSDictionary 可以转换为 JSON。
+
+消息发送方的显示名 senderName
+
+服务器内置的消息发送者名字，当发送者是自己时,这个值为空。在本地没法获取到相应发送者信息时推荐时使用这个值。
+
+对端已读 isRemoteRead
+
+接收对端已读回执后，所有小于已读回执时间戳的消息都会被置为 对端已读 。
+
+发送消息
+
+1.构造并发送消息
+
+文本消息
+复制//构造消息
+NIMMessage *message = [[NIMMessage alloc] init];
+textMessage.text    = text;
+
+//构造会话
+NIMSession *session = [NIMSession session:userId type:NIMSessionTypeP2P];
+
+//发送消息
+[[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:nil];
+图片消息
+复制//构造消息
+NIMImageObject * imageObject = [[NIMImageObject alloc] initWithImage:image];
+NIMMessage *message          = [[NIMMessage alloc] init];
+message.messageObject        = imageObject;
+
+//构造会话
+NIMSession *session = [NIMSession session:userId type:NIMSessionTypeP2P];
+
+//发送消息
+[[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:nil];
+音频消息
+复制//构造消息
+NIMAudioObject *audioObject = [[NIMAudioObject alloc] initWithSourcePath:filePath];
+NIMMessage *message        = [[NIMMessage alloc] init];
+message.messageObject      = audioObject;
+
+//构造会话
+NIMSession *session = [NIMSession session:userId type:NIMSessionTypeP2P];
+
+//发送消息
+[[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:nil];
+视频消息
+复制//构造消息
+NIMVideoObject *videoObject = [[NIMVideoObject alloc] initWithSourcePath:filePath];
+NIMMessage *message         = [[NIMMessage alloc] init];
+message.messageObject       = videoObject;
+
+//构造会话
+NIMSession *session = [NIMSession session:userId type:NIMSessionTypeP2P];
+
+//发送消息
+[[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:nil];
+地理位置消息
+复制//构造消息
+//其中，latitude为纬度，longitude为经度，title为位置的描述字段
+NIMLocationObject *locationObject = [[NIMLocationObject alloc] initWithLatitude:latitude Longitude:longitude address:title];
+NIMMessage *message               = [[NIMMessage alloc] init];
+message.messageObject             = locationObject;
+
+//构造会话
+NIMSession *session = [NIMSession session:userId type:NIMSessionTypeP2P];
+
+//发送消息
+[[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:nil];
+通知消息
+不支持从客户端发出通知消息。
+
+提醒消息
+
+提醒消息用于会话内的状态提醒，如进入会话时出现的欢迎消息，会话命中敏感词后的提示消息等。
+
+复制//构造消息
+NIMTipObject *tipObject = [[NIMTipObject alloc];
+NIMMessage *message     = [[NIMMessage alloc] init];
+message.messageObject   = tipObject;
+
+//构造会话
+NIMSession *session = [NIMSession session:userId type:NIMSessionTypeP2P];
+
+//发送消息
+[[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:nil];
+自定义消息
+自定义消息用于 APP 拓展自己的消息类型，实现不同业务逻辑。自定义消息的 MessageObject(NIMCustomObject) 仅有一个 id 字段，SDK 会负责透传这个对象序列化后的结果。NIMCustomAttachment 协议包括一个必须实现的序列化接口和三个与上传相关的可选接口。如果需要在自定义消息中上传文件作为附件的一部分，必须实现这三个上传接口，缺一不可。实现自定义消息参考教程。
+
+复制//构造消息
+NIMCustomObject *customObject     = [[NIMCustomObject alloc] init]; 
+customObject.attachment              = attachment;
+NIMMessage *message               = [[NIMMessage alloc] init];
+message.messageObject             = customObject;
+
+//构造会话
+NIMSession *session = [NIMSession session:userId type:NIMSessionTypeP2P];
+
+//发送消息
+[[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:nil];
+2.检查调用状态
+
+正常情况这一步可以省略，但刚开始集成 SDK 时，因为上层开发对 API 不熟悉有可能传入一些无效参数，推荐在开发前期务必检查 sendMessage:toSession:error 的返回值和 error 信息，并以此为依据排查问题。
+
+3.处理回调
+
+在调用完发送消息接口后，通常会收到如下回调
+
+即将发送消息回调
+复制- (void)willSendMessage:(NIMMessage *)message
+建议开发者仅在收到这个回调后才将消息加入显示用的数据源中。
+
+消息发送进度回调
+复制- (void)sendMessage:(NIMMessage *)message
+           progress:(CGFloat)progress
+图片，视频等需要上传附件的消息会有比较详细的进度回调，文本消息则没有这个回调。
+
+消息发送完毕回调
+复制- (void)sendMessage:(NIMMessage *)message
+didCompleteWithError:(NSError *)error
+如果消息发送成功 error 为 nil，反之 error 会被填充具体的失败原因。
+
+4.重发
+
+因为网络原因等导致的发送消息失败而需要重发的情况，直接调用
+
+复制- (BOOL)resendMessage:(NIMMessage *)message
+                error:(NSError **)error
+此时如果再次调用 sendMessage，则会被 NIM SDK 认作新消息。
+
+5.消息的发送设置
+
+SDK 提供消息发送设置来满足开发者的对服务器自定义需求，这些设置可以在 NIMMessage 的 NIMMessageSetting 属性中找到。
+
+消息允许在消息历史中拉取开关 historyEnabled
+
+默认为 YES 。正常而言所有消息都会出现在通过 NIMConversationManager 调用( fetchMessageHistory:option:result: )返回的结果中，但是可以通过设置这个值来使得消息不出现在这其中。
+
+消息支持漫游开关 roamingEnabled
+
+默认为 YES 。 消息漫游的概念是指一定时间内发送的消息可以在另一端被同步到，以保证最大限度的消息同步。(如 iOS 上收发的消息过了一天登录 PC 仍旧会收到，这种消息我们称之为漫游消息)
+
+消息支持多端同步开关 syncEnabled
+
+默认为 YES 。在默认情况下，如果用户在 iOS 端和其他端（如 PC ）同时登录一个帐号，那么 iOS 端发送的消息会被同步到其他端，同样其他端发送的消息也会被同步到 iOS 端。但是需要注意的是因为 iOS 经常会退到后台，所以其他端发送的消息在 iOS 断线后是通过漫游消息来同步到的。
+
+消息被计入未读开关 shouldBeCounted
+
+默认为 YES 。默认情况下，用户收到的所有消息都会被计入未读。设置这个为 NO 后，对应的消息被对端接受后将不计入未读消息计数内。本地写消息时，也可以用这个字段配置写入后是否计入未读。
+
+消息需要被推送开关 apnsEnabled
+
+默认为YES。设置这个为NO后，消息将不再有苹果推送通知。
+
+消息推送前缀开关(一般为昵称) apnsWithPrefix
+
+默认为YES。将这个字段设为NO，推送消息将不带有前缀，如推送消息 “ 小明:今天吃什么？ ” 中的 “ 小明：” 将被省略。
+
+接收消息
+
+回调处理 收消息过程会通过 chatManager 的回调函数通知上层
+复制- (void)onRecvMessages:(NSArray *)messages
+如果收到的是图片，视频等需要下载附件的消息，在回调的处理中还需要调用
+
+（SDK 默认会在第一次收到消息时自动调用）
+
+复制- (BOOL)fetchMessageAttachment:(NIMMessage *)message
+                         error:(NSError **)error
+进行附件的下载，附件的下载过程会通过
+
+复制- (void)fetchMessageAttachment:(NIMMessage *)message
+                      progress:(CGFloat)progress
+复制- (void)fetchMessageAttachment:(NIMMessage *)message
+          didCompleteWithError:(NSError *)error;
+这两个回调返回进度和结果。
+
+已读回执
+
+在会话界面中调用发送已读回执的接口并传入最后一条消息，即表示这之前的消息都已读，对端将收到此回执。
+
+发送已读回执
+
+复制- (void)sendMessageReceipt:(NIMMessageReceipt *)receipt
+                completion:(NIMSendMessageReceiptBlock)completion;
+接受已读回执
+
+复制- (void)onRecvMessageReceipt:(NIMMessageReceipt *)receipt;
+在发送端 NIMMessageReceipt 需要通过最后一条消息 NIMMessage 进行初始化并进行发送，而接收端可以通过 NIMMessageReceipt 中的 timestamp 来得知发送端当前已读时间戳。此功能仅在 P2P 消息中有效。重复发送和通过无效消息构造的已读回执都将被 SDK 忽略。
+
+最近会话
+
+NIMConverationManager 提供最近消息的本地存储管理功能。
+
+最近会话 NIMRecentSession 用于表示会话列表页的数据模型。当用户发送，收取及删除消息时，都会同时去修改最近会话。
+
+当收到或者一条消息时，会自动生成这个消息对应的最近会话。但值得注意的是最近会话和会话并不是一一对应的关系，删除最近会话并不会影响会话。
+
+获取最近会话，一般用于首页显示会话列表
+复制- (NSArray*)allRecentSessions
+最近会话的通知
+NIMConverationManager 提供了最近会话的三个回调通知上层:
+
+分别为增加，修改，删除最近会话的回调:
+
+复制- (void)didAddRecentSession:(NIMRecentSession *)recentSession
+           totalUnreadCount:(NSInteger)totalUnreadCount
+
+- (void)didUpdateRecentSession:(NIMRecentSession *)recentSession
+              totalUnreadCount:(NSInteger)totalUnreadCount
+
+- (void)didRemoveRecentSession:(NIMRecentSession *)recentSession
+              totalUnreadCount:(NSInteger)totalUnreadCount
+最近消息添加
+开发者无法自己添加最近消息，最近消息会在发送或者收到消息的时候自动添加，并触发增加最近会话的回调。
+
+消息/会话的删除
+单条消息的删除
+
+复制- (void)deleteMessage:(NIMMessage *)message;
+调用此方法时，如果删除的是最后一条消息，消息所属的最近会话的 lastMessage 属性会自动变成上一条消息(没有则为空消息)，同时触发最近消息修改的回调。
+
+单个会话批量消息删除
+
+复制- (void)deleteAllmessagesInSession:(NIMSession *)session
+               removeRecentSession:(BOOL)removeRecentSession
+removeRecentSession 标记了最近会话是否会被保留，会话内消息将会标记为已删除。调用此方法会触发最近消息修改的回调，如果选择保留最近会话， lastMessage 属性将会被置成一条空消息。
+
+最近会话的删除
+复制- (void)deleteRecentSession:(NIMRecentSession*)recentSession
+只会删除最近会话，但保留会话内消息。调用时，总未读消息数会减去当前会话的未读数。调用此方法触发最近消息删除的回调。
+
+清空所有会话的消息
+复制- (void)deleteAllMessages:(BOOL)removeRecentSessions
+removeRecentSession 标记了最近会话是否会被保留。调用这个接口只会触发 - (void)allMessagesDeleted 回调，其他针对单个 recentSession 的回调都不会被调用。
+
+总未读数获取
+复制- (NSInteger)allUnreadCount
+标记某个会话为已读
+复制- (void)markAllMessagesReadInSession:(NIMSession *)session
+调用这个方法时，会将所有属于这个会话的消息都置为已读状态。相应的最近会话(如果有的话)未读数会自动置 0 并且触发最近消息修改的回调
+
+历史记录
+云端记录
+
+NIMConverationManager 支持从云信服务器上远程获取之前的聊天历史记录。
+
+复制- (void)fetchMessageHistory:(NIMSession *)session
+                     option:(NIMHistoryMessageSearchOption *)option
+                     result:(NIMFetchMessageHistoryBlock)block;
+其中 option 为搜索选项，具体选项如下:
+
+搜索方向: 从当前消息开始，正向或反向查询消息历史。
+搜索条数: 搜索的范围由 startTime ，endTime 和 limit 参数共同限制，limit 为非零整数，上限为 100 条。
+同步数据: 是否在远程获取消息成功之后同步到本地数据库，同步只会保证消息数据写入本地但不触发回调。默认不同步。
+本地记录
+
+NIMConverationManager 支持本地查询消息
+
+复制 - (NSArray*)messagesInSession:(NIMSession *)session
+                   message:(NIMMessage *)message
+                     limit:(NSInteger)limit;
+传入一个已知的消息，返回比这个消息更早的消息集合。如果没有已知的消息，则传入 nil，返回最新的消息集合。
+
+NIMConverationManager 支持按消息 id 查询消息，可以查出被删除的消息。
+
+复制- (NSArray *)messagesInSession:(NIMSession *)session
+                 messageIds:(NSArray *)messageIds;
+NIMConverationManager 支持搜索本地历史消息
+
+复制
+ - (void)searchMessages:(NIMSession *)session
+
+                 option:(NIMMessageSearchOption *)option
+
+                 result:(NIMSearchMessageBlock)block;
+其中 option 为搜索选项，具体选项如下:
+
+搜索方向: 正向或反向查询消息历史。
+
+搜索条数: 搜索的范围由 startTime ， endTime 和 limit 参数共同限制。limit 为非零整数。
+
+消息类型: 需要搜索的消息类型。
+
+匹配内容: 如果需要搜索的消息类型为文本，会进行内容的匹配。
+
+消息发起者列表。
+
+搜索将返回：时间在 (startTime,endTime) 之间，消息类型为指定类型，且匹配搜索内容或消息发起者列表的一定数量的消息。
+
+语音录制及播放
+多媒体管理 NIMMediaManager 提供了音频播放、高清语音录制的功能。需要注意的是 NIM SDK 中的语音播放和录制仅支持 aac 和 amr，如果需要更多格式的支持，APP 需要自己实现，但并不推荐。
+
+播放音频
+
+切换音频的输出设备。
+复制- (BOOL)switchAudioOutputDevice:(NIMAudioOutputDevice)outputDevice
+判断是否正在播放音频
+复制- (BOOL)isPlaying
+播放音频
+复制- (void)playAudio:(NSString *)filePath 
+     withDelegate:(id<NIMMediaManagerDelgate>)delegate
+其中 filePath 为音频文件的路径，该操作会触发以下回调：
+
+初始化工作完成，准备开始播放音频的时候会触发
+
+复制- (void)playAudio:(NSString *)filePath didBeganWithError:(NSError *)error
+音频播放结束的时候会触发
+
+复制- (void)playAudio:(NSString *)filePath didCompletedWithError:(NSError *)error
+停止播放音频
+复制- (void)stopPlay
+该操作会触发回调：
+
+复制- (void)playAudio:(NSString *)filePath didCompletedWithError:(NSError *)error
+录制音频
+
+判断是否正在录制音频
+复制- (BOOL)isRecording
+录制音频
+复制- (void)record:(NIMAudioType)type
+      duration:(NSTimeInterval)duration
+      delegate:(id<NIMMediaManagerDelgate>)delegate;
+其中 duration 限制了录音的最大时长，该操作会触发以下回调：
+
+初始化工作完成，准备开始录制的时候会触发
+
+复制- (void)recordAudio:(NSString *)filePath didBeganWithError:(NSError *)error
+当到录音时长达到设置的最大时长，或者手动停止录音会触发
+
+复制- (void)recordAudio:(NSString *)filePath didCompletedWithError:(NSError *)error
+按照一定的时间间隔触发
+
+复制- (void)recordAudioProgress:(NSTimeInterval)currentTime
+其中 currentTime 为当前的录音时长，触发该回调的时间间隔可以通过以下属性设置，默认为 0.3 秒
+
+@property (nonatomic， assign) NSTimeInterval recordProgressUpdateTimeInterval
+
+停止录制音频
+复制- (void)stopRecord
+该操作会触发
+
+复制- (void)recordAudio:(NSString *)filePath didCompletedWithError:(NSError *)error
+取消录音
+复制- (void)cancelRecord
+该操作会触发
+
+复制- (void)recordAudioDidCancelled
+获取录音分贝
+获取峰值
+
+复制- (float)recordPeakPower
+获取平均值
+
+复制- (float)recordAveragePower
+来电打断
+
+来电时会根据正在播放音频还是录音，分别触发
+复制- (void)playAudioInterruptionBegin
+
+- (void)recordAudioInterruptionBegin
+通话结束返回应用会分别触发
+复制- (void)playAudioInterruptionEnd
+
+- (void)recordAudioInterruptionEnd
+群组功能
+群组功能概述
+
+群组功能对应的管理类为 NIMTeamManager 。NIMTeamManager 提供了普通群 (Normal) 以及高级群 (Advanced) 两种形式的群聊功能。高级群拥有更多的权限操作，两种群聊形式在共有操作上保持了接口一致。推荐 APP 开发时只选择一种群类型进行开发。普通群和高级群在原则上是不能互相转换的，他们的群类型在创建时就已经确定。
+
+普通群
+开发手册中所提及的普通群都等同于 Demo 中的讨论组。普通群没有权限操作，适用于快速创建多人会话的场景。每个普通群只有一个管理员。管理员可以对群进行增减员操作，普通成员只能对群进行增员操作。在添加新成员的时候，并不需要经过对方同意。
+
+高级群
+高级群在权限上有更多的限制，权限分为群主、管理员、以及群成员。
+
+群操作权限对比
+群操作	普通群	高级群
+邀请成员	任何人	群主、管理员
+踢出成员	群主	群主、管理员(管理员之间无法互相踢)
+解散群	群主	群主
+退群	任何人	管理员、普通成员
+处理入群申请	/	群主、管理员
+更改自己的群昵称	/	任何人
+更改他人群昵称	/	群主、管理员
+更改群名称	任何人	群主、管理员
+更改群公告	/	群主、管理员
+更改群介绍	/	群主、管理员
+更新验证方式	/	群主、管理员
+添加(删除)管理员	/	群主
+移交群主	/	群主
+获取群组
+
+NIM SDK 在程序启动时会对本地群信息进行同步，所以只需要调用本地缓存接口获取群就可以了。 SDK 提供了批量获取自己的群接口、以及根据单个群 id 查询的接口。同样 SDK 也提供了远程获取群信息的接口。
+
+本地获取
+
+复制- (NSArray *)allMyTeams
+- (NIMTeam *)teamById:(NSString *)teamId
+远程获取
+
+复制- (void)fetchTeamInfo:(NSString *)teamId
+           completion:(NIMTeamFetchInfoHandler)block;
+创建群组
+
+复制- (void)createTeam:(NIMCreateTeamOption *)option
+             users:(NSArray *)users
+        completion:(NIMTeamCreateHandler)block
+option 提供以下创建群选项
+
+创建群类别，普通群或者高级群
+
+群名称
+
+群介绍
+
+群公告
+
+群验证方式
+
+邀请群成员
+
+邀请附言
+
+创建成功将回调群的 id 并触发委托事件:
+
+复制- (void)onTeamAdded:(NIMTeam *)team
+加入群组
+
+用户可以通过被动接受邀请和主动加入两种方式进入群组。
+
+邀请用户入群
+
+复制- (void)addUsers:(NSArray  *)users
+          toTeam:(NSString *)teamId
+      postscript:(NSString *)postscript
+请求完成后，如果是普通群，被邀请者将直接入群；如果是高级群，云信服务器会下发一条系统消息到目标用户，目标用户可以选择同意或者拒绝入群。
+
+同意群邀请(仅限高级群)
+
+复制- (void)acceptInviteWithTeam:(NSString*)teamId
+                   invitorId:(NSString*)invitorId
+                  completion:(NIMTeamHandler)block
+拒绝群邀请(仅限高级群)
+
+复制- (void)rejectInviteWithTeam:(NSString*)teamId
+                   invitorId:(NSString*)invitorId
+                rejectReason:(NSString*)rejectReason
+                  completion:(NIMTeamHandler)block
+主动申请入群
+
+复制- (void)applyToTeam:(NSString *)teamId
+            message:(NSString *)message
+         completion:(NIMTeamApplyHandler)block
+请求完成后，如果是普通群，将直接入群；如果是高级群，云信服务器会下发一条系统消息给群管理员，管理员可以选择通过或者拒绝申请。
+
+通过申请(仅限高级群)
+
+复制- (void)passApplyToTeam:(NSString *)teamId
+                 userId:(NSString *)userId
+             completion:(NIMTeamApplyHandler)block
+拒绝申请(仅限高级群)
+
+复制- (void)rejectApplyToTeam:(NSString *)teamId
+                   userId:(NSString *)userId
+             rejectReason:(NSString*)rejectReason
+               completion:(NIMTeamHandler)block
+编辑群组资料
+
+管理员以上权限的群成员可以修改群资料。群资料包括
+
+修改群名称
+
+复制- (void)updateTeamName:(NSString*)teamName
+                teamId:(NSString*)teamId
+            completion:(NIMTeamHandler)block
+修改群介绍(仅限高级群)
+
+复制- (void)updateTeamIntro:(NSString*)intro
+                 teamId:(NSString*)teamId
+             completion:(NIMTeamHandler)block
+修改群公告(仅限高级群)
+
+复制- (void)updateTeamAnnouncement:(NSString*)announcement
+                        teamId:(NSString*)teamId
+                    completion:(NIMTeamHandler)block
+修改群验证方式(仅限高级群)
+
+复制- (void)updateTeamJoinMode:(NIMTeamJoinMode)joinMode
+                    teamId:(NSString*)teamId
+                completion:(NIMTeamHandler)block
+管理群组权限
+
+高级群群主可以对群进行权限管理，权限管理包括:
+
+提升管理员(仅限高级群)
+
+复制- (void)addManagersToTeam:(NSString *)teamId
+                    users:(NSArray  *)users
+               completion:(NIMTeamHandler)block
+移除管理员(仅限高级群)
+
+复制- (void)removeManagersFromTeam:(NSString *)teamId
+                         users:(NSArray  *)users
+                    completion:(NIMTeamHandler)block
+转让群(仅限高级群)
+
+复制- (void)transferManagerWithTeam:(NSString *)teamId
+                     newOwnerId:(NSString *)newOwnerId
+                        isLeave:(BOOL)isLeave
+                     completion:(NIMTeamHandler)block
+群组成员
+
+获取群成员
+
+复制- (void)fetchTeamMembers:(NSString *)teamId
+              completion:(NIMTeamMemberHandler)block
+获取到的群成员只有云信服务器托管的群相关数据，需要开发者结合自己管理的用户数据进行界面显示。
+
+用户退群
+
+复制- (void)quitTeam:(NSString *)teamId
+      completion:(NIMTeamHandler)block
+用户退群成功后，相关会话信息仍然会保留，但不再能接收关于此群的消息。
+
+踢出用户
+
+复制- (void)kickUsers:(NSArray *)users
+         fromTeam:(NSString *)teamId
+       completion:(NIMTeamHandler)block
+被踢出的用户相关会话信息仍然会保留，但不再能接收关于此群的消息。
+
+解散群
+
+复制- (void)dismissTeam:(NSString*)teamId
+         completion:(NIMTeamHandler)block
+群解散后，所有群用户关于此群会话会被保留，但是不能能够在此群会话里收发消息。
+
+群组委托
+
+用户的群信息会在以下条件下更新：
+
+修改群组名称
+更改群验证方式
+更改群介绍
+更改群公告
+这些操作成功后，云信服务器会推送一条群通知，同时触发 SDK 更新群信息的委托事件：
+
+复制- (void)onTeamUpdated:(NIMTeam *)team
+用户的群信息会在以下条件下移除：
+
+群解散
+退群
+被踢出群
+这些操作成功后，云信服务器同样会推送一条群通知，同时触发 SDK 更新群信息的委托事件：
+
+复制- (void)onTeamRemoved:(NIMTeam *)team
+用户的群成员信息会在以下条件下更新
+
+群成员数量变动
+静音群组
+群成员信息变动，包括权限，群昵称等
+这些操作成功后，云信服务器同样会推送一条群通知，同时触发 SDK 更新群信息的委托事件：
+
+复制- (void)onTeamMemberChanged:(NIMTeam *)team;
+群组通知
+
+群组通知是一种消息类型 ( NIMMessageTypeNotification ) ，用户在创建群或者进入群成功之后，任何关于群的变动，云信服务器都会下发一条群通知消息。群通知消息和其他消息一样，可从 NIMConverationManager 提供的消息查询接口中获取。
+
+SDK 在收到群通知之后，会对本地缓存的群信息做出对应的修改，然后触发与修改相对应的委托事件回调。
+群通知是接收型的消息，开发者不应该自己手动去创建和发送群通知消息。
+群消息通知设置
+
+SDK 提供了修改群消息通知的接口，上层可以通过设置这个选项以影响群消息的通知行为。当设置 notify 为 NO 时，群内消息将不会有 APNS 通知。当然上层也可以使用这一属性来决定收到在线消息时的 APP 表现 (是否响铃等)。
+
+复制  - (void)updateNotifyState:(BOOL)notify
+                     inTeam:(NSString *)teamId
+                 completion:(NIMTeamHandler)block;
+自定义拓展
+
+SDK 提供了群信息的拓展接口，开发者可以自行定义内容。
+
+复制- (void)updateTeamCustomInfo:(NSString *)info
+                      teamId:(NSString *)teamId
+                  completion:(NIMTeamHandler)block
+开发者可以通过 NIMTeam 的两个属性读取拓展信息:
+
+应用方可以自行拓展这个字段做个性化配置,客户端不可以修改这个字段
+
+复制@property (nonatomic,copy,readonly)  NSString *serverCustomInfo;
+应用方可以自行拓展这个字段做个性化配置,客户端可以修改这个字段
+
+复制 @property (nonatomic,copy,readonly)  NSString *clientCustomInfo;
+聊天室
+聊天室功能概述
+
+聊天室功能对应的管理类为 NIMChatroomManager 。 NIMChatroomManager 提供了聊天室的业务管理，如进入/退出聊天室，获取相关信息以及权限操作等。目前不支持通过 SDK 接口建立/解散聊天室。
+
+聊天室模型特点：
+
+进入聊天室时将建立新的连接，退出聊天室或者被踢会断开连接，在聊天室中掉线会有自动重连，开发者需要监听聊天室连接状态来做出正确的界面表现。
+支持聊天人数无上限。
+聊天室只允许用户手动进入，无法进行邀请。
+支持同时进入多个聊天室，会建立多个连接。
+不支持多端进入同一个聊天室，后进入的客户端会将前一个踢掉。
+断开聊天室连接后，服务器不会再推送该聊天室的消息给此用户。
+聊天室成员分固定成员和非固定成员两种类型。
+进入聊天室
+
+用户要在聊天室内说话，必须先调用接口进入此聊天室。用户进入聊天室后，不会收到此聊天室的历史消息推送。如有历史消息需求，可以调用消息查询接口进行显示。
+
+复制- (void)enterChatroom:(NIMChatroomEnterRequest *)request
+           completion:(NIMChatroomEnterHandler)completion;
+NIMChatroomEnterRequest 中包含了聊天室的基本数据信息，包括需要进入的聊天室 id 和一些供用户自定义的扩展字段，后续当前用户的所有聊天室消息都会带上登录时设置的扩展字段。
+
+进入聊天室会建立新的连接，不同的聊天室对应着不同的连接，开发者可以监听连接状态做一些业务处理。
+
+复制- (void)chatroom:(NSString *)roomId connectionStateChanged:(NIMChatroomConnectionState)state;
+当进入聊天室后，再发生掉线问题时，SDK 将自动重连，无需开发者再次调用进入房间接口。
+
+离开聊天室
+
+离开聊天室时，会断开聊天室对应的连接，并不再收到关于此聊天室的任何消息。
+
+复制- (void)exitChatroom:(NSString *)roomId
+          completion:(NIMChatroomHandler)completion;
+当用户被踢时，会触发被踢回调，这个时候也会断开聊天室对应的连接：
+
+复制- (void)chatroom:(NSString *)roomId beKicked:(NIMChatroomKickReason)reason;
+聊天室消息收发
+
+聊天室消息收发接口与普通消息收发统一，在发送消息时指定会话类型为聊天室即可。会话 id 即为聊天室 id。
+
+查询聊天室消息历史
+
+进入聊天室时，不会下发关于聊天室的历史消息，可以通过下面的接口查询聊天室消息历史。
+
+复制- (void)fetchMessageHistory:(NSString *)roomId
+                     option:(NIMHistoryMessageSearchOption *)option
+                     result:(NIMFetchChatroomHistoryBlock)completion;
+获取聊天室信息
+
+此接口可以远程获取聊天室信息，NIM SDK 不会缓存聊天室信息，开发者需要根据业务自己做好缓存。
+
+复制- (void)fetchChatroomInfo:(NSString *)roomId
+               completion:(NIMChatroomInfoHandler)completion;
+获取聊天室成员
+
+此接口可以远程获取聊天室成员列表，NIM SDK 不会缓存聊天室成员列表，开发者需要根据业务自己做好缓存。 NIM SDK 提供两种方式获取聊天室成员:
+
+按锚点分页获取
+
+复制  - (void)fetchChatroomMembers:(NIMChatroomMemberRequest *)request
+                    completion:(NIMChatroomMembersHandler)completion;
+按用户 id 获取聊天室成员信息
+
+复制 - (void)fetchChatroomMembersByIds:(NIMChatroomMembersByIdsRequest *)request
+                     completion:(NIMChatroomMembersHandler)completion;
+聊天室权限管理
+
+聊天室可以调整成员的类型，分固定成员和非固定成员两种，固定成员又分为创建者、管理员、普通成员和受限成员四种。禁言用户和拉黑用户都属于受限用户。
+
+设置为管理员
+
+复制- (void)markMemberManager:(NIMChatroomMemberUpdateRequest *)request
+             completion:(NIMChatroomHandler)completion;
+设置为普通成员
+
+复制- (void)markNormalMember:(NIMChatroomMemberUpdateRequest *)request
+            completion:(NIMChatroomHandler)completion;
+设置为拉黑用户 拉黑的用户被移出黑名单后该成员变成非固定成员。
+
+复制- (void)updateMemberBlack:(NIMChatroomMemberUpdateRequest *)request
+             completion:(NIMChatroomHandler)completion;
+设置为禁言用户
+
+复制- (void)updateMemberMute:(NIMChatroomMemberUpdateRequest *)request
+            completion:(NIMChatroomHandler)completion;
+踢出成员
+
+创建者或管理员可以将权限比自己低的用户提出聊天室。
+
+复制- (void)kickMember:(NIMChatroomMemberKickRequest *)request
+        completion:(NIMChatroomHandler)completion;
+聊天室通知消息
+
+在聊天室中所有的通知都以消息 NIMMessage 的形式展示，内部 messageObject 为 NIMNotificationTypeChatroom 类型的 NIMNotificationObject。上层开发在收到具体消息需要进行过滤和显示。共支持十几种聊天室事件，详情参考 NIMChatroomEventType 和 NIMChatroomNotificationContent。
+
+系统通知
+除消息通道外，NIM SDK 还提供系统通知这种通道用于消息之外的通知分发。目前有两种类型:内置系统通知和自定义系统通知。
+
+内置
+
+这是由 NIM SDK 预定义的通知类型，目前仅支持几种群操作的通知，如被邀请入群，SDK 负责这些通知的持久化。所有的内置系统通知都是通过
+
+复制-(void)onReceiveSystemNotification:(NIMSystemNotification *)notification;
+下发给 APP。为了保证整个程序逻辑的一致性，APP 需要针对不同类型的系统通知进行相应的操作。
+
+内置系统通知的本地存储：（以下接口分为全量和过滤，过滤接口需要传入过滤器 NIMSystemNotificationFilter，可以按类型选择获取内置系统通知）
+
+获取本地存储的内置系统通知
+
+全量接口
+
+复制   - (NSArray *)fetchSystemNotifications:(NIMSystemNotification *)notification
+                              limit:(NSInteger)limit;
+过滤接口
+
+复制   - (NSArray *)fetchSystemNotifications:(NIMSystemNotification *)notification
+                                  limit:(NSInteger)limit
+                                 filter:(NIMSystemNotificationFilter *)filter;
+获取本地存储的内置系统未读数
+
+全量接口
+
+复制  - (NSInteger)allUnreadCount;
+过滤接口
+
+复制   - (NSInteger)allUnreadCount:(NIMSystemNotificationFilter *)filter;
+删除本地存储的内置系统通知
+
+全量接口
+
+复制  - (void)deleteAllNotifications;
+过滤接口
+
+复制  - (void)deleteAllNotifications:(NIMSystemNotificationFilter *)filter;
+单条接口
+
+复制  - (void)deleteNotification:(NIMSystemNotification *)notification;
+标记本地存储的内置系统通知为已读
+
+全量接口
+
+复制  - (void)markAllNotificationsAsRead;
+过滤接口
+
+复制  - (void)markAllNotificationsAsRead:(NIMSystemNotificationFilter *)filter;
+单条接口
+
+复制  - (void)markNotificationsAsRead:(NIMSystemNotification *)notification;
+自定义
+
+除内置系统通知外，NIM SDK 也额外提供自定义系统给开发者，方便开发者进行业务逻辑的通知。这个通知既可以由客户端发起也可以由开发者服务器发起。
+
+注意：自定义通知和自定义消息的不同之处在于，自定义消息归属于 NIM SDK 消息体系内，适用于会话，由 SDK 存储在消息数据库中，与 NIM SDK 其他内建消息类型一同展现给用户。而自定义通知主要用于第三方的一些事件状态通知，SDK 不存储，也不解析这些通知。SDK 仅仅负责替第三方传递和通知这些事件，起到透传的作用，收到自定义通知后的持久化工作需要由上层开发负责。
+
+发送自定义通知(客户端)
+
+复制- (void)sendCustomNotification:(NIMCustomSystemNotification *)notification
+                     toSession:(NIMSession *)session
+                    completion:(NIMSystemNotificationHandler)completion
+客户端发起的自定义通知目前支持自定义如下字段:通知内容(推荐使用 json 组织)，推送文案(如果没有则不进行 APNS 推送)，是否只发给在线用户。最后一个字段的意义在于区分自定义通知的使用场景。选择只发给在线用户，当目标用户不在线时这条通知会被云信服务器丢弃，这种实现比较适合发送即时通知，如正在输入。反之云信服务器会缓存当前通知(有上限)，并在目标用户上线后推送给目标用户。
+
+接收自定义通知
+
+复制- (void)onReceiveCustomSystemNotification:(NIMCustomSystemNotification *)notification;
+APNS 推送
+前期准备
+
+制作推送证书并在管理后台配置
+客户端配置推送证书名
+复制[[NIMSDK sharedSDK] registerWithAppID:您的APPKEY
+                              cerName:您的推送证书名];
+客户端注册 APNS，并在获取到 APNS Token 时将值传给 SDK
+复制- (void)registerAPNs
+{
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerForRemoteNotifications)])
+    {
+        UIUserNotificationType types = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound |         UIRemoteNotificationTypeAlert;
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types
+        categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    }
+    else
+    {
+        UIRemoteNotificationType types = UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound |         UIRemoteNotificationTypeBadge;
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:types];
+    }
+}
+复制- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    [[NIMSDK sharedSDK] updateApnsToken:deviceToken];
+}
+推送时机
+
+开发者在 发送消息 和 自定义系统通知 时，可以指定是否同时进行推送服务。为了节省不必要的流量开销，只有当接收者的应用切换到后台时，云信推送服务才会开启；如果应用在前台，则不会有推送通知。如果有应用前台通信需求，建议开发者使用 自定义系统通知 ，并监听回调:
+
+复制- (void)onReceiveCustomSystemNotification:(NIMCustomSystemNotification *)notification;
+属性设置
+
+NIM SDK 提供全局 APNS 属性设置，用于设置免打扰时间和推送样式，详细内容可以参考 NIMPushNotificationSetting
+
+获取推送设置:
+复制NIMPushNotificationSetting *setting =  [[[NIMSDK sharedSDK] apnsManager] currentSetting];
+修改推送设置:
+复制[[[NIMSDK sharedSDK] apnsManager] updateApnsSetting:setting
+completion:^(NSError *error) {}];
+消息推送内容设置
+
+用户在发送消息的时候，设置 NIMMessage 的 apnsContent 属性进行消息推送内容设置。如果不设置 apnsContent 属性，将使用云信内置文案。设置 NIMMessage 的 apnsPayload 可以自定义推送参数。
+
+示例代码:
+
+复制NIMAudioObject *audioObject = [[NIMAudioObject alloc] initWithSourcePath:filePath];
+NIMMessage *message = [[NIMMessage alloc] init];
+message.messageObject = audioObject;
+message.text = @"发来了一段语音";    //对方收到的推送文案
+用户在发送自定义系统通知的时候，设置 NIMCustomSystemNotification 的 apnsContent 属性来定制消息推送内容，同时可以设置 apnsPayload 来配置推送参数。
+
+注: 点击这里查看 iOS 系统内置推送 Payload 参数
+
+用户资料托管
+NIMUserManager 提供了用户帐号资料管理。以下几个接口仅当选择云信托管用户资料时有效，如果开发者不希望云信获取自己的用户数据，则需自行维护用户资料。
+
+NIMUserManager 里，使用 NIMUser 对用户进行封装。其中用户信息为 NIMUserInfo 属性。 具体的信息字段由 NIMUserInfoUpdateTag定义。 NIMUserInfoUpdateTag内置了多个常用信息字段(有格式校验)和一个拓展字段 NIMUserInfoUpdateTagEx 供开发者自行拓展。
+
+获取本地用户资料
+
+复制  - (NIMUser *)userInfo:(NSString *)userId;
+用户资料除自己之外，不保证其他用户资料实时更新。其他用户数据更新时机为：
+
+调用 - (void)fetchUserInfos:completion: 方法刷新用户
+
+收到此用户发来消息
+
+程序再次启动，此时会同步好友资料
+
+当用户资料更新时，会触发回调：
+
+复制- (void)onUserInfoChanged:(NIMUser *)user;
+获取服务器用户资料
+
+复制- (void)fetchUserInfos:(NSArray *)users completion:(NIMUserInfoBlock)block;
+此接口可以批量从服务器获取用户资料，出于用户体验和流量成本考虑，不建议应用频繁调用此接口。对于用户数据实时性要求不高的页面，应尽量调用读取本地缓存接口。
+
+当获取用户成功后，会触发回调：
+
+复制- (void)onUserInfoChanged:(NIMUser *)user;
+编辑用户资料
+
+复制- (void)updateMyUserInfo:(NSDictionary *)values completion:(NIMUserBlock)block;
+只允许用户编辑自己的资料。此接口可以一次性编辑多个属性。如昵称,头像等,传入的数据键值对是 {@(NIMUserInfoUpdateTag) : NSString},无效数据将被过滤。一些字段有修改格式校验。具体限制为:
+
+属性名	具体字段	类型限制	格式校验
+用户昵称	NIMUserInfoUpdateTagNick	NSString	无
+用户头像	NIMUserInfoUpdateTagAvatar	NSString	无
+用户签名	NIMUserInfoUpdateTagSign	NSString	无
+用户性别	NIMUserInfoUpdateTagGender	NIMUserGender	只支持指定枚举
+用户邮箱	NIMUserInfoUpdateTagEmail	NSString	只支持合法邮箱
+用户生日	NIMUserInfoUpdateTagBirth	NSString	yyyy-MM-dd
+用户手机	NIMUserInfoUpdateTagBirth	NSString	合法手机号 如13588888888、+(86)-13055555555
+拓展字段	NIMUserInfoUpdateTagEx	NSString	无
+当修改用户资料成功后，会触发回调：
+
+复制- (void)onUserInfoChanged:(NIMUser *)user;
+用户关系托管
+NIMUserManager 提供了用户用户关系管理，以及对用户会话的消息设置。在云信中，不是好友也允许聊天。用户关系如果不托管给云信，开发者需要自己在应用服务器维护。
+
+好友关系
+
+获取好友列表
+
+复制  - (NSArray *)myFriends;
+好友列表有本地缓存，缓存会在手动/自动登录后与服务器自动进行同步更新。接口返回的是 NIMUser 列表。 NIMUser 封装了开发者向云信托管的好友ID，对此好友的会话设置（是否需要消息提醒，是否是拉黑用户等）, 以及用户的详细信息 NIMUserInfo (需要将用户信息交给云信托管)。
+
+好友请求
+
+复制  - (void)requestFriend:(NIMUserRequest *)request
+             completion:(NIMUserBlock)block;
+好友请求包括请求添加好友以及同意/拒绝好友请求两种。
+
+好友请求需要构造出一个 NIMUserRequest 对象，封装添加对象用户的ID,以及添加方式。
+
+代码示例：
+
+复制     NIMUserRequest *request = [[NIMUserRequest alloc] init];
+     request.userId          = self.user.usrId;                            //封装用户ID
+     request.operation       = NIMUserOperationRequest;                    //封装验证方式
+     request.message         = @"跪求通过";                                 //封装自定义验证消息
+验证方式有 NIMUserOperationAdd 和 NIMUserOperationRequest 两种。
+
+第一种是不需要验证方式的，一旦请求后双方直接互为好友。
+
+第二种是需要验证的，对方会收到一条类型为 NIMSystemNotificationTypeFriendAdd 系统通知 ( NIMSystemNotification )。
+
+验证回复有 同意 NIMUserOperationVerify 和 拒绝 NIMUserOperationReject 两种。 对方收到消息之后，可以选择接受或者拒绝好友邀请，此时同样调用 requestFriend:completion: 方法，传入拒绝对象的ID和验证回复类型即可。
+
+好友添加成功后，会触发回调：
+
+复制     - (void)onFriendChanged:(NIMUser *)user;
+删除好友
+
+用户和用户之间可以解除好友关系。
+
+复制  - (void)deleteFriend:(NSString *)userId
+            completion:(NIMUserBlock)block;
+解除成功后，会同时修改本地的缓存数据，并触发回调：
+
+复制  - (void)onFriendChanged:(NIMUser *)user;
+黑名单
+
+云信中，黑名单和好友关系是互相独立的，即修改好友关系不会影响黑名单关系，同时，修改黑名单也不会对好友关系进行操作。
+
+获取黑名单成员列表
+复制- (NSArray *)myBlackList;
+黑名单列表有本地缓存，缓存会在手动/自动登录后与服务器自动进行同步更新。接口返回的是 NIMUser 列表。 NIMUser 封装了开发者向云信托管的好友ID，对此好友的会话设置（是否需要消息提醒，是否是拉黑用户等）, 以及用户的详细信息 NIMUserInfo (需要将用户信息交给云信托管)。
+
+添加用户到黑名单
+复制- (void)addToBlackList:(NSString *)userId
+            completion:(NIMUserBlock)block;
+拉黑成功后，会同时修改本地缓存，并触发回调：
+
+复制- (void)onBlackListChanged;
+将用户从黑名单移除
+复制- (void)removeFromBlackBlackList:(NSString *)userId
+                      completion:(NIMUserBlock)block;
+移除成功后，会同时修改本地缓存，并触发回调：
+
+复制- (void)onBlackListChanged;
+判断用户是否在自己的黑名单内
+复制- (BOOL)isUserInBlackList:(NSString *)userId;
+此接口是根据本地缓存数据来判断是否拉黑的，在调用时请保证本地缓存是正确的(登录后有正常完成数据同步)。
+
+消息提醒
+
+云信中，可以单独设置是否开启某个用户的消息提醒，即对某个用户静音。静音关系和好友关系是互相独立的，修改好友关系不会影响静音关系，同时，修改静音关系也不会对好友关系进行操作。
+
+获取静音成员列表
+复制- (NSArray *)myMuteUserList;
+静音列表有本地缓存，缓存会在手动/自动登录后与服务器自动进行同步更新。接口返回的是 NIMUser 列表。 NIMUser 封装了开发者向云信托管的好友ID，对此好友的会话设置（是否需要消息提醒，是否是拉黑用户等）, 以及用户的详细信息 NIMUserInfo (需要将用户信息交给云信托管)。
+
+设置消息提醒
+复制- (void)updateNotifyState:(BOOL)notify
+                  forUser:(NSString *)userId
+               completion:(NIMUserBlock)block;
+设置成功之后，同时更新本地缓存数据。
+
+是否需要消息通知
+复制- (BOOL)notifyForNewMsg:(NSString *)userId;
+此接口是根据本地缓存数据来判断是否拉黑的，在调用时请保证本地缓存是正确的(登录后有正常完成数据同步)。
+
+当修改用户资料成功后，会触发回调：
+
+复制- (void)onUserInfoChanged:(NIMUser *)user;
+音视频网络通话
+SDK 的音视频网络通话管理类是 NIMNetCallManager，提供基于网络的点对点视频通话和语音通话功能，支持通话中音视频设备控制和实时音视频模式切换。
+
+音视频网络通话流程
+
+主叫发起通话请求
+复制- (void)start:(NSArray *)callees
+         type:(NIMNetCallType)type
+       option:(NIMNetCallOption *)option
+   completion:(NIMNetCallStartHandler)completion
+当前只支持点对点通话，callees 只接收一个被叫。
+
+发起通话需要指定类型，在成功建立通话之前不允许进行通话类型切换。
+
+发起通话相关参数在 option 中指定，其中：
+
+期望的发送视频质量 preferredVideoQuality 用于开发者不满足于默认清晰度时传入更期望的清晰度。但是 SDK 可能会根据具体机型运算性能和协商结果调整为更合适的清晰度，导致该设置无效 (该情况通常发生在通话一方有低性能机器时)
+
+禁用视频裁剪 disableVideoCropping 如果不禁用，SDK 可能会根据对端机型屏幕宽高比将本端画面裁剪后再发送，以节省运算量和网络带宽，如果无特殊需求建议不要设置该参数
+
+扩展消息 extendMessage 用于开发者自己沟通额外信息，被叫收到呼叫时会携带该信息 (仅在发起网络通话时有效)
+
+附带推送 apnsInuse 设置网络通话请求是否附带发送 APNS 推送通知被叫
+
+角标计数 apnsBadge 设置推送是否需要角标计数
+
+推送前缀 apnsWithPrefix 设置推送是否需要带前缀 (一般为昵称)
+
+推送文案 apnsContent 设置自定义的推送文案
+
+推送声音 apnsSound 设置自定义的推送声音文件
+
+推送 Payload apnsPayload 设置自定义的 iOS 推送 Payload
+
+发起结果由 NIMNetCallStartHandler 返回:
+
+复制typedef void(^NIMNetCallStartHandler)(NSError *error, UInt64 callID)
+如果发起成功，返回的 error 为 nil，callID 用于唯一标识一通网络通话，后续的操作及回调均由此区分不同通话。
+
+被叫收到通话请求回调
+复制- (void)onReceive:(UInt64)callID
+             from:(NSString *)caller
+             type:(NIMNetCallType)type
+          message:(NSString *)extendMessage
+在成功建立通话之前不允许进行通话类型切换。
+
+其中 extendMessage 透传主叫发起通话时携带的额外信息。
+
+被叫响应通话请求
+复制- (void)response:(UInt64)callID
+          accept:(BOOL)accept
+          option:(NIMNetCallOption *)option
+      completion:(NIMNetCallResponseHandler)completion
+可以通过 option 指定期望的发送视频清晰度和设置裁剪开关。
+
+响应结果由 NIMNetCallStartHandler 返回:
+
+复制typedef void(^NIMNetCallResponseHandler)(NSError *error, UInt64 callID)
+如果响应成功，返回的 error 为 nil。
+
+在多端登录情况下，如果改通话已被该帐号其他端处理，error 携带错误码NIMLocalErrorCodeNetCallOtherHandled。
+
+主叫收到被叫响应回调
+复制- (void)onResponse:(UInt64)callID
+              from:(NSString *)callee
+          accepted:(BOOL)accepted
+呼入的通话已经被该帐号其他端处理回调
+复制- (void)onResponsedByOther:(UInt64)callID
+                  accepted:(BOOL)accepted
+对于已经被其他端处理过的通话，本端不能再做接听、拒绝或挂断操作。
+
+连接建立结果回调
+复制- (void)onCall:(UInt64)callID
+        status:(NIMNetCallStatus)status
+收到 NIMNetCallStatusDisconnect 时无需调用 hangup: 挂断该通话。
+
+发送通话控制信息
+复制- (void)control:(UInt64)callID
+           type:(NIMNetCallControlType)type
+通话控制信息用于方便通话双方沟通，可以选择性使用
+
+控制字段	含义
+NIMNetCallControlTypeOpenAudio	通知对方本端取消了静音
+NIMNetCallControlTypeCloseAudio	通知对方本端开启了静音
+NIMNetCallControlTypeOpenVideo	通知对方本端打开了摄像头
+NIMNetCallControlTypeCloseVideo	通知对方本端关闭了摄像头
+NIMNetCallControlTypeToVideo	请求对方切换到视频模式
+NIMNetCallControlTypeAgreeToVideo	同意切换到视频模式，用于切到视频模式需要对方同意的场景
+NIMNetCallControlTypeRejectToVideo	拒绝切换到视频模式，用于切到视频模式需要对方同意的场景
+NIMNetCallControlTypeToAudio	通知对方本端切换到了音频模式
+NIMNetCallControlTypeBusyLine	被叫通知主叫本端占线，用于主叫需要播放忙音的场景
+NIMNetCallControlTypeNoCamera	通知对方本端摄像头不可用
+NIMNetCallControlTypeBackground	通知对方本端切换到了后台
+NIMNetCallControlTypeFeedabck	被叫通知主叫已经收到了通话请求，用于主叫需要确认被叫收到请求再播放回铃音的场景
+收到通话控制信息回调
+复制- (void)onControl:(UInt64)callID
+             from:(NSString *)user
+             type:(NIMNetCallControlType)control
+结束通话
+复制- (void)hangup:(UInt64)callID
+在发起通话请求时，如果 SDK 尚未返回 callID，可传入 0 挂断该通话。
+
+被叫在响应呼叫之前不要调用挂断接口。
+
+收到对方结束通话回调
+复制- (void)onHangup:(UInt64)callID
+              by:(NSString *)user
+收到该回调后无需调用 hangup: 结束通话
+
+当前通话信息
+
+获取当前通话标识 ID
+复制- (UInt64)currentCallID
+如果没有正在进行中的通话 SDK 返回 0。
+
+当前通话网络状况回调
+复制- (void)onCall:(UInt64)callID
+     netStatus:(NIMNetCallNetStatus)status
+通常用于在 UI 上展现网络信号。
+
+获取当前通话网络状况
+复制- (NIMNetCallNetStatus)netStatus
+如果没有正在进行中的通话，则返回值没有参考意义。
+
+本地摄像头预览就绪回调
+复制- (void)onLocalPreviewReady:(CALayer *)layer
+本地摄像头初始化完成时返回 layer，可以用如下示例代码展现本地预览画面:
+
+复制- (void)onLocalPreviewReady:(CALayer *)layer
+{
+    if (self.localVideoLayer) {
+        [self.localVideoLayer removeFromSuperlayer];
+    }
+    self.localVideoLayer = layer;
+    layer.frame = self.localView.bounds;
+    [self.localView.layer addSublayer:layer];
+}
+获取本地摄像头预览层
+复制- (CALayer *)localPreviewLayer
+当没有进行中的网络通话，或者摄像头尚未初始化完成时返回 nil。
+
+远程视频 YUV 数据就绪
+复制- (void)onRemoteYUVReady:(NSData *)yuvData
+                   width:(NSUInteger)width
+                  height:(NSUInteger)height
+每获取到一帧对端画面都会回调，其中yuvData是紧凑的 YUV 数据 (stride 为 0)。
+
+将 YUV 数据直接用 OpenGL 渲染，比从 onRemoteImageReady: 得到的 image 贴图节省 CPU 资源。
+
+远程视频画面就绪回调
+复制- (void)onRemoteImageReady:(CGImageRef)image
+如果实现了该委托，每获取到一帧对端画面都会回调，可以将 image 转换成 UIImage 后直接在 UIImageView 里面填充。
+
+如果已经使用 onRemoteYUVReady:width:height: 得到的 YUV 数据渲染画面，不要再实现该委托以优化性能。
+
+通话中的设备控制
+
+设置静音
+复制- (BOOL)setMute:(BOOL)mute
+静音后对端将听不到本端的声音。
+
+设置扬声器
+复制- (BOOL)setSpeaker:(BOOL)useSpeaker
+用于在扬声器和听筒间切换。
+
+切换摄像头
+复制- (void)switchCamera:(NIMNetCallCamera)camera
+用于在前后摄像头之间切换。
+
+关闭摄像头功能设置
+复制- (BOOL)setCameraDisable:(BOOL)disable
+关闭摄像头以后对方将收不到自己的视频画面。
+
+切换通话模式
+复制- (void)switchType:(NIMNetCallType)type
+用于在语音模式和视频模式之间切换。如果需要对方接受才能切换，请使用 control:type 和 onConrtol:from:type 进行协商，达成一致后再调用该接口进行切换。
+
+通话中音视频本地录制
+
+通话建立以后，SDK 支持将本端的音视频图像和声音录制下来，保存成本地 mp4 格式文件。
+
+开始录制
+复制- (BOOL)startLocalRecording:(NSURL *)filePath
+               videoBitrate:(UInt32)videoBitrate
+只有通话连接建立以后才允许开始录制。
+
+可以指定录制文件的路径 filePath，SDK 不负责创建目录，请确保文件路径的合法性；也可以不指定，由 SDK 自己选择文件路径。
+
+如果对录制文件大小有要求，可以指定录制文件的视频码率 videoBitrate；也可以不指定，由 SDK 自己选择合适的码率。
+
+结束录制
+复制- (BOOL)stopLocalRecording
+录制相关回调
+复制- (void)onLocalRecordStarted:(UInt64)callID
+                     fileURL:(NSURL *)fileURL
+表示本地录制成功开始，携带录制对应的网络通话 ID 和录制文件路径信息。
+
+复制- (void)onLocalRecordError:(NSError *)error
+                    callID:(UInt64)callID
+表示本地录制发生了错误。
+
+复制- (void) onLocalRecordStopped:(UInt64)callID
+                      fileURL:(NSURL *)fileURL
+表示本地录制成功结束，携带录制对应的网络通话 ID 和录制文件路径信息。
+
+实时会话 (白板)
+SDK 的实时会话管理类是 NIMRTSManager，提供数据通道 (可靠 TCP 传输通道/语音通道) 以满足实时会话的需求，用于在线白板教学和文件传输等实时场景，其中 TCP 通道可以同时存在多个，语音通道全局只能有一个，并且与网络通话功能互斥。
+
+实时会话流程
+
+主叫发起实时会话请求
+复制- (NSString *)requestRTS:(NSArray *)callees
+                services:(NSUInteger)types
+                  option:(NIMRTSOption *)option
+              completion:(NIMRTSRequestHandler)completion
+需要在 callees 中指定被叫用户列表，当前只支持一个被叫。
+
+需要指定服务类型，为 NIMRTSService 的组合，如果要同时发起可靠传输通道和音频通话，使用 NIMRTSServiceReliableTransfer | NIMRTSServiceAudio。
+
+可以指定发起会话附带选项 option:
+
+扩展消息 extendMessage 用于开发者自己沟通额外信息，被叫收到呼叫时会携带该信息
+
+禁用录制 disableRecord 可以在开启了服务器录制功能的 APP 中用禁用这通实时会话的录制功能
+
+附带推送 apnsInuse 设置实时会话请求是否附带发送 APNS 推送通知被叫
+
+角标计数 apnsBadge 设置推送是否需要角标计数
+
+推送前缀 apnsWithPrefix 设置推送是否需要带前缀 (一般为昵称)
+
+推送文案 apnsContent 设置自定义的推送文案
+
+推送声音 apnsSound 设置自定义的推送声音文件
+
+推送 Payload apnsPayload 设置自定义的 iOS 推送 Payload
+
+每一通发起请求都会返回会话 ID sessionID，用于后续操作和回调中唯一标识这通请求。
+
+发起结果由 NIMRTSRequestHandler返回:
+
+复制typedef void(^NIMRTSRequestHandler)(NSError *error, NSString *sessionID)
+如果发起成功，返回的 error 为 nil。
+
+被叫收到实时会话请求回调
+复制- (void)onRTSRequest:(NSString *)sessionID
+                from:(NSString *)caller
+            services:(NSUInteger)types
+             message:(NSString *)extendMessage
+用户每收到一个实时会话请求都由唯一的 sessionID 标识，用于后续操作和回调中指定这通请求。
+
+extendMessage 是主叫传递过来的附加信息。
+
+被叫响应实时会话请求
+复制- (void)responseRTS:(NSString *)sessionID
+             accept:(BOOL)accept
+             option:(NIMRTSOption *)option
+         completion:(NIMRTSResponseHandler)completion
+用于接受或拒绝一通实时会话请求。
+
+在开启了服务器录制功能的 APP 中, 可用 option 中的 disableRecord 选项禁用该通实时会话的录制功能。
+
+响应结果由 NIMRTSResponseHandler 返回:
+
+复制typedef void(^NIMRTSResponseHandler)(NSError *error, NSString *sessionID)
+如果响应成功，返回的 error 为 nil。
+
+主叫收到被叫实时会话响应回调
+复制- (void)onRTSResponse:(NSString *)sessionID
+                 from:(NSString *)callee
+             accepted:(BOOL)accepted
+被叫拒绝接听时，主叫不需要再调用 terminateRTS: 接口。
+
+呼入的实时会话请求已经被该帐号其他端处理回调
+复制- (void)onRTSResponsedByOther:(NSString *)sessionID
+                     accepted:(BOOL)accepted
+对于已经被其他端处理过的实时会话请求，本端不能再做接听、拒绝或挂断操作。
+
+实时会话状态反馈回调
+复制- (void)onRTS:(NSString *)sessionID
+      service:(NIMRTSService)type
+       status:(NIMRTSStatus)status
+        error:(NSError *)error;
+如果该实时会话包含多个服务，会有多个回调分别表示各个服务的状态。
+
+发送实时会话数据
+复制- (BOOL)sendRTSData:(NSData *)data
+               from:(NSString *)sessionID
+                 to:(NSString *)userID
+               with:(NIMRTSService)service
+发送的数据长度不允许超过 50 KB，推荐不超过 4 KB。
+
+发送数据的周期建议控制在 50 ms 以上，否则可能引起延迟增大等问题。
+
+可以指定发送数据的目标用户 ID，也可以不指定用户表示广播给所有其他用户。
+
+需要指定发送数据的服务通道，现在只支持 TCP 通道。
+
+收到实时会话数据回调
+复制- (void)onRTSReceive:(NSString *)sessionID
+                data:(NSData *)data
+                from:(NSString *)user
+              withIn:(NIMRTSService)channel
+发送实时会话控制指令
+复制- (void)sendRTSControl:(NSString *)controlInfo
+            forSession:(NSString *)sessionID
+实时会话控制指令用于方便双方沟通信息，可以选择性使用。
+
+收到实时会话控制指令回调
+复制- (void)onRTSControl:(NSString *)controlInfo
+                from:(NSString *)user
+          forSession:(NSString *)sessionID
+服务器录制信息回调
+复制- (void)onRTSRecordingInfo:(NIMRTSRecordingInfo *)info
+                forSession:(NSString *)sessionID;
+包含了一通实时会话的服务器录制路径等信息，仅在启用了服务器录制的 APP 中有效。
+
+结束实时会话
+复制- (void)terminateRTS:(NSString *)sessionID
+被叫在响应请求之前不要调用挂断接口。
+
+对方结束实时会话回调
+复制- (void)onRTSTerminate:(NSString *)sessionID
+                    by:(NSString *)user
+音频控制
+
+设置静音
+复制- (BOOL)setMute:(BOOL)mute
+静音后对端将听不到本端的声音。
+
+设置扬声器
+复制- (BOOL)setSpeaker:(BOOL)useSpeaker
+用于在扬声器和听筒间切换。
+
+API 文档
+在线文档

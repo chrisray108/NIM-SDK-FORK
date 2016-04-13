@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMRecentSession.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMRecentSession</TokenIdentifier>
+			<Abstract type="html">最近会话</Abstract>
+			<DeclaredIn>NIMRecentSession.h</DeclaredIn>
+            
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRecentSession/setSession:</TokenIdentifier>
+			<Abstract type="html">当前会话</Abstract>
+			<DeclaredIn>NIMRecentSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NIMSession *session</Declaration>
+			
+			
+			<Anchor>//api/name/session</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRecentSession/session</TokenIdentifier>
+			<Abstract type="html">当前会话</Abstract>
+			<DeclaredIn>NIMRecentSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NIMSession *session</Declaration>
+			
+			
+			<Anchor>//api/name/session</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRecentSession/session</TokenIdentifier>
+			<Abstract type="html">当前会话</Abstract>
+			<DeclaredIn>NIMRecentSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NIMSession *session</Declaration>
+			
+			
+			<Anchor>//api/name/session</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRecentSession/setLastMessage:</TokenIdentifier>
+			<Abstract type="html">最后一条消息</Abstract>
+			<DeclaredIn>NIMRecentSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NIMMessage *lastMessage</Declaration>
+			
+			
+			<Anchor>//api/name/lastMessage</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRecentSession/lastMessage</TokenIdentifier>
+			<Abstract type="html">最后一条消息</Abstract>
+			<DeclaredIn>NIMRecentSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NIMMessage *lastMessage</Declaration>
+			
+			
+			<Anchor>//api/name/lastMessage</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRecentSession/lastMessage</TokenIdentifier>
+			<Abstract type="html">最后一条消息</Abstract>
+			<DeclaredIn>NIMRecentSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NIMMessage *lastMessage</Declaration>
+			
+			
+			<Anchor>//api/name/lastMessage</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRecentSession/setUnreadCount:</TokenIdentifier>
+			<Abstract type="html">未读消息数</Abstract>
+			<DeclaredIn>NIMRecentSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSInteger unreadCount</Declaration>
+			
+			
+			<Anchor>//api/name/unreadCount</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRecentSession/unreadCount</TokenIdentifier>
+			<Abstract type="html">未读消息数</Abstract>
+			<DeclaredIn>NIMRecentSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSInteger unreadCount</Declaration>
+			
+			
+			<Anchor>//api/name/unreadCount</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRecentSession/unreadCount</TokenIdentifier>
+			<Abstract type="html">未读消息数</Abstract>
+			<DeclaredIn>NIMRecentSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSInteger unreadCount</Declaration>
+			
+			
+			<Anchor>//api/name/unreadCount</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMChatroomManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMChatroomManager</TokenIdentifier>
+			<Abstract type="html">聊天室管理器</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/enterChatroom:completion:</TokenIdentifier>
+			<Abstract type="html">进入聊天室</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)enterChatroom:(NIMChatroomEnterRequest *)request completion:(NIMChatroomEnterHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">进入聊天室请求</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">进入完成后的回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enterChatroom:completion:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/exitChatroom:completion:</TokenIdentifier>
+			<Abstract type="html">离开聊天室</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)exitChatroom:(NSString *)roomId completion:(NIMChatroomHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>roomId</Name>
+					<Abstract type="html">聊天室ID</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">离开聊天室的回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/exitChatroom:completion:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/fetchMessageHistory:option:result:</TokenIdentifier>
+			<Abstract type="html">查询服务器保存的聊天室消息记录</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchMessageHistory:(NSString *)roomId option:(NIMHistoryMessageSearchOption *)option result:(NIMFetchChatroomHistoryBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>roomId</Name>
+					<Abstract type="html">聊天室ID</Abstract>
+				</Parameter><Parameter>
+					<Name>option</Name>
+					<Abstract type="html">查询选项</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">完成回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchMessageHistory:option:result:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/fetchChatroomInfo:completion:</TokenIdentifier>
+			<Abstract type="html">获取聊天室信息</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchChatroomInfo:(NSString *)roomId completion:(NIMChatroomInfoHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>roomId</Name>
+					<Abstract type="html">聊天室ID</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">获取聊天室信息的回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchChatroomInfo:completion:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/fetchChatroomMembers:completion:</TokenIdentifier>
+			<Abstract type="html">获取聊天室成员</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchChatroomMembers:(NIMChatroomMemberRequest *)request completion:(NIMChatroomMembersHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">获取成员请求</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">请求完成回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchChatroomMembers:completion:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/fetchChatroomMembersByIds:completion:</TokenIdentifier>
+			<Abstract type="html">根据用户ID获取聊天室成员信息</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchChatroomMembersByIds:(NIMChatroomMembersByIdsRequest *)request completion:(NIMChatroomMembersHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">获取成员请求</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">请求完成回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchChatroomMembersByIds:completion:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/markMemberManager:completion:</TokenIdentifier>
+			<Abstract type="html">标记为聊天室管理员</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)markMemberManager:(NIMChatroomMemberUpdateRequest *)request completion:(NIMChatroomHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">更新请求</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">请求回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/markMemberManager:completion:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/markNormalMember:completion:</TokenIdentifier>
+			<Abstract type="html">标记为聊天室普通成员</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)markNormalMember:(NIMChatroomMemberUpdateRequest *)request completion:(NIMChatroomHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">更新请求</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">请求回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/markNormalMember:completion:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/updateMemberBlack:completion:</TokenIdentifier>
+			<Abstract type="html">更新用户聊天室黑名单状态</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)updateMemberBlack:(NIMChatroomMemberUpdateRequest *)request completion:(NIMChatroomHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">更新请求</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">请求回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateMemberBlack:completion:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/updateMemberMute:completion:</TokenIdentifier>
+			<Abstract type="html">更新用户聊天室静言状态</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)updateMemberMute:(NIMChatroomMemberUpdateRequest *)request completion:(NIMChatroomHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">更新请求</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">请求回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateMemberMute:completion:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/kickMember:completion:</TokenIdentifier>
+			<Abstract type="html">将特定成员踢出聊天室</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)kickMember:(NIMChatroomMemberKickRequest *)request completion:(NIMChatroomHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">踢出请求</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">请求回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/kickMember:completion:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/addDelegate:</TokenIdentifier>
+			<Abstract type="html">添加通知对象</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)addDelegate:(id&lt;NIMChatroomManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">通知对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDelegate:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMChatroomManager/removeDelegate:</TokenIdentifier>
+			<Abstract type="html">移除通知对象</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)removeDelegate:(id&lt;NIMChatroomManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">通知对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeDelegate:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

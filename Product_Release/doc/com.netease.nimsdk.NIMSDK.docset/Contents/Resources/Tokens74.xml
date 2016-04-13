@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMAudioOutputDevice.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMAudioOutputDevice</TokenIdentifier>
+			<Abstract type="html">音频输出设备类型</Abstract>
+			<DeclaredIn>NIMMediaManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="74"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMAudioOutputDeviceReceiver</TokenIdentifier>
+            <Abstract type="html">听筒
+     </Abstract>
+            <Declaration>NIMAudioOutputDeviceReceiver</Declaration>
+            
+            <DeclaredIn>NIMMediaManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="74"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMAudioOutputDeviceSpeaker</TokenIdentifier>
+            <Abstract type="html">扬声器
+     </Abstract>
+            <Declaration>NIMAudioOutputDeviceSpeaker</Declaration>
+            
+            <DeclaredIn>NIMMediaManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="74"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

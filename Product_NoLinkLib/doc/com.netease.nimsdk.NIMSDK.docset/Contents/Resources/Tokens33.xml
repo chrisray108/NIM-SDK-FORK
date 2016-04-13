@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMRTSOption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMRTSOption</TokenIdentifier>
+			<Abstract type="html">实时会话的附带选项, 用于发起和响应</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+            
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/setExtendMessage:</TokenIdentifier>
+			<Abstract type="html">扩展消息, 仅在发起会话时有效, 用于开发者在主被叫之间沟通额外信息</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *extendMessage</Declaration>
+			
+			
+			<Anchor>//api/name/extendMessage</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/extendMessage</TokenIdentifier>
+			<Abstract type="html">扩展消息, 仅在发起会话时有效, 用于开发者在主被叫之间沟通额外信息</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *extendMessage</Declaration>
+			
+			
+			<Anchor>//api/name/extendMessage</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSOption/extendMessage</TokenIdentifier>
+			<Abstract type="html">扩展消息, 仅在发起会话时有效, 用于开发者在主被叫之间沟通额外信息</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *extendMessage</Declaration>
+			
+			
+			<Anchor>//api/name/extendMessage</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/setDisableRecord:</TokenIdentifier>
+			<Abstract type="html">禁用服务器录制</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL disableRecord</Declaration>
+			
+			
+			<Anchor>//api/name/disableRecord</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/disableRecord</TokenIdentifier>
+			<Abstract type="html">禁用服务器录制</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL disableRecord</Declaration>
+			
+			
+			<Anchor>//api/name/disableRecord</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSOption/disableRecord</TokenIdentifier>
+			<Abstract type="html">禁用服务器录制</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL disableRecord</Declaration>
+			
+			
+			<Anchor>//api/name/disableRecord</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/setApnsInuse:</TokenIdentifier>
+			<Abstract type="html">实时会话请求是否附带推送</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL apnsInuse</Declaration>
+			
+			
+			<Anchor>//api/name/apnsInuse</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/apnsInuse</TokenIdentifier>
+			<Abstract type="html">实时会话请求是否附带推送</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL apnsInuse</Declaration>
+			
+			
+			<Anchor>//api/name/apnsInuse</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSOption/apnsInuse</TokenIdentifier>
+			<Abstract type="html">实时会话请求是否附带推送</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL apnsInuse</Declaration>
+			
+			
+			<Anchor>//api/name/apnsInuse</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/setApnsBadge:</TokenIdentifier>
+			<Abstract type="html">推送是否需要角标计数</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL apnsBadge</Declaration>
+			
+			
+			<Anchor>//api/name/apnsBadge</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/apnsBadge</TokenIdentifier>
+			<Abstract type="html">推送是否需要角标计数</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL apnsBadge</Declaration>
+			
+			
+			<Anchor>//api/name/apnsBadge</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSOption/apnsBadge</TokenIdentifier>
+			<Abstract type="html">推送是否需要角标计数</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL apnsBadge</Declaration>
+			
+			
+			<Anchor>//api/name/apnsBadge</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/setApnsWithPrefix:</TokenIdentifier>
+			<Abstract type="html">推送是否需要带前缀(一般为昵称)</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL apnsWithPrefix</Declaration>
+			
+			
+			<Anchor>//api/name/apnsWithPrefix</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/apnsWithPrefix</TokenIdentifier>
+			<Abstract type="html">推送是否需要带前缀(一般为昵称)</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL apnsWithPrefix</Declaration>
+			
+			
+			<Anchor>//api/name/apnsWithPrefix</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSOption/apnsWithPrefix</TokenIdentifier>
+			<Abstract type="html">推送是否需要带前缀(一般为昵称)</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL apnsWithPrefix</Declaration>
+			
+			
+			<Anchor>//api/name/apnsWithPrefix</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/setApnsContent:</TokenIdentifier>
+			<Abstract type="html">apns推送文案</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsContent</Declaration>
+			
+			
+			<Anchor>//api/name/apnsContent</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/apnsContent</TokenIdentifier>
+			<Abstract type="html">apns推送文案</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsContent</Declaration>
+			
+			
+			<Anchor>//api/name/apnsContent</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSOption/apnsContent</TokenIdentifier>
+			<Abstract type="html">apns推送文案</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsContent</Declaration>
+			
+			
+			<Anchor>//api/name/apnsContent</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/setApnsSound:</TokenIdentifier>
+			<Abstract type="html">apns推送声音文件</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsSound</Declaration>
+			
+			
+			<Anchor>//api/name/apnsSound</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/apnsSound</TokenIdentifier>
+			<Abstract type="html">apns推送声音文件</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsSound</Declaration>
+			
+			
+			<Anchor>//api/name/apnsSound</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSOption/apnsSound</TokenIdentifier>
+			<Abstract type="html">apns推送声音文件</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsSound</Declaration>
+			
+			
+			<Anchor>//api/name/apnsSound</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/setApnsPayload:</TokenIdentifier>
+			<Abstract type="html">apns推送Payload</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *apnsPayload</Declaration>
+			
+			
+			<Anchor>//api/name/apnsPayload</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSOption/apnsPayload</TokenIdentifier>
+			<Abstract type="html">apns推送Payload</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *apnsPayload</Declaration>
+			
+			
+			<Anchor>//api/name/apnsPayload</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSOption/apnsPayload</TokenIdentifier>
+			<Abstract type="html">apns推送Payload</Abstract>
+			<DeclaredIn>NIMRTSOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *apnsPayload</Declaration>
+			
+			
+			<Anchor>//api/name/apnsPayload</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

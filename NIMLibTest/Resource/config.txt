@@ -1,0 +1,26 @@
+线上服单元测试配置
+
+账号: utestsender4online
+密码: 123456
+
+好友列表: utestreceiver4online  wanglei wanglei1 wanglei2
+
+群列表: 2688677  （普通群,群主）
+	   2689416   (普通群,群成员)
+
+	   2690567   (高级群,群主)
+	   2690601	 (高级群,群成员)
+
+
+聊天室列表: 3024
+
+
+测试服单元测试配置
+账号: utestsender4dev
+密码: 123456
+
+好友列表: utestreceiver4dev  utestreceiver4dev2
+群列表: 11508  （普通群,群主）
+       11480   (高级群,群成员)
+聊天室列表：101  (房间创建者)
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMConversationManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMConversationManagerDelegate</TokenIdentifier>
+			<Abstract type="html">会话管理器回调</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="55"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManagerDelegate/didAddRecentSession:totalUnreadCount:</TokenIdentifier>
+			<Abstract type="html">增加最近会话的回调</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)didAddRecentSession:(NIMRecentSession *)recentSession totalUnreadCount:(NSInteger)totalUnreadCount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recentSession</Name>
+					<Abstract type="html">最近会话</Abstract>
+				</Parameter><Parameter>
+					<Name>totalUnreadCount</Name>
+					<Abstract type="html">目前总未读数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didAddRecentSession:totalUnreadCount:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManagerDelegate/didUpdateRecentSession:totalUnreadCount:</TokenIdentifier>
+			<Abstract type="html">最近会话修改的回调</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)didUpdateRecentSession:(NIMRecentSession *)recentSession totalUnreadCount:(NSInteger)totalUnreadCount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recentSession</Name>
+					<Abstract type="html">最近会话</Abstract>
+				</Parameter><Parameter>
+					<Name>totalUnreadCount</Name>
+					<Abstract type="html">目前总未读数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didUpdateRecentSession:totalUnreadCount:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManagerDelegate/didRemoveRecentSession:totalUnreadCount:</TokenIdentifier>
+			<Abstract type="html">删除最近会话的回调</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)didRemoveRecentSession:(NIMRecentSession *)recentSession totalUnreadCount:(NSInteger)totalUnreadCount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recentSession</Name>
+					<Abstract type="html">最近会话</Abstract>
+				</Parameter><Parameter>
+					<Name>totalUnreadCount</Name>
+					<Abstract type="html">目前总未读数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didRemoveRecentSession:totalUnreadCount:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManagerDelegate/messagesDeletedInSession:</TokenIdentifier>
+			<Abstract type="html">单个会话里所有消息被删除的回调</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)messagesDeletedInSession:(NIMSession *)session</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>session</Name>
+					<Abstract type="html">消息所属会话</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/messagesDeletedInSession:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManagerDelegate/allMessagesDeleted</TokenIdentifier>
+			<Abstract type="html">所有消息被删除的回调</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)allMessagesDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/allMessagesDeleted</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

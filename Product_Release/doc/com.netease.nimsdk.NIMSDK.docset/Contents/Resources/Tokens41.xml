@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMTeam.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMTeam</TokenIdentifier>
+			<Abstract type="html">群组信息</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+            
+			
+			<NodeRef refid="41"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setTeamId:</TokenIdentifier>
+			<Abstract type="html">群ID</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *teamId</Declaration>
+			
+			
+			<Anchor>//api/name/teamId</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/teamId</TokenIdentifier>
+			<Abstract type="html">群ID</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *teamId</Declaration>
+			
+			
+			<Anchor>//api/name/teamId</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/teamId</TokenIdentifier>
+			<Abstract type="html">群ID</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *teamId</Declaration>
+			
+			
+			<Anchor>//api/name/teamId</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setTeamName:</TokenIdentifier>
+			<Abstract type="html">群名称</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *teamName</Declaration>
+			
+			
+			<Anchor>//api/name/teamName</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/teamName</TokenIdentifier>
+			<Abstract type="html">群名称</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *teamName</Declaration>
+			
+			
+			<Anchor>//api/name/teamName</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/teamName</TokenIdentifier>
+			<Abstract type="html">群名称</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *teamName</Declaration>
+			
+			
+			<Anchor>//api/name/teamName</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setType:</TokenIdentifier>
+			<Abstract type="html">群类型</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMTeamType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/type</TokenIdentifier>
+			<Abstract type="html">群类型</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMTeamType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/type</TokenIdentifier>
+			<Abstract type="html">群类型</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMTeamType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setOwner:</TokenIdentifier>
+			<Abstract type="html">群拥有者ID</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *owner</Declaration>
+			
+			
+			<Anchor>//api/name/owner</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/owner</TokenIdentifier>
+			<Abstract type="html">群拥有者ID</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *owner</Declaration>
+			
+			
+			<Anchor>//api/name/owner</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/owner</TokenIdentifier>
+			<Abstract type="html">群拥有者ID</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *owner</Declaration>
+			
+			
+			<Anchor>//api/name/owner</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setIntro:</TokenIdentifier>
+			<Abstract type="html">群介绍</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *intro</Declaration>
+			
+			
+			<Anchor>//api/name/intro</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/intro</TokenIdentifier>
+			<Abstract type="html">群介绍</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *intro</Declaration>
+			
+			
+			<Anchor>//api/name/intro</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/intro</TokenIdentifier>
+			<Abstract type="html">群介绍</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *intro</Declaration>
+			
+			
+			<Anchor>//api/name/intro</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setAnnouncement:</TokenIdentifier>
+			<Abstract type="html">群公告</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *announcement</Declaration>
+			
+			
+			<Anchor>//api/name/announcement</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/announcement</TokenIdentifier>
+			<Abstract type="html">群公告</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *announcement</Declaration>
+			
+			
+			<Anchor>//api/name/announcement</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/announcement</TokenIdentifier>
+			<Abstract type="html">群公告</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *announcement</Declaration>
+			
+			
+			<Anchor>//api/name/announcement</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setMemberNumber:</TokenIdentifier>
+			<Abstract type="html">群成员人数</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger memberNumber</Declaration>
+			
+			
+			<Anchor>//api/name/memberNumber</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/memberNumber</TokenIdentifier>
+			<Abstract type="html">群成员人数</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger memberNumber</Declaration>
+			
+			
+			<Anchor>//api/name/memberNumber</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/memberNumber</TokenIdentifier>
+			<Abstract type="html">群成员人数</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger memberNumber</Declaration>
+			
+			
+			<Anchor>//api/name/memberNumber</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setLevel:</TokenIdentifier>
+			<Abstract type="html">群等级</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger level</Declaration>
+			
+			
+			<Anchor>//api/name/level</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/level</TokenIdentifier>
+			<Abstract type="html">群等级</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger level</Declaration>
+			
+			
+			<Anchor>//api/name/level</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/level</TokenIdentifier>
+			<Abstract type="html">群等级</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger level</Declaration>
+			
+			
+			<Anchor>//api/name/level</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setCreateTime:</TokenIdentifier>
+			<Abstract type="html">群创建时间</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval createTime</Declaration>
+			
+			
+			<Anchor>//api/name/createTime</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/createTime</TokenIdentifier>
+			<Abstract type="html">群创建时间</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval createTime</Declaration>
+			
+			
+			<Anchor>//api/name/createTime</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/createTime</TokenIdentifier>
+			<Abstract type="html">群创建时间</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval createTime</Declaration>
+			
+			
+			<Anchor>//api/name/createTime</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setJoinMode:</TokenIdentifier>
+			<Abstract type="html">群验证方式</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMTeamJoinMode joinMode</Declaration>
+			
+			
+			<Anchor>//api/name/joinMode</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/joinMode</TokenIdentifier>
+			<Abstract type="html">群验证方式</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMTeamJoinMode joinMode</Declaration>
+			
+			
+			<Anchor>//api/name/joinMode</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/joinMode</TokenIdentifier>
+			<Abstract type="html">群验证方式</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMTeamJoinMode joinMode</Declaration>
+			
+			
+			<Anchor>//api/name/joinMode</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setServerCustomInfo:</TokenIdentifier>
+			<Abstract type="html">群服务端自定义信息</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *serverCustomInfo</Declaration>
+			
+			
+			<Anchor>//api/name/serverCustomInfo</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/serverCustomInfo</TokenIdentifier>
+			<Abstract type="html">群服务端自定义信息</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *serverCustomInfo</Declaration>
+			
+			
+			<Anchor>//api/name/serverCustomInfo</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/serverCustomInfo</TokenIdentifier>
+			<Abstract type="html">群服务端自定义信息</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *serverCustomInfo</Declaration>
+			
+			
+			<Anchor>//api/name/serverCustomInfo</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setClientCustomInfo:</TokenIdentifier>
+			<Abstract type="html">群客户端自定义信息</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *clientCustomInfo</Declaration>
+			
+			
+			<Anchor>//api/name/clientCustomInfo</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/clientCustomInfo</TokenIdentifier>
+			<Abstract type="html">群客户端自定义信息</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *clientCustomInfo</Declaration>
+			
+			
+			<Anchor>//api/name/clientCustomInfo</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/clientCustomInfo</TokenIdentifier>
+			<Abstract type="html">群客户端自定义信息</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *clientCustomInfo</Declaration>
+			
+			
+			<Anchor>//api/name/clientCustomInfo</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/setNotifyForNewMsg:</TokenIdentifier>
+			<Abstract type="html">群消息是否需要通知</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL notifyForNewMsg</Declaration>
+			
+			
+			<Anchor>//api/name/notifyForNewMsg</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMTeam/notifyForNewMsg</TokenIdentifier>
+			<Abstract type="html">群消息是否需要通知</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL notifyForNewMsg</Declaration>
+			
+			
+			<Anchor>//api/name/notifyForNewMsg</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMTeam/notifyForNewMsg</TokenIdentifier>
+			<Abstract type="html">群消息是否需要通知</Abstract>
+			<DeclaredIn>NIMTeam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL notifyForNewMsg</Declaration>
+			
+			
+			<Anchor>//api/name/notifyForNewMsg</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

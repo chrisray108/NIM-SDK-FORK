@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NIMNetCallManagerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">NIMSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Netease</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/onCall:netStatus:">- onCall:netStatus:</option>
+		
+		<option value="//api/name/onCall:status:">- onCall:status:</option>
+		
+		<option value="//api/name/onControl:from:type:">- onControl:from:type:</option>
+		
+		<option value="//api/name/onHangup:by:">- onHangup:by:</option>
+		
+		<option value="//api/name/onLocalPreviewReady:">- onLocalPreviewReady:</option>
+		
+		<option value="//api/name/onLocalRecordError:callID:">- onLocalRecordError:callID:</option>
+		
+		<option value="//api/name/onLocalRecordStarted:fileURL:">- onLocalRecordStarted:fileURL:</option>
+		
+		<option value="//api/name/onLocalRecordStopped:fileURL:">- onLocalRecordStopped:fileURL:</option>
+		
+		<option value="//api/name/onReceive:from:type:message:">- onReceive:from:type:message:</option>
+		
+		<option value="//api/name/onRemoteImageReady:">- onRemoteImageReady:</option>
+		
+		<option value="//api/name/onRemoteYUVReady:width:height:">- onRemoteYUVReady:width:height:</option>
+		
+		<option value="//api/name/onResponse:from:accepted:">- onResponse:from:accepted:</option>
+		
+		<option value="//api/name/onResponsedByOther:accepted:">- onResponsedByOther:accepted:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NIMNetCallManagerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>NIMNetCallManagerProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>音视频聊天相关回调</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onReceive:from:type:message:" title="onReceive:from:type:message:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onReceive:from:type:message:">&ndash;&nbsp;onReceive:from:type:message:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>被叫收到呼叫（振铃）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onReceive:(UInt64)<em>callID</em> from:(NSString *)<em>caller</em> type:(NIMNetCallType)<em>type</em> message:(NSString *)<em>extendMessage</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callID</code></th>
+						<td><p>call id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>caller</code></th>
+						<td><p>主叫帐号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>呼叫类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>extendMessage</code></th>
+						<td><p>扩展消息, 透传主叫发起通话时携带的该信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>被叫收到呼叫（振铃）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onResponse:from:accepted:" title="onResponse:from:accepted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onResponse:from:accepted:">&ndash;&nbsp;onResponse:from:accepted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>主叫收到被叫响应</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onResponse:(UInt64)<em>callID</em> from:(NSString *)<em>callee</em> accepted:(BOOL)<em>accepted</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callID</code></th>
+						<td><p>call id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callee</code></th>
+						<td><p>被叫帐号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accepted</code></th>
+						<td><p>是否接听</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>主叫收到被叫响应</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onHangup:by:" title="onHangup:by:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onHangup:by:">&ndash;&nbsp;onHangup:by:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>对方挂断电话</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onHangup:(UInt64)<em>callID</em> by:(NSString *)<em>user</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callID</code></th>
+						<td><p>call id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>对方帐号</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>对方挂断电话</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onResponsedByOther:accepted:" title="onResponsedByOther:accepted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onResponsedByOther:accepted:">&ndash;&nbsp;onResponsedByOther:accepted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>这通呼入通话已经被该帐号其他端处理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onResponsedByOther:(UInt64)<em>callID</em> accepted:(BOOL)<em>accepted</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callID</code></th>
+						<td><p>呼入通话的call id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accepted</code></th>
+						<td><p>是否被接听</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>这通呼入通话已经被该帐号其他端处理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onControl:from:type:" title="onControl:from:type:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onControl:from:type:">&ndash;&nbsp;onControl:from:type:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到对方网络通话控制信息，用于方便通话双方沟通信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onControl:(UInt64)<em>callID</em> from:(NSString *)<em>user</em> type:(NIMNetCallControlType)<em>control</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callID</code></th>
+						<td><p>相关网络通话的call id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>对方帐号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>control</code></th>
+						<td><p>控制类型</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到对方网络通话控制信息，用于方便通话双方沟通信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onCall:status:" title="onCall:status:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onCall:status:">&ndash;&nbsp;onCall:status:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>当前通话状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onCall:(UInt64)<em>callID</em> status:(NIMNetCallStatus)<em>status</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callID</code></th>
+						<td><p>相关网络通话的call id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>通话状态, 收到NIMNetCallStatusDisconnect时无需调用hangup:挂断该通话</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>当前通话状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onCall:netStatus:" title="onCall:netStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onCall:netStatus:">&ndash;&nbsp;onCall:netStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>当前通话网络状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onCall:(UInt64)<em>callID</em> netStatus:(NIMNetCallNetStatus)<em>status</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callID</code></th>
+						<td><p>相关网络通话的call id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>网络状态</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>当前通话网络状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onLocalPreviewReady:" title="onLocalPreviewReady:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onLocalPreviewReady:">&ndash;&nbsp;onLocalPreviewReady:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>本地摄像头预览就绪</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onLocalPreviewReady:(CALayer *)<em>layer</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>layer</code></th>
+						<td><p>本地摄像头预览层</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>本地摄像头预览就绪</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onRemoteYUVReady:width:height:" title="onRemoteYUVReady:width:height:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onRemoteYUVReady:width:height:">&ndash;&nbsp;onRemoteYUVReady:width:height:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>远程视频YUV数据就绪</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onRemoteYUVReady:(NSData *)<em>yuvData</em> width:(NSUInteger)<em>width</em> height:(NSUInteger)<em>height</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>yuvData</code></th>
+						<td><p>远程视频YUV数据, stride为0</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>远程视频画面宽度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>height</code></th>
+						<td><p>远程视频画面长度</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>远程视频YUV数据就绪</p><p>将YUV数据直接渲染在OpenGL上比UIImageView贴图占用更少的cpu</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onRemoteImageReady:" title="onRemoteImageReady:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onRemoteImageReady:">&ndash;&nbsp;onRemoteImageReady:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>远程视频画面就绪</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onRemoteImageReady:(CGImageRef)<em>image</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>image</code></th>
+						<td><p>远程视频画面</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>远程视频画面就绪</p><p>如果你已经使用onRemoteYUVReady:width:height:得到的YUV数据渲染画面, 不要实现该委托以优化性能</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onLocalRecordStarted:fileURL:" title="onLocalRecordStarted:fileURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onLocalRecordStarted:fileURL:">&ndash;&nbsp;onLocalRecordStarted:fileURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>本地录制成功开始</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onLocalRecordStarted:(UInt64)<em>callID</em> fileURL:(NSURL *)<em>fileURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callID</code></th>
+						<td><p>录制的相关网络通话的call id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileURL</code></th>
+						<td><p>录制的文件路径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>本地录制成功开始</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onLocalRecordError:callID:" title="onLocalRecordError:callID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onLocalRecordError:callID:">&ndash;&nbsp;onLocalRecordError:callID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>本地录制发生了错误</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onLocalRecordError:(NSError *)<em>error</em> callID:(UInt64)<em>callID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>错误</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callID</code></th>
+						<td><p>录制错误相关网络通话的call id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>本地录制发生了错误</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onLocalRecordStopped:fileURL:" title="onLocalRecordStopped:fileURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onLocalRecordStopped:fileURL:">&ndash;&nbsp;onLocalRecordStopped:fileURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>本地录制成功结束</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onLocalRecordStopped:(UInt64)<em>callID</em> fileURL:(NSURL *)<em>fileURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callID</code></th>
+						<td><p>录制的相关网络通话的call id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileURL</code></th>
+						<td><p>录制的文件路径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>本地录制成功结束</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NIMNetCallManagerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Netease. All rights reserved. Updated: 2016-04-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

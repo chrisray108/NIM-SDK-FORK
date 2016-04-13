@@ -1,0 +1,10 @@
+//
+//  link_all_lib.xcconfig
+//  NIMLib
+//
+//  Created by chris on 15/11/12.
+//  Copyright © 2015年 Netease. All rights reserved.
+//
+
+
+OTHER_LIBTOOLFLAGS = $(inherited) -l"aacplus" -l"event" -l"nvs" -l"nio" -l"nts" -l"webrtc_audio" -l"G711" -l"openh264" -l"yuv"  -l"opus" -l"crypto"

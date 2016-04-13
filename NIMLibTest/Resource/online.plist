@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appKey</key>
+	<string>45c6af3c98409b18a84451215d0bdd6e</string>
+	<key>appSecret</key>
+	<string>37db56012b60</string>
+	<key>webServer</key>
+	<string>https://api.netease.im/nimserver</string>
+	<key>cerName</key>
+	<string>ENTERPRISE</string>
+	<key>account</key>
+	<string>utestsender4online</string>
+	<key>token</key>
+	<string>123456</string>
+	<key>friendIds</key>
+	<array>
+		<string>utestreceiver4online</string>
+        <string>wanglei</string>
+        <string>wanglei1</string>
+        <string>wanglei2</string>
+	</array>
+	<key>teamIds</key>
+    <array>
+        <string>2688677</string>
+        <string>2689416</string>
+        <string>2690567</string>
+        <string>2690601</string>
+    </array>
+	<key>chatroomIds</key>
+    <array>
+        <string>3024</string>
+    </array>
+</dict>
+</plist>

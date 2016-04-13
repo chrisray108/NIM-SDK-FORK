@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMAudioToTextOption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMAudioToTextOption</TokenIdentifier>
+			<Abstract type="html">语音转文字选项</Abstract>
+			<DeclaredIn>NIMMediaManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioToTextOption/setUrl:</TokenIdentifier>
+			<Abstract type="html">音频URL</Abstract>
+			<DeclaredIn>NIMMediaManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioToTextOption/url</TokenIdentifier>
+			<Abstract type="html">音频URL</Abstract>
+			<DeclaredIn>NIMMediaManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMAudioToTextOption/url</TokenIdentifier>
+			<Abstract type="html">音频URL</Abstract>
+			<DeclaredIn>NIMMediaManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioToTextOption/setFilepath:</TokenIdentifier>
+			<Abstract type="html">音频本地地址</Abstract>
+			<DeclaredIn>NIMMediaManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *filepath</Declaration>
+			
+			
+			<Anchor>//api/name/filepath</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioToTextOption/filepath</TokenIdentifier>
+			<Abstract type="html">音频本地地址</Abstract>
+			<DeclaredIn>NIMMediaManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *filepath</Declaration>
+			
+			
+			<Anchor>//api/name/filepath</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMAudioToTextOption/filepath</TokenIdentifier>
+			<Abstract type="html">音频本地地址</Abstract>
+			<DeclaredIn>NIMMediaManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *filepath</Declaration>
+			
+			
+			<Anchor>//api/name/filepath</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
