@@ -89,7 +89,7 @@ cp -rf "Product_Release/"$SDK_HEADER_NAME $SDK_DIR
 
 cd $SDK_DIR
 
-git add --all
+git add -A
 
 git commit -m "commit version"$SDK_VERSION
 
