@@ -13,19 +13,19 @@ PRODUCT_DIR="Product"
 # Lib Directory
 LIBS_DIR="Libs"
 
-
-echo "start build"
+# Origin Address
+ORIGIN_ADDR=""
 
 for CONFIG in $BUILD_CONFIG
 do
-    BUILD_LIB CONFIG
+    BUILD_LIB $CONFIG
 
     echo "generate product..."
 
     BUILD_DIR=$PRODUCT_DIR'_'$CONFIG
 
-    mkdir -p $BUILD_DIR
-    mv -f ./libNIMSDK.a $BUILD_DIR
+    # mkdir -p $BUILD_DIR
+    # mv -f ./libNIMSDK.a $BUILD_DIR
 
     HEADERS_DIR=$BUILD_DIR/ExportHeaders
 
@@ -47,9 +47,9 @@ do
         cp -rf ./NIMLib/Vendors/Libs/ $LIB_PATH
     fi
 
-    ORIGIN=ORIGIN_ADDRESS CONFIG
-    
-    PUSH_GIT $BUILD_DIR ORIGIN
+    ORIGIN_ADDRESS $CONFIG
+
+    PUSH_GIT $BUILD_DIR
 
 done
 echo "end build"
@@ -71,10 +71,11 @@ function BUILD_LIB()
         export CFLAGS_CONFIG="-fembed-bitcode -Qunused-arguments"
         fi
 
-        #xcodebuild -configuration $1 clean build ARCHS=$ARCH -sdk $XCRUN_SDK TARGET_BUILD_DIR="./build-$ARCH" BUILT_PRODUCTS_DIR="./build-$ARCH" OTHER_CFLAGS="$OTHER_CFLAGS $CFLAGS_CONFIG"
+        xcodebuild -configuration $1 clean build ARCHS=$ARCH -sdk $XCRUN_SDK TARGET_BUILD_DIR="./build-$ARCH" BUILT_PRODUCTS_DIR="./build-$ARCH" OTHER_CFLAGS="$OTHER_CFLAGS $CFLAGS_CONFIG"
     done
-    #lipo -create `find ./build-* -name libNIMLib.a` -output 'libNIMSDK.a'
+    lipo -create `find ./build-* -name libNIMLib.a` -output 'libNIMSDK.a'
 }
+
 
 function PUSH_GIT()
 {
@@ -82,13 +83,12 @@ function PUSH_GIT()
     SDK_NAME="libNIMSDK.a"
     SDK_HEADER_NAME="ExportHeaders"
 
-    SDK_VERSION="2.1.0"
-    ORIGIN_ADDRESS=$2 
+    SDK_VERSION="1.0.0"
 
     echo "start push"
     mkdir -p $SDK_DIR
 
-    git clone $ORIGIN_ADDRESS $SDK_DIR
+    git clone $ORIGIN_ADDR $SDK_DIR
 
     # rm -rf $SDK_DIR/$SDK_NAME
     # cp -rf $1"/"$SDK_NAME $SDK_DIR
@@ -100,7 +100,7 @@ function PUSH_GIT()
 
     git add -A
     git commit -m "commit version"$SDK_VERSION
-    git remote add origin $ORIGIN_ADDRESS
+    git remote add origin $ORIGIN_ADDR
 
     git tag -d $SDK_VERSION
     git push origin :refs/tags/$SDK_VERSION
@@ -111,24 +111,27 @@ function PUSH_GIT()
     cd ..
 
     rm -rf $SDK_DIR
-
     echo "end push"
 }
 
 
 
+
 function ORIGIN_ADDRESS()
 {
-    if [ $1 == "Release" ]
-        return "git@github.com:netease-im/NIM_iOS_SDK.git"
+    if [ "$1" == "Release" ]
+        then
+        ORIGIN_ADDR=""
     fi
-    if [ $1 == "NoLinkLib" ]
-        return ""
+
+    if [ "$1" == "NoLinkLib" ]
+        then
+        ORIGIN_ADDR=""
     fi
-    if [ $1 == "NoOpenSSL" ]
-        return "git@github.com:netease-im/NIM_iOS_SDK_NO_OPENSSL.git"
+
+    if [ "$1" == "NoOpenSSL" ]
+        then
+        ORIGIN_ADDR="git@github.com:netease-im/NIM_iOS_SDK_NO_OPENSSL.git"
     fi
 }
-
-
 
