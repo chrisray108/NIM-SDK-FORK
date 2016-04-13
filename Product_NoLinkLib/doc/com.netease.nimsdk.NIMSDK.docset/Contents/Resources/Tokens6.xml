@@ -86,7 +86,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/NIMChatroomMember/setRoomAvatar:</TokenIdentifier>
-			<Abstract type="html">聊天室内的昵称字段，由用户进聊天室时提交。</Abstract>
+			<Abstract type="html">聊天室内的头像字段，由用户进聊天室时提交。</Abstract>
 			<DeclaredIn>NIMChatroomMember.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, copy) NSString *roomAvatar</Declaration>
@@ -98,7 +98,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/NIMChatroomMember/roomAvatar</TokenIdentifier>
-			<Abstract type="html">聊天室内的昵称字段，由用户进聊天室时提交。</Abstract>
+			<Abstract type="html">聊天室内的头像字段，由用户进聊天室时提交。</Abstract>
 			<DeclaredIn>NIMChatroomMember.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, copy) NSString *roomAvatar</Declaration>
@@ -110,7 +110,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/NIMChatroomMember/roomAvatar</TokenIdentifier>
-			<Abstract type="html">聊天室内的昵称字段，由用户进聊天室时提交。</Abstract>
+			<Abstract type="html">聊天室内的头像字段，由用户进聊天室时提交。</Abstract>
 			<DeclaredIn>NIMChatroomMember.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, copy) NSString *roomAvatar</Declaration>

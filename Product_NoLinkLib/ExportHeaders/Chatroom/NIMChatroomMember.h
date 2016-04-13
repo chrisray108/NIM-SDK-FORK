@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, NIMChatroomMemberType) {
 @property (nonatomic,copy)   NSString *roomNickname;
 
 /**
- *  聊天室内的昵称字段，由用户进聊天室时提交。
+ *  聊天室内的头像字段，由用户进聊天室时提交。
  */
 @property (nonatomic,copy)   NSString *roomAvatar;
 

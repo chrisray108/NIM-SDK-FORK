@@ -13,95 +13,122 @@ PRODUCT_DIR="Product"
 # Lib Directory
 LIBS_DIR="Libs"
 
+
 echo "start build"
 
-# for CONFIG in $BUILD_CONFIG
-# do
-#     echo "start build"$CONFIG
-#     for ARCH in $ARCHS
-#     do
-#         echo "building $ARCH..."
+for CONFIG in $BUILD_CONFIG
+do
+    BUILD_LIB CONFIG
 
-#         if [ "$ARCH" = "i386" -o "$ARCH" = "x86_64" ]
-#         then
-#         XCRUN_SDK="iphonesimulator"
-#         export CFLAGS_CONFIG="-fembed-bitcode-marker"
-#         else
-#         XCRUN_SDK="iphoneos"
-#         export CFLAGS_CONFIG="-fembed-bitcode -Qunused-arguments"
-#         fi
+    echo "generate product..."
 
-#         xcodebuild -configuration $CONFIG clean build ARCHS=$ARCH -sdk $XCRUN_SDK TARGET_BUILD_DIR="./build-$ARCH" BUILT_PRODUCTS_DIR="./build-$ARCH" OTHER_CFLAGS="$OTHER_CFLAGS $CFLAGS_CONFIG"
-#     done
+    BUILD_DIR=$PRODUCT_DIR'_'$CONFIG
 
-#     lipo -create `find ./build-* -name libNIMLib.a` -output 'libNIMSDK.a'
+    mkdir -p $BUILD_DIR
+    mv -f ./libNIMSDK.a $BUILD_DIR
 
-#     echo "generate product..."
+    HEADERS_DIR=$BUILD_DIR/ExportHeaders
 
-#     BUILD_DIR=$PRODUCT_DIR'_'$CONFIG
+    cp -rf ./NIMLib/ExportHeaders/ $HEADERS_DIR
 
-#     mkdir -p $BUILD_DIR
-#     mv -f ./libNIMSDK.a $BUILD_DIR
+    rm -rf ./build ./build-* ./$BUILD_DIR/doc
+    appledoc -o ./$BUILD_DIR/doc --project-name NIMSDK --project-company Netease --company-id com.netease.nimsdk  --keep-intermediate-files ./$BUILD_DIR
+    docpath=$(awk '$1=="Path:" {print $2}' ./$BUILD_DIR/doc/docset-installed.txt)
 
-#     HEADERS_DIR=$BUILD_DIR/ExportHeaders
+    cp -rf $docpath ./$BUILD_DIR/doc
+    rm ./$BUILD_DIR/doc/docset-installed.txt
+    rm -rf ./$BUILD_DIR/doc/docset
+    mv ./$BUILD_DIR/doc/html ./$BUILD_DIR/doc/NIMSDK-iOS
 
-#     cp -rf ./NIMLib/ExportHeaders/ $HEADERS_DIR
+    if [ "$CONFIG" == "NoLinkLib" ]
+        then
+        LIB_PATH=./$BUILD_DIR/$LIBS_DIR 
+        mkdir -p $LIB_PATH
+        cp -rf ./NIMLib/Vendors/Libs/ $LIB_PATH
+    fi
 
-#     rm -rf ./build ./build-* ./$BUILD_DIR/doc
-#     appledoc -o ./$BUILD_DIR/doc --project-name NIMSDK --project-company Netease --company-id com.netease.nimsdk  --keep-intermediate-files ./$BUILD_DIR
-#     docpath=$(awk '$1=="Path:" {print $2}' ./$BUILD_DIR/doc/docset-installed.txt)
+    ORIGIN=ORIGIN_ADDRESS CONFIG
+    
+    PUSH_GIT $BUILD_DIR ORIGIN
 
-#     cp -rf $docpath ./$BUILD_DIR/doc
-#     rm ./$BUILD_DIR/doc/docset-installed.txt
-#     rm -rf ./$BUILD_DIR/doc/docset
-#     mv ./$BUILD_DIR/doc/html ./$BUILD_DIR/doc/NIMSDK-iOS
-
-#     if [ "$CONFIG" == "NoLinkLib" ]
-#         then
-#         LIB_PATH=./$BUILD_DIR/$LIBS_DIR 
-#         mkdir -p $LIB_PATH
-#         cp -rf ./NIMLib/Vendors/Libs/ $LIB_PATH
-#     fi
-# done
-
-
-
+done
 echo "end build"
 
-SDK_DIR="SDK"
-SDK_NAME="libNIMSDK.a"
-SDK_HEADER_NAME="ExportHeaders"
 
-SDK_VERSION="2.1.0"
-ORIGIN_ADDRESS="git@github.com:chrisray108/NIM-SDK-FORK.git" 
+function BUILD_LIB()
+{
+    echo "start build" $1
+    for ARCH in $ARCHS
+    do
+        echo "building $ARCH..."
 
-echo "start push"
+        if [ "$ARCH" = "i386" -o "$ARCH" = "x86_64" ]
+        then
+        XCRUN_SDK="iphonesimulator"
+        export CFLAGS_CONFIG="-fembed-bitcode-marker"
+        else
+        XCRUN_SDK="iphoneos"
+        export CFLAGS_CONFIG="-fembed-bitcode -Qunused-arguments"
+        fi
 
-mkdir -p $SDK_DIR
+        #xcodebuild -configuration $1 clean build ARCHS=$ARCH -sdk $XCRUN_SDK TARGET_BUILD_DIR="./build-$ARCH" BUILT_PRODUCTS_DIR="./build-$ARCH" OTHER_CFLAGS="$OTHER_CFLAGS $CFLAGS_CONFIG"
+    done
+    #lipo -create `find ./build-* -name libNIMLib.a` -output 'libNIMSDK.a'
+}
 
-git clone $ORIGIN_ADDRESS $SDK_DIR
+function PUSH_GIT()
+{
+    SDK_DIR="SDK"
+    SDK_NAME="libNIMSDK.a"
+    SDK_HEADER_NAME="ExportHeaders"
 
-#rm -rf "Product_Release/"$SDK_NAME $SDK_DIR
-#cp -rf "Product_Release/"$SDK_NAME $SDK_DIR
+    SDK_VERSION="2.1.0"
+    ORIGIN_ADDRESS=$2 
 
-rm -rf "Product_Release/"$SDK_HEADER_NAME $SDK_DIR
-cp -rf "Product_Release/"$SDK_HEADER_NAME $SDK_DIR
+    echo "start push"
+    mkdir -p $SDK_DIR
 
-cd $SDK_DIR
+    git clone $ORIGIN_ADDRESS $SDK_DIR
 
-git add -A
+    # rm -rf $SDK_DIR/$SDK_NAME
+    # cp -rf $1"/"$SDK_NAME $SDK_DIR
 
-git commit -m "commit version"$SDK_VERSION
+    rm -rf $SDK_DIR/$SDK_HEADER_NAME
+    cp -rf $1"/"$SDK_HEADER_NAME $SDK_DIR
 
-git remote add origin $ORIGIN_ADDRESS
+    cd $SDK_DIR
 
-git push origin master 
+    git add -A
+    git commit -m "commit version"$SDK_VERSION
+    git remote add origin $ORIGIN_ADDRESS
 
-cd ..
+    git tag -d $SDK_VERSION
+    git push origin :refs/tags/$SDK_VERSION
 
-echo "end push"
+    git tag $SDK_VERSION
+    git push --tag origin master
+
+    cd ..
+
+    rm -rf $SDK_DIR
+
+    echo "end push"
+}
 
 
+
+function ORIGIN_ADDRESS()
+{
+    if [ $1 == "Release" ]
+        return "git@github.com:netease-im/NIM_iOS_SDK.git"
+    fi
+    if [ $1 == "NoLinkLib" ]
+        return ""
+    fi
+    if [ $1 == "NoOpenSSL" ]
+        return "git@github.com:netease-im/NIM_iOS_SDK_NO_OPENSSL.git"
+    fi
+}
 
 
 
