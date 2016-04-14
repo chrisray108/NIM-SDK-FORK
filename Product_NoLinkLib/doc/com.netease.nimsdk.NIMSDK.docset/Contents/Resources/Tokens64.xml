@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMNetCallManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMNetCallManagerDelegate</TokenIdentifier>
+			<Abstract type="html">音视频聊天相关回调</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="64"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onReceive:from:type:message:</TokenIdentifier>
+			<Abstract type="html">被叫收到呼叫（振铃）</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onReceive:(UInt64)callID from:(NSString *)caller type:(NIMNetCallType)type message:(NSString *)extendMessage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">call id</Abstract>
+				</Parameter><Parameter>
+					<Name>caller</Name>
+					<Abstract type="html">主叫帐号</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">呼叫类型</Abstract>
+				</Parameter><Parameter>
+					<Name>extendMessage</Name>
+					<Abstract type="html">扩展消息, 透传主叫发起通话时携带的该信息</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReceive:from:type:message:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onResponse:from:accepted:</TokenIdentifier>
+			<Abstract type="html">主叫收到被叫响应</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onResponse:(UInt64)callID from:(NSString *)callee accepted:(BOOL)accepted</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">call id</Abstract>
+				</Parameter><Parameter>
+					<Name>callee</Name>
+					<Abstract type="html">被叫帐号</Abstract>
+				</Parameter><Parameter>
+					<Name>accepted</Name>
+					<Abstract type="html">是否接听</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onResponse:from:accepted:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onHangup:by:</TokenIdentifier>
+			<Abstract type="html">对方挂断电话</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onHangup:(UInt64)callID by:(NSString *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">call id</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract type="html">对方帐号</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onHangup:by:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onResponsedByOther:accepted:</TokenIdentifier>
+			<Abstract type="html">这通呼入通话已经被该帐号其他端处理</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onResponsedByOther:(UInt64)callID accepted:(BOOL)accepted</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">呼入通话的call id</Abstract>
+				</Parameter><Parameter>
+					<Name>accepted</Name>
+					<Abstract type="html">是否被接听</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onResponsedByOther:accepted:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onControl:from:type:</TokenIdentifier>
+			<Abstract type="html">收到对方网络通话控制信息，用于方便通话双方沟通信息</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onControl:(UInt64)callID from:(NSString *)user type:(NIMNetCallControlType)control</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">相关网络通话的call id</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract type="html">对方帐号</Abstract>
+				</Parameter><Parameter>
+					<Name>control</Name>
+					<Abstract type="html">控制类型</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onControl:from:type:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onCall:status:</TokenIdentifier>
+			<Abstract type="html">当前通话状态</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onCall:(UInt64)callID status:(NIMNetCallStatus)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">相关网络通话的call id</Abstract>
+				</Parameter><Parameter>
+					<Name>status</Name>
+					<Abstract type="html">通话状态, 收到NIMNetCallStatusDisconnect时无需调用hangup:挂断该通话</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onCall:status:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onCall:netStatus:</TokenIdentifier>
+			<Abstract type="html">当前通话网络状态</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onCall:(UInt64)callID netStatus:(NIMNetCallNetStatus)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">相关网络通话的call id</Abstract>
+				</Parameter><Parameter>
+					<Name>status</Name>
+					<Abstract type="html">网络状态</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onCall:netStatus:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onLocalPreviewReady:</TokenIdentifier>
+			<Abstract type="html">本地摄像头预览就绪</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onLocalPreviewReady:(CALayer *)layer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">本地摄像头预览层</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onLocalPreviewReady:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onRemoteYUVReady:width:height:</TokenIdentifier>
+			<Abstract type="html">远程视频YUV数据就绪</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onRemoteYUVReady:(NSData *)yuvData width:(NSUInteger)width height:(NSUInteger)height</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>yuvData</Name>
+					<Abstract type="html">远程视频YUV数据, stride为0</Abstract>
+				</Parameter><Parameter>
+					<Name>width</Name>
+					<Abstract type="html">远程视频画面宽度</Abstract>
+				</Parameter><Parameter>
+					<Name>height</Name>
+					<Abstract type="html">远程视频画面长度</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onRemoteYUVReady:width:height:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onRemoteImageReady:</TokenIdentifier>
+			<Abstract type="html">远程视频画面就绪</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onRemoteImageReady:(CGImageRef)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">远程视频画面</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onRemoteImageReady:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onLocalRecordStarted:fileURL:</TokenIdentifier>
+			<Abstract type="html">本地录制成功开始</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onLocalRecordStarted:(UInt64)callID fileURL:(NSURL *)fileURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">录制的相关网络通话的call id</Abstract>
+				</Parameter><Parameter>
+					<Name>fileURL</Name>
+					<Abstract type="html">录制的文件路径</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onLocalRecordStarted:fileURL:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onLocalRecordError:callID:</TokenIdentifier>
+			<Abstract type="html">本地录制发生了错误</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onLocalRecordError:(NSError *)error callID:(UInt64)callID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">错误</Abstract>
+				</Parameter><Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">录制错误相关网络通话的call id</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onLocalRecordError:callID:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMNetCallManagerDelegate/onLocalRecordStopped:fileURL:</TokenIdentifier>
+			<Abstract type="html">本地录制成功结束</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onLocalRecordStopped:(UInt64)callID fileURL:(NSURL *)fileURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callID</Name>
+					<Abstract type="html">录制的相关网络通话的call id</Abstract>
+				</Parameter><Parameter>
+					<Name>fileURL</Name>
+					<Abstract type="html">录制的文件路径</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onLocalRecordStopped:fileURL:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

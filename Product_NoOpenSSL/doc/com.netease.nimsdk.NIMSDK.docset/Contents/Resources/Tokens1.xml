@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMAudioObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMAudioObject</TokenIdentifier>
+			<Abstract type="html">语音实例对象</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioObject/initWithSourcePath:</TokenIdentifier>
+			<Abstract type="html">语音对象初始化方法</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithSourcePath:(NSString *)sourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourcePath</Name>
+					<Abstract type="html">语音路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">语音实例对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSourcePath:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioObject/initWithData:extension:</TokenIdentifier>
+			<Abstract type="html">语音对象初始化方法</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithData:(NSData *)data extension:(NSString *)extension</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">语音数据</Abstract>
+				</Parameter><Parameter>
+					<Name>extension</Name>
+					<Abstract type="html">语音数据文件后缀名</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">语音实例对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:extension:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioObject/setPath:</TokenIdentifier>
+			<Abstract type="html">语音的本地路径</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioObject/path</TokenIdentifier>
+			<Abstract type="html">语音的本地路径</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMAudioObject/path</TokenIdentifier>
+			<Abstract type="html">语音的本地路径</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioObject/setUrl:</TokenIdentifier>
+			<Abstract type="html">语音的远程路径</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioObject/url</TokenIdentifier>
+			<Abstract type="html">语音的远程路径</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMAudioObject/url</TokenIdentifier>
+			<Abstract type="html">语音的远程路径</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioObject/setDuration:</TokenIdentifier>
+			<Abstract type="html">语音时长，毫秒为单位</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMAudioObject/duration</TokenIdentifier>
+			<Abstract type="html">语音时长，毫秒为单位</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMAudioObject/duration</TokenIdentifier>
+			<Abstract type="html">语音时长，毫秒为单位</Abstract>
+			<DeclaredIn>NIMAudioObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

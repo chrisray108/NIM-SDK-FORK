@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMMessageType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMMessageType</TokenIdentifier>
+			<Abstract type="html">消息内容类型枚举</Abstract>
+			<DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+			
+			<NodeRef refid="87"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageTypeText</TokenIdentifier>
+            <Abstract type="html">文本类型消息
+     </Abstract>
+            <Declaration>NIMMessageTypeText</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageTypeImage</TokenIdentifier>
+            <Abstract type="html">图片类型消息
+     </Abstract>
+            <Declaration>NIMMessageTypeImage</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageTypeAudio</TokenIdentifier>
+            <Abstract type="html">声音类型消息
+     </Abstract>
+            <Declaration>NIMMessageTypeAudio</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageTypeVideo</TokenIdentifier>
+            <Abstract type="html">视频类型消息
+     </Abstract>
+            <Declaration>NIMMessageTypeVideo</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageTypeLocation</TokenIdentifier>
+            <Abstract type="html">位置类型消息
+     </Abstract>
+            <Declaration>NIMMessageTypeLocation</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageTypeNotification</TokenIdentifier>
+            <Abstract type="html">通知类型消息
+     </Abstract>
+            <Declaration>NIMMessageTypeNotification</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageTypeFile</TokenIdentifier>
+            <Abstract type="html">文件类型消息
+     </Abstract>
+            <Declaration>NIMMessageTypeFile</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageTypeTip</TokenIdentifier>
+            <Abstract type="html">提醒类型消息
+     </Abstract>
+            <Declaration>NIMMessageTypeTip</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageTypeCustom</TokenIdentifier>
+            <Abstract type="html">自定义类型消息
+     </Abstract>
+            <Declaration>NIMMessageTypeCustom</Declaration>
+            
+            <DeclaredIn>NIMGlobalDefs.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

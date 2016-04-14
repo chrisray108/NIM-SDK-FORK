@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMChatroomKickReason.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMChatroomKickReason</TokenIdentifier>
+			<Abstract type="html">聊天室被踢原因</Abstract>
+			<DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="79"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMChatroomKickReasonUnknown</TokenIdentifier>
+            <Abstract type="html">未知原因
+     </Abstract>
+            <Declaration>NIMChatroomKickReasonUnknown</Declaration>
+            
+            <DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="79"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMChatroomKickReasonInvalidRoom</TokenIdentifier>
+            <Abstract type="html">聊天室已经解散
+     </Abstract>
+            <Declaration>NIMChatroomKickReasonInvalidRoom</Declaration>
+            
+            <DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="79"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMChatroomKickReasonByManager</TokenIdentifier>
+            <Abstract type="html">被聊天室管理员踢出
+     </Abstract>
+            <Declaration>NIMChatroomKickReasonByManager</Declaration>
+            
+            <DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="79"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMChatroomKickReasonByConflictLogin</TokenIdentifier>
+            <Abstract type="html">多端被踢
+     </Abstract>
+            <Declaration>NIMChatroomKickReasonByConflictLogin</Declaration>
+            
+            <DeclaredIn>NIMChatroomManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="79"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMSDK.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMSDK</TokenIdentifier>
+			<Abstract type="html">NIMSDK</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+            
+			
+			<NodeRef refid="36"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NIMSDK/sharedSDK</TokenIdentifier>
+			<Abstract type="html">获取SDK实例</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)sharedSDK</Declaration>
+			
+			<ReturnValue><Abstract type="html">NIMSDK实例</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedSDK</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/sdkVersion</TokenIdentifier>
+			<Abstract type="html">获取SDK版本号</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)sdkVersion</Declaration>
+			
+			<ReturnValue><Abstract type="html">SDK版本号</Abstract></ReturnValue>
+			<Anchor>//api/name/sdkVersion</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/registerWithAppID:cerName:</TokenIdentifier>
+			<Abstract type="html">初始化SDK</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)registerWithAppID:(NSString *)appKey cerName:(NSString *)cerName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">申请的appKey</Abstract>
+				</Parameter><Parameter>
+					<Name>cerName</Name>
+					<Abstract type="html">推送证书名</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerWithAppID:cerName:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/appKey</TokenIdentifier>
+			<Abstract type="html">获取AppKey</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)appKey</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回当前注册的AppKey</Abstract></ReturnValue>
+			<Anchor>//api/name/appKey</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/isUsingDemoAppKey</TokenIdentifier>
+			<Abstract type="html">是否正在使用Demo AppKey</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isUsingDemoAppKey</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回是否正在使用Demo AppKey</Abstract></ReturnValue>
+			<Anchor>//api/name/isUsingDemoAppKey</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/updateApnsToken:</TokenIdentifier>
+			<Abstract type="html">更新APNS Token</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)updateApnsToken:(NSData *)token</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">APNS Token</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateApnsToken:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/currentLogFilepath</TokenIdentifier>
+			<Abstract type="html">获得SDK Log路径</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)currentLogFilepath</Declaration>
+			
+			<ReturnValue><Abstract type="html">SDK当天log路径</Abstract></ReturnValue>
+			<Anchor>//api/name/currentLogFilepath</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/enableConsoleLog</TokenIdentifier>
+			<Abstract type="html">开启控制台Log</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)enableConsoleLog</Declaration>
+			
+			
+			<Anchor>//api/name/enableConsoleLog</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setLoginManager:</TokenIdentifier>
+			<Abstract type="html">登录管理类 负责登录,注销和相关操作的通知收发</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMLoginManager&gt; loginManager</Declaration>
+			
+			
+			<Anchor>//api/name/loginManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/loginManager</TokenIdentifier>
+			<Abstract type="html">登录管理类 负责登录,注销和相关操作的通知收发</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMLoginManager&gt; loginManager</Declaration>
+			
+			
+			<Anchor>//api/name/loginManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/loginManager</TokenIdentifier>
+			<Abstract type="html">登录管理类 负责登录,注销和相关操作的通知收发</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMLoginManager&gt; loginManager</Declaration>
+			
+			
+			<Anchor>//api/name/loginManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setChatManager:</TokenIdentifier>
+			<Abstract type="html">聊天管理类,负责消息的收发</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMChatManager&gt; chatManager</Declaration>
+			
+			
+			<Anchor>//api/name/chatManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/chatManager</TokenIdentifier>
+			<Abstract type="html">聊天管理类,负责消息的收发</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMChatManager&gt; chatManager</Declaration>
+			
+			
+			<Anchor>//api/name/chatManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/chatManager</TokenIdentifier>
+			<Abstract type="html">聊天管理类,负责消息的收发</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMChatManager&gt; chatManager</Declaration>
+			
+			
+			<Anchor>//api/name/chatManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setConversationManager:</TokenIdentifier>
+			<Abstract type="html">会话管理类,负责消息,最近会话的读写和管理</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMConversationManager&gt; conversationManager</Declaration>
+			
+			
+			<Anchor>//api/name/conversationManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/conversationManager</TokenIdentifier>
+			<Abstract type="html">会话管理类,负责消息,最近会话的读写和管理</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMConversationManager&gt; conversationManager</Declaration>
+			
+			
+			<Anchor>//api/name/conversationManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/conversationManager</TokenIdentifier>
+			<Abstract type="html">会话管理类,负责消息,最近会话的读写和管理</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMConversationManager&gt; conversationManager</Declaration>
+			
+			
+			<Anchor>//api/name/conversationManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setMediaManager:</TokenIdentifier>
+			<Abstract type="html">媒体管理类,负责多媒体相关的接口 (录音等)</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMMediaManager&gt; mediaManager</Declaration>
+			
+			
+			<Anchor>//api/name/mediaManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/mediaManager</TokenIdentifier>
+			<Abstract type="html">媒体管理类,负责多媒体相关的接口 (录音等)</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMMediaManager&gt; mediaManager</Declaration>
+			
+			
+			<Anchor>//api/name/mediaManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/mediaManager</TokenIdentifier>
+			<Abstract type="html">媒体管理类,负责多媒体相关的接口 (录音等)</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMMediaManager&gt; mediaManager</Declaration>
+			
+			
+			<Anchor>//api/name/mediaManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setTeamManager:</TokenIdentifier>
+			<Abstract type="html">群组管理类,负责群组的操作:创建,拉人,踢人,同步等</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMTeamManager&gt; teamManager</Declaration>
+			
+			
+			<Anchor>//api/name/teamManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/teamManager</TokenIdentifier>
+			<Abstract type="html">群组管理类,负责群组的操作:创建,拉人,踢人,同步等</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMTeamManager&gt; teamManager</Declaration>
+			
+			
+			<Anchor>//api/name/teamManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/teamManager</TokenIdentifier>
+			<Abstract type="html">群组管理类,负责群组的操作:创建,拉人,踢人,同步等</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMTeamManager&gt; teamManager</Declaration>
+			
+			
+			<Anchor>//api/name/teamManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setUserManager:</TokenIdentifier>
+			<Abstract type="html">好友管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMUserManager&gt; userManager</Declaration>
+			
+			
+			<Anchor>//api/name/userManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/userManager</TokenIdentifier>
+			<Abstract type="html">好友管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMUserManager&gt; userManager</Declaration>
+			
+			
+			<Anchor>//api/name/userManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/userManager</TokenIdentifier>
+			<Abstract type="html">好友管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMUserManager&gt; userManager</Declaration>
+			
+			
+			<Anchor>//api/name/userManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setSystemNotificationManager:</TokenIdentifier>
+			<Abstract type="html">系统通知管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMSystemNotificationManager&gt; systemNotificationManager</Declaration>
+			
+			
+			<Anchor>//api/name/systemNotificationManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/systemNotificationManager</TokenIdentifier>
+			<Abstract type="html">系统通知管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMSystemNotificationManager&gt; systemNotificationManager</Declaration>
+			
+			
+			<Anchor>//api/name/systemNotificationManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/systemNotificationManager</TokenIdentifier>
+			<Abstract type="html">系统通知管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMSystemNotificationManager&gt; systemNotificationManager</Declaration>
+			
+			
+			<Anchor>//api/name/systemNotificationManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setApnsManager:</TokenIdentifier>
+			<Abstract type="html">APNS推送管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMApnsManager&gt; apnsManager</Declaration>
+			
+			
+			<Anchor>//api/name/apnsManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/apnsManager</TokenIdentifier>
+			<Abstract type="html">APNS推送管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMApnsManager&gt; apnsManager</Declaration>
+			
+			
+			<Anchor>//api/name/apnsManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/apnsManager</TokenIdentifier>
+			<Abstract type="html">APNS推送管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMApnsManager&gt; apnsManager</Declaration>
+			
+			
+			<Anchor>//api/name/apnsManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setResourceManager:</TokenIdentifier>
+			<Abstract type="html">资源管理器,负责文件上传和下载</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMResourceManager&gt; resourceManager</Declaration>
+			
+			
+			<Anchor>//api/name/resourceManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/resourceManager</TokenIdentifier>
+			<Abstract type="html">资源管理器,负责文件上传和下载</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMResourceManager&gt; resourceManager</Declaration>
+			
+			
+			<Anchor>//api/name/resourceManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/resourceManager</TokenIdentifier>
+			<Abstract type="html">资源管理器,负责文件上传和下载</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMResourceManager&gt; resourceManager</Declaration>
+			
+			
+			<Anchor>//api/name/resourceManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setNetCallManager:</TokenIdentifier>
+			<Abstract type="html">网络通话管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMNetCallManager&gt; netCallManager</Declaration>
+			
+			
+			<Anchor>//api/name/netCallManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/netCallManager</TokenIdentifier>
+			<Abstract type="html">网络通话管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMNetCallManager&gt; netCallManager</Declaration>
+			
+			
+			<Anchor>//api/name/netCallManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/netCallManager</TokenIdentifier>
+			<Abstract type="html">网络通话管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMNetCallManager&gt; netCallManager</Declaration>
+			
+			
+			<Anchor>//api/name/netCallManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setRtsManager:</TokenIdentifier>
+			<Abstract type="html">实时会话管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMRTSManager&gt; rtsManager</Declaration>
+			
+			
+			<Anchor>//api/name/rtsManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/rtsManager</TokenIdentifier>
+			<Abstract type="html">实时会话管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMRTSManager&gt; rtsManager</Declaration>
+			
+			
+			<Anchor>//api/name/rtsManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/rtsManager</TokenIdentifier>
+			<Abstract type="html">实时会话管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMRTSManager&gt; rtsManager</Declaration>
+			
+			
+			<Anchor>//api/name/rtsManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/setChatroomManager:</TokenIdentifier>
+			<Abstract type="html">聊天室管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMChatroomManager&gt; chatroomManager</Declaration>
+			
+			
+			<Anchor>//api/name/chatroomManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMSDK/chatroomManager</TokenIdentifier>
+			<Abstract type="html">聊天室管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMChatroomManager&gt; chatroomManager</Declaration>
+			
+			
+			<Anchor>//api/name/chatroomManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMSDK/chatroomManager</TokenIdentifier>
+			<Abstract type="html">聊天室管理类</Abstract>
+			<DeclaredIn>NIMSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;NIMChatroomManager&gt; chatroomManager</Declaration>
+			
+			
+			<Anchor>//api/name/chatroomManager</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

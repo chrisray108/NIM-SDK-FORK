@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMImageOption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMImageOption</TokenIdentifier>
+			<Abstract type="html">图片选项</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageOption/setCompressQuality:</TokenIdentifier>
+			<Abstract type="html">压缩参数默认为0,可传入0.0-1.0的值,如果值为0或者不合法参数时按照0.5进行压缩</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat compressQuality</Declaration>
+			
+			
+			<Anchor>//api/name/compressQuality</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageOption/compressQuality</TokenIdentifier>
+			<Abstract type="html">压缩参数默认为0,可传入0.0-1.0的值,如果值为0或者不合法参数时按照0.5进行压缩</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat compressQuality</Declaration>
+			
+			
+			<Anchor>//api/name/compressQuality</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMImageOption/compressQuality</TokenIdentifier>
+			<Abstract type="html">压缩参数默认为0,可传入0.0-1.0的值,如果值为0或者不合法参数时按照0.5进行压缩</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat compressQuality</Declaration>
+			
+			
+			<Anchor>//api/name/compressQuality</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageOption/setFormat:</TokenIdentifier>
+			<Abstract type="html">图片压缩格式,默认为JPEG</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMImageFormat format</Declaration>
+			
+			
+			<Anchor>//api/name/format</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMImageOption/format</TokenIdentifier>
+			<Abstract type="html">图片压缩格式,默认为JPEG</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMImageFormat format</Declaration>
+			
+			
+			<Anchor>//api/name/format</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMImageOption/format</TokenIdentifier>
+			<Abstract type="html">图片压缩格式,默认为JPEG</Abstract>
+			<DeclaredIn>NIMImageObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NIMImageFormat format</Declaration>
+			
+			
+			<Anchor>//api/name/format</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

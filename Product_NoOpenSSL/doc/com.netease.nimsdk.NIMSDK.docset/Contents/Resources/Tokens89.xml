@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMNetCallControlType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMNetCallControlType</TokenIdentifier>
+			<Abstract type="html">网络通话控制类型</Abstract>
+			<DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="89"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeOpenAudio</TokenIdentifier>
+            <Abstract type="html">开启了音频
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeOpenAudio</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeCloseAudio</TokenIdentifier>
+            <Abstract type="html">关闭了音频
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeCloseAudio</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeOpenVideo</TokenIdentifier>
+            <Abstract type="html">开启了视频
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeOpenVideo</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeCloseVideo</TokenIdentifier>
+            <Abstract type="html">关闭了视频
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeCloseVideo</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeToVideo</TokenIdentifier>
+            <Abstract type="html">切换到视频模式
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeToVideo</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeAgreeToVideo</TokenIdentifier>
+            <Abstract type="html">同意切换到视频模式，用于切到视频模式需要对方同意的场景
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeAgreeToVideo</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeRejectToVideo</TokenIdentifier>
+            <Abstract type="html">拒绝切换到视频模式，用于切到视频模式需要对方同意的场景
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeRejectToVideo</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeToAudio</TokenIdentifier>
+            <Abstract type="html">切换到音频模式
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeToAudio</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeBusyLine</TokenIdentifier>
+            <Abstract type="html">占线
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeBusyLine</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeNoCamera</TokenIdentifier>
+            <Abstract type="html">没有可用摄像头
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeNoCamera</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeBackground</TokenIdentifier>
+            <Abstract type="html">应用切换到了后台
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeBackground</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeFeedabck</TokenIdentifier>
+            <Abstract type="html">收到呼叫请求的反馈，通常用于被叫告诉主叫可以播放回铃音了
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeFeedabck</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeStartLocalRecord</TokenIdentifier>
+            <Abstract type="html">开始本地录制
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeStartLocalRecord</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMNetCallControlTypeStopLocalRecord</TokenIdentifier>
+            <Abstract type="html">结束本地录制
+     </Abstract>
+            <Declaration>NIMNetCallControlTypeStopLocalRecord</Declaration>
+            
+            <DeclaredIn>NIMNetCallManagerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

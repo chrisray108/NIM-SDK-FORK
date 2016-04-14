@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMMessageObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMMessageObject</TokenIdentifier>
+			<Abstract type="html">消息体协议</Abstract>
+			<DeclaredIn>NIMMessageObjectProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMMessageObject/setMessage:</TokenIdentifier>
+			<Abstract type="html">消息体所在的消息对象</Abstract>
+			<DeclaredIn>NIMMessageObjectProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NIMMessage *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMMessageObject/message</TokenIdentifier>
+			<Abstract type="html">消息体所在的消息对象</Abstract>
+			<DeclaredIn>NIMMessageObjectProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NIMMessage *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NIMMessageObject/message</TokenIdentifier>
+			<Abstract type="html">消息体所在的消息对象</Abstract>
+			<DeclaredIn>NIMMessageObjectProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NIMMessage *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMMessageObject/type</TokenIdentifier>
+			<Abstract type="html">消息内容类型</Abstract>
+			<DeclaredIn>NIMMessageObjectProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NIMMessageType)type</Declaration>
+			
+			<ReturnValue><Abstract type="html">消息内容类型</Abstract></ReturnValue>
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

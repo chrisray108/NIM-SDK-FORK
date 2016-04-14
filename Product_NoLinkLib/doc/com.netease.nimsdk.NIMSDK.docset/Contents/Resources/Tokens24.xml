@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMMessageChatroomExtension.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMMessageChatroomExtension</TokenIdentifier>
+			<Abstract type="html">消息内的聊天室拓展信息</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessageChatroomExtension/setRoomNickname:</TokenIdentifier>
+			<Abstract type="html">用户在聊天室内的昵称</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *roomNickname</Declaration>
+			
+			
+			<Anchor>//api/name/roomNickname</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessageChatroomExtension/roomNickname</TokenIdentifier>
+			<Abstract type="html">用户在聊天室内的昵称</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *roomNickname</Declaration>
+			
+			
+			<Anchor>//api/name/roomNickname</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessageChatroomExtension/roomNickname</TokenIdentifier>
+			<Abstract type="html">用户在聊天室内的昵称</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *roomNickname</Declaration>
+			
+			
+			<Anchor>//api/name/roomNickname</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessageChatroomExtension/setRoomAvatar:</TokenIdentifier>
+			<Abstract type="html">用户在聊天室内的头像</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *roomAvatar</Declaration>
+			
+			
+			<Anchor>//api/name/roomAvatar</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessageChatroomExtension/roomAvatar</TokenIdentifier>
+			<Abstract type="html">用户在聊天室内的头像</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *roomAvatar</Declaration>
+			
+			
+			<Anchor>//api/name/roomAvatar</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessageChatroomExtension/roomAvatar</TokenIdentifier>
+			<Abstract type="html">用户在聊天室内的头像</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *roomAvatar</Declaration>
+			
+			
+			<Anchor>//api/name/roomAvatar</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessageChatroomExtension/setRoomAvatarThumbnail:</TokenIdentifier>
+			<Abstract type="html">用户在聊天室内的头像缩略图</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *roomAvatarThumbnail</Declaration>
+			
+			
+			<Anchor>//api/name/roomAvatarThumbnail</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessageChatroomExtension/roomAvatarThumbnail</TokenIdentifier>
+			<Abstract type="html">用户在聊天室内的头像缩略图</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *roomAvatarThumbnail</Declaration>
+			
+			
+			<Anchor>//api/name/roomAvatarThumbnail</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessageChatroomExtension/roomAvatarThumbnail</TokenIdentifier>
+			<Abstract type="html">用户在聊天室内的头像缩略图</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *roomAvatarThumbnail</Declaration>
+			
+			
+			<Anchor>//api/name/roomAvatarThumbnail</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessageChatroomExtension/setRoomExt:</TokenIdentifier>
+			<Abstract type="html">用户在当前聊天室的拓展信息</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *roomExt</Declaration>
+			
+			
+			<Anchor>//api/name/roomExt</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessageChatroomExtension/roomExt</TokenIdentifier>
+			<Abstract type="html">用户在当前聊天室的拓展信息</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *roomExt</Declaration>
+			
+			
+			<Anchor>//api/name/roomExt</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessageChatroomExtension/roomExt</TokenIdentifier>
+			<Abstract type="html">用户在当前聊天室的拓展信息</Abstract>
+			<DeclaredIn>NIMMessageChatroomExtension.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *roomExt</Declaration>
+			
+			
+			<Anchor>//api/name/roomExt</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

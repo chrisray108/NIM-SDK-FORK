@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NIMMessageAttachmentDownloadState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NIMMessageAttachmentDownloadState</TokenIdentifier>
+			<Abstract type="html">消息附件下载状态</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+            
+			
+			<NodeRef refid="85"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageAttachmentDownloadStateNeedDownload</TokenIdentifier>
+            <Abstract type="html">附件需要进行下载 (有附件但并没有下载过)
+     </Abstract>
+            <Declaration>NIMMessageAttachmentDownloadStateNeedDownload</Declaration>
+            
+            <DeclaredIn>NIMMessage.h</DeclaredIn>
+            
+            <NodeRef refid="85"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageAttachmentDownloadStateFailed</TokenIdentifier>
+            <Abstract type="html">附件收取失败 (尝试下载过一次并失败)
+     </Abstract>
+            <Declaration>NIMMessageAttachmentDownloadStateFailed</Declaration>
+            
+            <DeclaredIn>NIMMessage.h</DeclaredIn>
+            
+            <NodeRef refid="85"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageAttachmentDownloadStateDownloading</TokenIdentifier>
+            <Abstract type="html">附件下载中
+     </Abstract>
+            <Declaration>NIMMessageAttachmentDownloadStateDownloading</Declaration>
+            
+            <DeclaredIn>NIMMessage.h</DeclaredIn>
+            
+            <NodeRef refid="85"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NIMMessageAttachmentDownloadStateDownloaded</TokenIdentifier>
+            <Abstract type="html">附件下载成功/无附件
+     </Abstract>
+            <Declaration>NIMMessageAttachmentDownloadStateDownloaded</Declaration>
+            
+            <DeclaredIn>NIMMessage.h</DeclaredIn>
+            
+            <NodeRef refid="85"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

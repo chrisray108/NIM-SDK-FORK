@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMMessage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMMessage</TokenIdentifier>
+			<Abstract type="html">消息结构</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setMessageType:</TokenIdentifier>
+			<Abstract type="html">消息类型</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMMessageType messageType</Declaration>
+			
+			
+			<Anchor>//api/name/messageType</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/messageType</TokenIdentifier>
+			<Abstract type="html">消息类型</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMMessageType messageType</Declaration>
+			
+			
+			<Anchor>//api/name/messageType</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/messageType</TokenIdentifier>
+			<Abstract type="html">消息类型</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMMessageType messageType</Declaration>
+			
+			
+			<Anchor>//api/name/messageType</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setFrom:</TokenIdentifier>
+			<Abstract type="html">消息来源</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *from</Declaration>
+			
+			
+			<Anchor>//api/name/from</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/from</TokenIdentifier>
+			<Abstract type="html">消息来源</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *from</Declaration>
+			
+			
+			<Anchor>//api/name/from</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/from</TokenIdentifier>
+			<Abstract type="html">消息来源</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *from</Declaration>
+			
+			
+			<Anchor>//api/name/from</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setSession:</TokenIdentifier>
+			<Abstract type="html">消息所属会话</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NIMSession *session</Declaration>
+			
+			
+			<Anchor>//api/name/session</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/session</TokenIdentifier>
+			<Abstract type="html">消息所属会话</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NIMSession *session</Declaration>
+			
+			
+			<Anchor>//api/name/session</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/session</TokenIdentifier>
+			<Abstract type="html">消息所属会话</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NIMSession *session</Declaration>
+			
+			
+			<Anchor>//api/name/session</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setMessageId:</TokenIdentifier>
+			<Abstract type="html">消息ID,唯一标识</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *messageId</Declaration>
+			
+			
+			<Anchor>//api/name/messageId</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/messageId</TokenIdentifier>
+			<Abstract type="html">消息ID,唯一标识</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *messageId</Declaration>
+			
+			
+			<Anchor>//api/name/messageId</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/messageId</TokenIdentifier>
+			<Abstract type="html">消息ID,唯一标识</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *messageId</Declaration>
+			
+			
+			<Anchor>//api/name/messageId</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setText:</TokenIdentifier>
+			<Abstract type="html">消息文本</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/text</TokenIdentifier>
+			<Abstract type="html">消息文本</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/text</TokenIdentifier>
+			<Abstract type="html">消息文本</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setMessageObject:</TokenIdentifier>
+			<Abstract type="html">消息附件内容</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;NIMMessageObject&gt; messageObject</Declaration>
+			
+			
+			<Anchor>//api/name/messageObject</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/messageObject</TokenIdentifier>
+			<Abstract type="html">消息附件内容</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;NIMMessageObject&gt; messageObject</Declaration>
+			
+			
+			<Anchor>//api/name/messageObject</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/messageObject</TokenIdentifier>
+			<Abstract type="html">消息附件内容</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;NIMMessageObject&gt; messageObject</Declaration>
+			
+			
+			<Anchor>//api/name/messageObject</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setSetting:</TokenIdentifier>
+			<Abstract type="html">消息设置</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NIMMessageSetting *setting</Declaration>
+			
+			
+			<Anchor>//api/name/setting</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setting</TokenIdentifier>
+			<Abstract type="html">消息设置</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NIMMessageSetting *setting</Declaration>
+			
+			
+			<Anchor>//api/name/setting</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/setting</TokenIdentifier>
+			<Abstract type="html">消息设置</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NIMMessageSetting *setting</Declaration>
+			
+			
+			<Anchor>//api/name/setting</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setApnsContent:</TokenIdentifier>
+			<Abstract type="html">消息推送文案,长度限制200字节</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsContent</Declaration>
+			
+			
+			<Anchor>//api/name/apnsContent</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/apnsContent</TokenIdentifier>
+			<Abstract type="html">消息推送文案,长度限制200字节</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsContent</Declaration>
+			
+			
+			<Anchor>//api/name/apnsContent</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/apnsContent</TokenIdentifier>
+			<Abstract type="html">消息推送文案,长度限制200字节</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *apnsContent</Declaration>
+			
+			
+			<Anchor>//api/name/apnsContent</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setApnsPayload:</TokenIdentifier>
+			<Abstract type="html">消息推送Payload</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *apnsPayload</Declaration>
+			
+			
+			<Anchor>//api/name/apnsPayload</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/apnsPayload</TokenIdentifier>
+			<Abstract type="html">消息推送Payload</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *apnsPayload</Declaration>
+			
+			
+			<Anchor>//api/name/apnsPayload</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/apnsPayload</TokenIdentifier>
+			<Abstract type="html">消息推送Payload</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *apnsPayload</Declaration>
+			
+			
+			<Anchor>//api/name/apnsPayload</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setRemoteExt:</TokenIdentifier>
+			<Abstract type="html">服务器扩展</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *remoteExt</Declaration>
+			
+			
+			<Anchor>//api/name/remoteExt</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/remoteExt</TokenIdentifier>
+			<Abstract type="html">服务器扩展</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *remoteExt</Declaration>
+			
+			
+			<Anchor>//api/name/remoteExt</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/remoteExt</TokenIdentifier>
+			<Abstract type="html">服务器扩展</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *remoteExt</Declaration>
+			
+			
+			<Anchor>//api/name/remoteExt</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setLocalExt:</TokenIdentifier>
+			<Abstract type="html">客户端本地扩展</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *localExt</Declaration>
+			
+			
+			<Anchor>//api/name/localExt</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/localExt</TokenIdentifier>
+			<Abstract type="html">客户端本地扩展</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *localExt</Declaration>
+			
+			
+			<Anchor>//api/name/localExt</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/localExt</TokenIdentifier>
+			<Abstract type="html">客户端本地扩展</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *localExt</Declaration>
+			
+			
+			<Anchor>//api/name/localExt</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setMessageExt:</TokenIdentifier>
+			<Abstract type="html">消息拓展字段</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id messageExt</Declaration>
+			
+			
+			<Anchor>//api/name/messageExt</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/messageExt</TokenIdentifier>
+			<Abstract type="html">消息拓展字段</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id messageExt</Declaration>
+			
+			
+			<Anchor>//api/name/messageExt</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/messageExt</TokenIdentifier>
+			<Abstract type="html">消息拓展字段</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id messageExt</Declaration>
+			
+			
+			<Anchor>//api/name/messageExt</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">消息发送时间</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/timestamp</TokenIdentifier>
+			<Abstract type="html">消息发送时间</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/timestamp</TokenIdentifier>
+			<Abstract type="html">消息发送时间</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setDeliveryState:</TokenIdentifier>
+			<Abstract type="html">消息投递状态 仅针对发送的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMMessageDeliveryState deliveryState</Declaration>
+			
+			
+			<Anchor>//api/name/deliveryState</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/deliveryState</TokenIdentifier>
+			<Abstract type="html">消息投递状态 仅针对发送的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMMessageDeliveryState deliveryState</Declaration>
+			
+			
+			<Anchor>//api/name/deliveryState</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/deliveryState</TokenIdentifier>
+			<Abstract type="html">消息投递状态 仅针对发送的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMMessageDeliveryState deliveryState</Declaration>
+			
+			
+			<Anchor>//api/name/deliveryState</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setAttachmentDownloadState:</TokenIdentifier>
+			<Abstract type="html">消息附件下载状态 仅针对收到的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMMessageAttachmentDownloadState attachmentDownloadState</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentDownloadState</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/attachmentDownloadState</TokenIdentifier>
+			<Abstract type="html">消息附件下载状态 仅针对收到的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMMessageAttachmentDownloadState attachmentDownloadState</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentDownloadState</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/attachmentDownloadState</TokenIdentifier>
+			<Abstract type="html">消息附件下载状态 仅针对收到的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMMessageAttachmentDownloadState attachmentDownloadState</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentDownloadState</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setIsReceivedMsg:</TokenIdentifier>
+			<Abstract type="html">是否是收到的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isReceivedMsg</Declaration>
+			
+			
+			<Anchor>//api/name/isReceivedMsg</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/isReceivedMsg</TokenIdentifier>
+			<Abstract type="html">是否是收到的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isReceivedMsg</Declaration>
+			
+			
+			<Anchor>//api/name/isReceivedMsg</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/isReceivedMsg</TokenIdentifier>
+			<Abstract type="html">是否是收到的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isReceivedMsg</Declaration>
+			
+			
+			<Anchor>//api/name/isReceivedMsg</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setIsOutgoingMsg:</TokenIdentifier>
+			<Abstract type="html">是否是往外发的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isOutgoingMsg</Declaration>
+			
+			
+			<Anchor>//api/name/isOutgoingMsg</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/isOutgoingMsg</TokenIdentifier>
+			<Abstract type="html">是否是往外发的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isOutgoingMsg</Declaration>
+			
+			
+			<Anchor>//api/name/isOutgoingMsg</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/isOutgoingMsg</TokenIdentifier>
+			<Abstract type="html">是否是往外发的消息</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isOutgoingMsg</Declaration>
+			
+			
+			<Anchor>//api/name/isOutgoingMsg</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setIsPlayed:</TokenIdentifier>
+			<Abstract type="html">消息是否被播放过</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isPlayed</Declaration>
+			
+			
+			<Anchor>//api/name/isPlayed</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/isPlayed</TokenIdentifier>
+			<Abstract type="html">消息是否被播放过</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isPlayed</Declaration>
+			
+			
+			<Anchor>//api/name/isPlayed</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/isPlayed</TokenIdentifier>
+			<Abstract type="html">消息是否被播放过</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isPlayed</Declaration>
+			
+			
+			<Anchor>//api/name/isPlayed</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setIsDeleted:</TokenIdentifier>
+			<Abstract type="html">消息是否标记为已删除</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/isDeleted</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/isDeleted</TokenIdentifier>
+			<Abstract type="html">消息是否标记为已删除</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/isDeleted</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/isDeleted</TokenIdentifier>
+			<Abstract type="html">消息是否标记为已删除</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/isDeleted</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setIsRemoteRead:</TokenIdentifier>
+			<Abstract type="html">对端是否已读</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isRemoteRead</Declaration>
+			
+			
+			<Anchor>//api/name/isRemoteRead</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/isRemoteRead</TokenIdentifier>
+			<Abstract type="html">对端是否已读</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isRemoteRead</Declaration>
+			
+			
+			<Anchor>//api/name/isRemoteRead</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/isRemoteRead</TokenIdentifier>
+			<Abstract type="html">对端是否已读</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isRemoteRead</Declaration>
+			
+			
+			<Anchor>//api/name/isRemoteRead</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/setSenderName:</TokenIdentifier>
+			<Abstract type="html">消息发送者名字</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *senderName</Declaration>
+			
+			
+			<Anchor>//api/name/senderName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMMessage/senderName</TokenIdentifier>
+			<Abstract type="html">消息发送者名字</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *senderName</Declaration>
+			
+			
+			<Anchor>//api/name/senderName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMMessage/senderName</TokenIdentifier>
+			<Abstract type="html">消息发送者名字</Abstract>
+			<DeclaredIn>NIMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *senderName</Declaration>
+			
+			
+			<Anchor>//api/name/senderName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

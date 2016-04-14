@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMRTSRecordingInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMRTSRecordingInfo</TokenIdentifier>
+			<Abstract type="html">实时会话录制服务信息</Abstract>
+			<DeclaredIn>NIMRTSRecordingInfo.h</DeclaredIn>
+            
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSRecordingInfo/setService:</TokenIdentifier>
+			<Abstract type="html">录制文件的服务类型</Abstract>
+			<DeclaredIn>NIMRTSRecordingInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) NIMRTSService service</Declaration>
+			
+			
+			<Anchor>//api/name/service</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSRecordingInfo/service</TokenIdentifier>
+			<Abstract type="html">录制文件的服务类型</Abstract>
+			<DeclaredIn>NIMRTSRecordingInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) NIMRTSService service</Declaration>
+			
+			
+			<Anchor>//api/name/service</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSRecordingInfo/service</TokenIdentifier>
+			<Abstract type="html">录制文件的服务类型</Abstract>
+			<DeclaredIn>NIMRTSRecordingInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) NIMRTSService service</Declaration>
+			
+			
+			<Anchor>//api/name/service</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSRecordingInfo/setServerAddress:</TokenIdentifier>
+			<Abstract type="html">录制存储服务器地址</Abstract>
+			<DeclaredIn>NIMRTSRecordingInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *serverAddress</Declaration>
+			
+			
+			<Anchor>//api/name/serverAddress</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSRecordingInfo/serverAddress</TokenIdentifier>
+			<Abstract type="html">录制存储服务器地址</Abstract>
+			<DeclaredIn>NIMRTSRecordingInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *serverAddress</Declaration>
+			
+			
+			<Anchor>//api/name/serverAddress</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSRecordingInfo/serverAddress</TokenIdentifier>
+			<Abstract type="html">录制存储服务器地址</Abstract>
+			<DeclaredIn>NIMRTSRecordingInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *serverAddress</Declaration>
+			
+			
+			<Anchor>//api/name/serverAddress</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSRecordingInfo/setRecordFileName:</TokenIdentifier>
+			<Abstract type="html">录制存储文件名</Abstract>
+			<DeclaredIn>NIMRTSRecordingInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *recordFileName</Declaration>
+			
+			
+			<Anchor>//api/name/recordFileName</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMRTSRecordingInfo/recordFileName</TokenIdentifier>
+			<Abstract type="html">录制存储文件名</Abstract>
+			<DeclaredIn>NIMRTSRecordingInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *recordFileName</Declaration>
+			
+			
+			<Anchor>//api/name/recordFileName</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMRTSRecordingInfo/recordFileName</TokenIdentifier>
+			<Abstract type="html">录制存储文件名</Abstract>
+			<DeclaredIn>NIMRTSRecordingInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *recordFileName</Declaration>
+			
+			
+			<Anchor>//api/name/recordFileName</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

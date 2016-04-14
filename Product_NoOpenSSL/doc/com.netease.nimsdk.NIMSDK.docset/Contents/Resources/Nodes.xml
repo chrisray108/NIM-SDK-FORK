@@ -1,0 +1,2593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>NIMSDK</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
+						<NodeRef refid="53"/>
+						<NodeRef refid="54"/>
+						<NodeRef refid="55"/>
+						<NodeRef refid="56"/>
+						<NodeRef refid="57"/>
+						<NodeRef refid="58"/>
+						<NodeRef refid="59"/>
+						<NodeRef refid="60"/>
+						<NodeRef refid="61"/>
+						<NodeRef refid="62"/>
+						<NodeRef refid="63"/>
+						<NodeRef refid="64"/>
+						<NodeRef refid="65"/>
+						<NodeRef refid="66"/>
+						<NodeRef refid="67"/>
+						<NodeRef refid="68"/>
+						<NodeRef refid="69"/>
+						<NodeRef refid="70"/>
+						<NodeRef refid="71"/>
+						<NodeRef refid="72"/>
+						<NodeRef refid="73"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="74"/>
+						<NodeRef refid="75"/>
+						<NodeRef refid="76"/>
+						<NodeRef refid="77"/>
+						<NodeRef refid="78"/>
+						<NodeRef refid="79"/>
+						<NodeRef refid="80"/>
+						<NodeRef refid="81"/>
+						<NodeRef refid="82"/>
+						<NodeRef refid="83"/>
+						<NodeRef refid="84"/>
+						<NodeRef refid="85"/>
+						<NodeRef refid="86"/>
+						<NodeRef refid="87"/>
+						<NodeRef refid="88"/>
+						<NodeRef refid="89"/>
+						<NodeRef refid="90"/>
+						<NodeRef refid="91"/>
+						<NodeRef refid="92"/>
+						<NodeRef refid="93"/>
+						<NodeRef refid="94"/>
+						<NodeRef refid="95"/>
+						<NodeRef refid="96"/>
+						<NodeRef refid="97"/>
+						<NodeRef refid="98"/>
+						<NodeRef refid="99"/>
+						<NodeRef refid="100"/>
+						<NodeRef refid="101"/>
+						<NodeRef refid="102"/>
+						<NodeRef refid="103"/>
+						<NodeRef refid="104"/>
+						<NodeRef refid="105"/>
+						<NodeRef refid="106"/>
+						<NodeRef refid="107"/>
+						<NodeRef refid="108"/>
+						<NodeRef refid="109"/>
+						<NodeRef refid="110"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="111"/>
+                        <NodeRef refid="112"/>
+                        <NodeRef refid="113"/>
+                        <NodeRef refid="114"/>
+                        <NodeRef refid="115"/>
+                        <NodeRef refid="116"/>
+                        <NodeRef refid="117"/>
+                        <NodeRef refid="118"/>
+                        <NodeRef refid="119"/>
+                        <NodeRef refid="120"/>
+                        <NodeRef refid="121"/>
+                        <NodeRef refid="122"/>
+                        <NodeRef refid="123"/>
+                        <NodeRef refid="124"/>
+                        <NodeRef refid="125"/>
+                        <NodeRef refid="126"/>
+                        <NodeRef refid="127"/>
+                        <NodeRef refid="128"/>
+                        <NodeRef refid="129"/>
+                        <NodeRef refid="130"/>
+                        <NodeRef refid="131"/>
+                        <NodeRef refid="132"/>
+                        <NodeRef refid="133"/>
+                        <NodeRef refid="134"/>
+                        <NodeRef refid="135"/>
+                        <NodeRef refid="136"/>
+                        <NodeRef refid="137"/>
+                        <NodeRef refid="138"/>
+                        <NodeRef refid="139"/>
+                        <NodeRef refid="140"/>
+                        
+                    </Subnodes>
+                </Node>
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>NIMAudioObject</Name>
+            <Path>Classes/NIMAudioObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMAudioObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMAudioObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMAudioObject.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMAudioObject.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>NIMAudioToTextOption</Name>
+            <Path>Classes/NIMAudioToTextOption.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMAudioToTextOption.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMAudioToTextOption.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMAudioToTextOption.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>NIMAutoLoginData</Name>
+            <Path>Classes/NIMAutoLoginData.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMAutoLoginData.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMAutoLoginData.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMAutoLoginData.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>NIMChatroom</Name>
+            <Path>Classes/NIMChatroom.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMChatroom.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMChatroom.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMChatroom.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>NIMChatroomEnterRequest</Name>
+            <Path>Classes/NIMChatroomEnterRequest.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomEnterRequest.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomEnterRequest.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMChatroomEnterRequest.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>NIMChatroomMember</Name>
+            <Path>Classes/NIMChatroomMember.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMember.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMember.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMember.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>NIMChatroomMemberKickRequest</Name>
+            <Path>Classes/NIMChatroomMemberKickRequest.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMemberKickRequest.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMemberKickRequest.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMemberKickRequest.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>NIMChatroomMemberRequest</Name>
+            <Path>Classes/NIMChatroomMemberRequest.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMemberRequest.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMemberRequest.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMemberRequest.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>NIMChatroomMemberUpdateRequest</Name>
+            <Path>Classes/NIMChatroomMemberUpdateRequest.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMemberUpdateRequest.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMemberUpdateRequest.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMemberUpdateRequest.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>NIMChatroomMembersByIdsRequest</Name>
+            <Path>Classes/NIMChatroomMembersByIdsRequest.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMembersByIdsRequest.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMembersByIdsRequest.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMChatroomMembersByIdsRequest.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>NIMChatroomNotificationContent</Name>
+            <Path>Classes/NIMChatroomNotificationContent.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomNotificationContent.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomNotificationContent.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMChatroomNotificationContent.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>NIMChatroomNotificationMember</Name>
+            <Path>Classes/NIMChatroomNotificationMember.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomNotificationMember.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMChatroomNotificationMember.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMChatroomNotificationMember.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>NIMCreateTeamOption</Name>
+            <Path>Classes/NIMCreateTeamOption.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMCreateTeamOption.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMCreateTeamOption.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMCreateTeamOption.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>NIMCustomObject</Name>
+            <Path>Classes/NIMCustomObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMCustomObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMCustomObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMCustomObject.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMCustomObject.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>NIMCustomSystemNotification</Name>
+            <Path>Classes/NIMCustomSystemNotification.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMCustomSystemNotification.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMCustomSystemNotification.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMCustomSystemNotification.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>NIMCustomSystemNotificationSetting</Name>
+            <Path>Classes/NIMCustomSystemNotificationSetting.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMCustomSystemNotificationSetting.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMCustomSystemNotificationSetting.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMCustomSystemNotificationSetting.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
+            <Name>NIMFileObject</Name>
+            <Path>Classes/NIMFileObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMFileObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMFileObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMFileObject.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMFileObject.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>NIMHistoryMessageSearchOption</Name>
+            <Path>Classes/NIMHistoryMessageSearchOption.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMHistoryMessageSearchOption.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMHistoryMessageSearchOption.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMHistoryMessageSearchOption.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>NIMImageObject</Name>
+            <Path>Classes/NIMImageObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMImageObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMImageObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMImageObject.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMImageObject.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>NIMImageOption</Name>
+            <Path>Classes/NIMImageOption.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMImageOption.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMImageOption.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMImageOption.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>NIMLocationObject</Name>
+            <Path>Classes/NIMLocationObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMLocationObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMLocationObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMLocationObject.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMLocationObject.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>NIMLoginClient</Name>
+            <Path>Classes/NIMLoginClient.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMLoginClient.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMLoginClient.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMLoginClient.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
+            <Name>NIMMessage</Name>
+            <Path>Classes/NIMMessage.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMMessage.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMMessage.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMMessage.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="24" type="file" documentType="reference">
+            <Name>NIMMessageChatroomExtension</Name>
+            <Path>Classes/NIMMessageChatroomExtension.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMMessageChatroomExtension.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMMessageChatroomExtension.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMMessageChatroomExtension.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="25" type="file" documentType="reference">
+            <Name>NIMMessageReceipt</Name>
+            <Path>Classes/NIMMessageReceipt.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMMessageReceipt.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMMessageReceipt.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMMessageReceipt.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMMessageReceipt.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="26" type="file" documentType="reference">
+            <Name>NIMMessageSearchOption</Name>
+            <Path>Classes/NIMMessageSearchOption.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMMessageSearchOption.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMMessageSearchOption.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMMessageSearchOption.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="27" type="file" documentType="reference">
+            <Name>NIMMessageSetting</Name>
+            <Path>Classes/NIMMessageSetting.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMMessageSetting.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMMessageSetting.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMMessageSetting.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="28" type="file" documentType="reference">
+            <Name>NIMNetCallNotificationContent</Name>
+            <Path>Classes/NIMNetCallNotificationContent.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMNetCallNotificationContent.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMNetCallNotificationContent.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMNetCallNotificationContent.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="29" type="file" documentType="reference">
+            <Name>NIMNetCallOption</Name>
+            <Path>Classes/NIMNetCallOption.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMNetCallOption.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMNetCallOption.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMNetCallOption.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="30" type="file" documentType="reference">
+            <Name>NIMNotificationContent</Name>
+            <Path>Classes/NIMNotificationContent.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMNotificationContent.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMNotificationContent.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMNotificationContent.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="31" type="file" documentType="reference">
+            <Name>NIMNotificationObject</Name>
+            <Path>Classes/NIMNotificationObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMNotificationObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMNotificationObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMNotificationObject.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="32" type="file" documentType="reference">
+            <Name>NIMPushNotificationSetting</Name>
+            <Path>Classes/NIMPushNotificationSetting.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMPushNotificationSetting.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMPushNotificationSetting.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMPushNotificationSetting.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="33" type="file" documentType="reference">
+            <Name>NIMRTSOption</Name>
+            <Path>Classes/NIMRTSOption.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMRTSOption.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMRTSOption.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMRTSOption.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="34" type="file" documentType="reference">
+            <Name>NIMRTSRecordingInfo</Name>
+            <Path>Classes/NIMRTSRecordingInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMRTSRecordingInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMRTSRecordingInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMRTSRecordingInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="35" type="file" documentType="reference">
+            <Name>NIMRecentSession</Name>
+            <Path>Classes/NIMRecentSession.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMRecentSession.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMRecentSession.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMRecentSession.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="36" type="file" documentType="reference">
+            <Name>NIMSDK</Name>
+            <Path>Classes/NIMSDK.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMSDK.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMSDK.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMSDK.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMSDK.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMSDK.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="37" type="file" documentType="reference">
+            <Name>NIMSDKConfig</Name>
+            <Path>Classes/NIMSDKConfig.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMSDKConfig.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMSDKConfig.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMSDKConfig.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMSDKConfig.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMSDKConfig.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="38" type="file" documentType="reference">
+            <Name>NIMSession</Name>
+            <Path>Classes/NIMSession.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMSession.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMSession.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMSession.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMSession.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="39" type="file" documentType="reference">
+            <Name>NIMSystemNotification</Name>
+            <Path>Classes/NIMSystemNotification.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMSystemNotification.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMSystemNotification.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMSystemNotification.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="40" type="file" documentType="reference">
+            <Name>NIMSystemNotificationFilter</Name>
+            <Path>Classes/NIMSystemNotificationFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMSystemNotificationFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMSystemNotificationFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMSystemNotificationFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="41" type="file" documentType="reference">
+            <Name>NIMTeam</Name>
+            <Path>Classes/NIMTeam.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMTeam.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMTeam.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMTeam.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="42" type="file" documentType="reference">
+            <Name>NIMTeamMember</Name>
+            <Path>Classes/NIMTeamMember.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMTeamMember.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMTeamMember.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMTeamMember.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="43" type="file" documentType="reference">
+            <Name>NIMTeamNotificationContent</Name>
+            <Path>Classes/NIMTeamNotificationContent.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMTeamNotificationContent.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMTeamNotificationContent.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMTeamNotificationContent.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="44" type="file" documentType="reference">
+            <Name>NIMUpdateTeamInfoAttachment</Name>
+            <Path>Classes/NIMUpdateTeamInfoAttachment.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMUpdateTeamInfoAttachment.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMUpdateTeamInfoAttachment.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMUpdateTeamInfoAttachment.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="45" type="file" documentType="reference">
+            <Name>NIMUser</Name>
+            <Path>Classes/NIMUser.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMUser.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMUser.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMUser.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMUser.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="46" type="file" documentType="reference">
+            <Name>NIMUserAddAttachment</Name>
+            <Path>Classes/NIMUserAddAttachment.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMUserAddAttachment.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMUserAddAttachment.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMUserAddAttachment.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="47" type="file" documentType="reference">
+            <Name>NIMUserInfo</Name>
+            <Path>Classes/NIMUserInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMUserInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMUserInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMUserInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="48" type="file" documentType="reference">
+            <Name>NIMUserRequest</Name>
+            <Path>Classes/NIMUserRequest.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMUserRequest.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMUserRequest.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMUserRequest.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="49" type="file" documentType="reference">
+            <Name>NIMVideoObject</Name>
+            <Path>Classes/NIMVideoObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/NIMVideoObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/NIMVideoObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/NIMVideoObject.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/NIMVideoObject.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+		
+        <Node id="50" type="file" documentType="reference">
+            <Name>NIMChatManager</Name>
+            <Path>Protocols/NIMChatManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMChatManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMChatManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMChatManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="51" type="file" documentType="reference">
+            <Name>NIMChatManagerDelegate</Name>
+            <Path>Protocols/NIMChatManagerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMChatManagerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMChatManagerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMChatManagerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="52" type="file" documentType="reference">
+            <Name>NIMChatroomManager</Name>
+            <Path>Protocols/NIMChatroomManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMChatroomManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMChatroomManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMChatroomManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="53" type="file" documentType="reference">
+            <Name>NIMChatroomManagerDelegate</Name>
+            <Path>Protocols/NIMChatroomManagerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMChatroomManagerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMChatroomManagerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMChatroomManagerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="54" type="file" documentType="reference">
+            <Name>NIMConversationManager</Name>
+            <Path>Protocols/NIMConversationManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMConversationManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMConversationManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMConversationManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="55" type="file" documentType="reference">
+            <Name>NIMConversationManagerDelegate</Name>
+            <Path>Protocols/NIMConversationManagerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMConversationManagerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMConversationManagerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMConversationManagerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="56" type="file" documentType="reference">
+            <Name>NIMCustomAttachment</Name>
+            <Path>Protocols/NIMCustomAttachment.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMCustomAttachment.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMCustomAttachment.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMCustomAttachment.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="57" type="file" documentType="reference">
+            <Name>NIMCustomAttachmentCoding</Name>
+            <Path>Protocols/NIMCustomAttachmentCoding.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMCustomAttachmentCoding.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMCustomAttachmentCoding.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMCustomAttachmentCoding.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="58" type="file" documentType="reference">
+            <Name>NIMLoginManager</Name>
+            <Path>Protocols/NIMLoginManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMLoginManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMLoginManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMLoginManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="59" type="file" documentType="reference">
+            <Name>NIMLoginManagerDelegate</Name>
+            <Path>Protocols/NIMLoginManagerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMLoginManagerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMLoginManagerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMLoginManagerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="60" type="file" documentType="reference">
+            <Name>NIMMediaManager</Name>
+            <Path>Protocols/NIMMediaManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMMediaManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMMediaManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/NIMMediaManager.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMMediaManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="61" type="file" documentType="reference">
+            <Name>NIMMediaManagerDelgate</Name>
+            <Path>Protocols/NIMMediaManagerDelgate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMMediaManagerDelgate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMMediaManagerDelgate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMMediaManagerDelgate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="62" type="file" documentType="reference">
+            <Name>NIMMessageObject</Name>
+            <Path>Protocols/NIMMessageObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMMessageObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMMessageObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/NIMMessageObject.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMMessageObject.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="63" type="file" documentType="reference">
+            <Name>NIMNetCallManager</Name>
+            <Path>Protocols/NIMNetCallManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMNetCallManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMNetCallManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMNetCallManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="64" type="file" documentType="reference">
+            <Name>NIMNetCallManagerDelegate</Name>
+            <Path>Protocols/NIMNetCallManagerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMNetCallManagerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMNetCallManagerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMNetCallManagerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="65" type="file" documentType="reference">
+            <Name>NIMRTSManager</Name>
+            <Path>Protocols/NIMRTSManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMRTSManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMRTSManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMRTSManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="66" type="file" documentType="reference">
+            <Name>NIMRTSManagerDelegate</Name>
+            <Path>Protocols/NIMRTSManagerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMRTSManagerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMRTSManagerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMRTSManagerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="67" type="file" documentType="reference">
+            <Name>NIMResourceManager</Name>
+            <Path>Protocols/NIMResourceManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMResourceManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMResourceManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMResourceManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="68" type="file" documentType="reference">
+            <Name>NIMSystemNotificationManager</Name>
+            <Path>Protocols/NIMSystemNotificationManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMSystemNotificationManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMSystemNotificationManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMSystemNotificationManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="69" type="file" documentType="reference">
+            <Name>NIMSystemNotificationManagerDelegate</Name>
+            <Path>Protocols/NIMSystemNotificationManagerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMSystemNotificationManagerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMSystemNotificationManagerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMSystemNotificationManagerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="70" type="file" documentType="reference">
+            <Name>NIMTeamManager</Name>
+            <Path>Protocols/NIMTeamManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMTeamManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMTeamManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMTeamManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="71" type="file" documentType="reference">
+            <Name>NIMTeamManagerDelegate</Name>
+            <Path>Protocols/NIMTeamManagerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMTeamManagerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMTeamManagerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMTeamManagerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="72" type="file" documentType="reference">
+            <Name>NIMUserManager</Name>
+            <Path>Protocols/NIMUserManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMUserManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMUserManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMUserManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="73" type="file" documentType="reference">
+            <Name>NIMUserManagerDelegate</Name>
+            <Path>Protocols/NIMUserManagerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NIMUserManagerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NIMUserManagerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NIMUserManagerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="74" type="file" documentType="reference">
+            <Name>NIMAudioOutputDevice</Name>
+            <Path>Constants/NIMAudioOutputDevice.html</Path>
+            
+        </Node>
+		<Node id="75" type="file" documentType="reference">
+            <Name>NIMAudioType</Name>
+            <Path>Constants/NIMAudioType.html</Path>
+            
+        </Node>
+		<Node id="76" type="file" documentType="reference">
+            <Name>NIMChatroomConnectionState</Name>
+            <Path>Constants/NIMChatroomConnectionState.html</Path>
+            
+        </Node>
+		<Node id="77" type="file" documentType="reference">
+            <Name>NIMChatroomEventType</Name>
+            <Path>Constants/NIMChatroomEventType.html</Path>
+            
+        </Node>
+		<Node id="78" type="file" documentType="reference">
+            <Name>NIMChatroomFetchMemberType</Name>
+            <Path>Constants/NIMChatroomFetchMemberType.html</Path>
+            
+        </Node>
+		<Node id="79" type="file" documentType="reference">
+            <Name>NIMChatroomKickReason</Name>
+            <Path>Constants/NIMChatroomKickReason.html</Path>
+            
+        </Node>
+		<Node id="80" type="file" documentType="reference">
+            <Name>NIMChatroomMemberType</Name>
+            <Path>Constants/NIMChatroomMemberType.html</Path>
+            
+        </Node>
+		<Node id="81" type="file" documentType="reference">
+            <Name>NIMKickReason</Name>
+            <Path>Constants/NIMKickReason.html</Path>
+            
+        </Node>
+		<Node id="82" type="file" documentType="reference">
+            <Name>NIMLocalErrorCode</Name>
+            <Path>Constants/NIMLocalErrorCode.html</Path>
+            
+        </Node>
+		<Node id="83" type="file" documentType="reference">
+            <Name>NIMLoginClientType</Name>
+            <Path>Constants/NIMLoginClientType.html</Path>
+            
+        </Node>
+		<Node id="84" type="file" documentType="reference">
+            <Name>NIMLoginStep</Name>
+            <Path>Constants/NIMLoginStep.html</Path>
+            
+        </Node>
+		<Node id="85" type="file" documentType="reference">
+            <Name>NIMMessageAttachmentDownloadState</Name>
+            <Path>Constants/NIMMessageAttachmentDownloadState.html</Path>
+            
+        </Node>
+		<Node id="86" type="file" documentType="reference">
+            <Name>NIMMessageDeliveryState</Name>
+            <Path>Constants/NIMMessageDeliveryState.html</Path>
+            
+        </Node>
+		<Node id="87" type="file" documentType="reference">
+            <Name>NIMMessageType</Name>
+            <Path>Constants/NIMMessageType.html</Path>
+            
+        </Node>
+		<Node id="88" type="file" documentType="reference">
+            <Name>NIMNetCallCamera</Name>
+            <Path>Constants/NIMNetCallCamera.html</Path>
+            
+        </Node>
+		<Node id="89" type="file" documentType="reference">
+            <Name>NIMNetCallControlType</Name>
+            <Path>Constants/NIMNetCallControlType.html</Path>
+            
+        </Node>
+		<Node id="90" type="file" documentType="reference">
+            <Name>NIMNetCallEventType</Name>
+            <Path>Constants/NIMNetCallEventType.html</Path>
+            
+        </Node>
+		<Node id="91" type="file" documentType="reference">
+            <Name>NIMNetCallNetStatus</Name>
+            <Path>Constants/NIMNetCallNetStatus.html</Path>
+            
+        </Node>
+		<Node id="92" type="file" documentType="reference">
+            <Name>NIMNetCallStatus</Name>
+            <Path>Constants/NIMNetCallStatus.html</Path>
+            
+        </Node>
+		<Node id="93" type="file" documentType="reference">
+            <Name>NIMNetCallType</Name>
+            <Path>Constants/NIMNetCallType.html</Path>
+            
+        </Node>
+		<Node id="94" type="file" documentType="reference">
+            <Name>NIMNetCallVideoQuality</Name>
+            <Path>Constants/NIMNetCallVideoQuality.html</Path>
+            
+        </Node>
+		<Node id="95" type="file" documentType="reference">
+            <Name>NIMNotificationType</Name>
+            <Path>Constants/NIMNotificationType.html</Path>
+            
+        </Node>
+		<Node id="96" type="file" documentType="reference">
+            <Name>NIMPushNotificationDisplayType</Name>
+            <Path>Constants/NIMPushNotificationDisplayType.html</Path>
+            
+        </Node>
+		<Node id="97" type="file" documentType="reference">
+            <Name>NIMRTSService</Name>
+            <Path>Constants/NIMRTSService.html</Path>
+            
+        </Node>
+		<Node id="98" type="file" documentType="reference">
+            <Name>NIMRTSStatus</Name>
+            <Path>Constants/NIMRTSStatus.html</Path>
+            
+        </Node>
+		<Node id="99" type="file" documentType="reference">
+            <Name>NIMRemoteErrorCode</Name>
+            <Path>Constants/NIMRemoteErrorCode.html</Path>
+            
+        </Node>
+		<Node id="100" type="file" documentType="reference">
+            <Name>NIMSessionType</Name>
+            <Path>Constants/NIMSessionType.html</Path>
+            
+        </Node>
+		<Node id="101" type="file" documentType="reference">
+            <Name>NIMSystemNotificationType</Name>
+            <Path>Constants/NIMSystemNotificationType.html</Path>
+            
+        </Node>
+		<Node id="102" type="file" documentType="reference">
+            <Name>NIMTeamApplyStatus</Name>
+            <Path>Constants/NIMTeamApplyStatus.html</Path>
+            
+        </Node>
+		<Node id="103" type="file" documentType="reference">
+            <Name>NIMTeamJoinMode</Name>
+            <Path>Constants/NIMTeamJoinMode.html</Path>
+            
+        </Node>
+		<Node id="104" type="file" documentType="reference">
+            <Name>NIMTeamMemberType</Name>
+            <Path>Constants/NIMTeamMemberType.html</Path>
+            
+        </Node>
+		<Node id="105" type="file" documentType="reference">
+            <Name>NIMTeamOperationType</Name>
+            <Path>Constants/NIMTeamOperationType.html</Path>
+            
+        </Node>
+		<Node id="106" type="file" documentType="reference">
+            <Name>NIMTeamType</Name>
+            <Path>Constants/NIMTeamType.html</Path>
+            
+        </Node>
+		<Node id="107" type="file" documentType="reference">
+            <Name>NIMTeamUpdateTag</Name>
+            <Path>Constants/NIMTeamUpdateTag.html</Path>
+            
+        </Node>
+		<Node id="108" type="file" documentType="reference">
+            <Name>NIMUserGender</Name>
+            <Path>Constants/NIMUserGender.html</Path>
+            
+        </Node>
+		<Node id="109" type="file" documentType="reference">
+            <Name>NIMUserInfoUpdateTag</Name>
+            <Path>Constants/NIMUserInfoUpdateTag.html</Path>
+            
+        </Node>
+		<Node id="110" type="file" documentType="reference">
+            <Name>NIMUserOperation</Name>
+            <Path>Constants/NIMUserOperation.html</Path>
+            
+        </Node>
+		
+        <Node id="111" type="file" documentType="reference">
+            <Name>NIMApnsHandler</Name>
+            <Path>Blocks/NIMApnsHandler.html</Path>
+            
+        </Node>
+        <Node id="112" type="file" documentType="reference">
+            <Name>NIMAudioToTextBlock</Name>
+            <Path>Blocks/NIMAudioToTextBlock.html</Path>
+            
+        </Node>
+        <Node id="113" type="file" documentType="reference">
+            <Name>NIMBadgeHandler</Name>
+            <Path>Blocks/NIMBadgeHandler.html</Path>
+            
+        </Node>
+        <Node id="114" type="file" documentType="reference">
+            <Name>NIMChatroomEnterHandler</Name>
+            <Path>Blocks/NIMChatroomEnterHandler.html</Path>
+            
+        </Node>
+        <Node id="115" type="file" documentType="reference">
+            <Name>NIMChatroomHandler</Name>
+            <Path>Blocks/NIMChatroomHandler.html</Path>
+            
+        </Node>
+        <Node id="116" type="file" documentType="reference">
+            <Name>NIMChatroomInfoHandler</Name>
+            <Path>Blocks/NIMChatroomInfoHandler.html</Path>
+            
+        </Node>
+        <Node id="117" type="file" documentType="reference">
+            <Name>NIMChatroomMemberHandler</Name>
+            <Path>Blocks/NIMChatroomMemberHandler.html</Path>
+            
+        </Node>
+        <Node id="118" type="file" documentType="reference">
+            <Name>NIMChatroomMembersHandler</Name>
+            <Path>Blocks/NIMChatroomMembersHandler.html</Path>
+            
+        </Node>
+        <Node id="119" type="file" documentType="reference">
+            <Name>NIMDownloadCompleteBlock</Name>
+            <Path>Blocks/NIMDownloadCompleteBlock.html</Path>
+            
+        </Node>
+        <Node id="120" type="file" documentType="reference">
+            <Name>NIMFetchChatroomHistoryBlock</Name>
+            <Path>Blocks/NIMFetchChatroomHistoryBlock.html</Path>
+            
+        </Node>
+        <Node id="121" type="file" documentType="reference">
+            <Name>NIMFetchMessageHistoryBlock</Name>
+            <Path>Blocks/NIMFetchMessageHistoryBlock.html</Path>
+            
+        </Node>
+        <Node id="122" type="file" documentType="reference">
+            <Name>NIMHttpProgressBlock</Name>
+            <Path>Blocks/NIMHttpProgressBlock.html</Path>
+            
+        </Node>
+        <Node id="123" type="file" documentType="reference">
+            <Name>NIMLoginHandler</Name>
+            <Path>Blocks/NIMLoginHandler.html</Path>
+            
+        </Node>
+        <Node id="124" type="file" documentType="reference">
+            <Name>NIMNetCallResponseHandler</Name>
+            <Path>Blocks/NIMNetCallResponseHandler.html</Path>
+            
+        </Node>
+        <Node id="125" type="file" documentType="reference">
+            <Name>NIMNetCallStartHandler</Name>
+            <Path>Blocks/NIMNetCallStartHandler.html</Path>
+            
+        </Node>
+        <Node id="126" type="file" documentType="reference">
+            <Name>NIMRTSRequestHandler</Name>
+            <Path>Blocks/NIMRTSRequestHandler.html</Path>
+            
+        </Node>
+        <Node id="127" type="file" documentType="reference">
+            <Name>NIMRTSResponseHandler</Name>
+            <Path>Blocks/NIMRTSResponseHandler.html</Path>
+            
+        </Node>
+        <Node id="128" type="file" documentType="reference">
+            <Name>NIMRemoveRemoteSessionBlock</Name>
+            <Path>Blocks/NIMRemoveRemoteSessionBlock.html</Path>
+            
+        </Node>
+        <Node id="129" type="file" documentType="reference">
+            <Name>NIMSearchMessageBlock</Name>
+            <Path>Blocks/NIMSearchMessageBlock.html</Path>
+            
+        </Node>
+        <Node id="130" type="file" documentType="reference">
+            <Name>NIMSendMessageReceiptBlock</Name>
+            <Path>Blocks/NIMSendMessageReceiptBlock.html</Path>
+            
+        </Node>
+        <Node id="131" type="file" documentType="reference">
+            <Name>NIMSystemNotificationHandler</Name>
+            <Path>Blocks/NIMSystemNotificationHandler.html</Path>
+            
+        </Node>
+        <Node id="132" type="file" documentType="reference">
+            <Name>NIMTeamApplyHandler</Name>
+            <Path>Blocks/NIMTeamApplyHandler.html</Path>
+            
+        </Node>
+        <Node id="133" type="file" documentType="reference">
+            <Name>NIMTeamCreateHandler</Name>
+            <Path>Blocks/NIMTeamCreateHandler.html</Path>
+            
+        </Node>
+        <Node id="134" type="file" documentType="reference">
+            <Name>NIMTeamFetchInfoHandler</Name>
+            <Path>Blocks/NIMTeamFetchInfoHandler.html</Path>
+            
+        </Node>
+        <Node id="135" type="file" documentType="reference">
+            <Name>NIMTeamHandler</Name>
+            <Path>Blocks/NIMTeamHandler.html</Path>
+            
+        </Node>
+        <Node id="136" type="file" documentType="reference">
+            <Name>NIMTeamMemberHandler</Name>
+            <Path>Blocks/NIMTeamMemberHandler.html</Path>
+            
+        </Node>
+        <Node id="137" type="file" documentType="reference">
+            <Name>NIMUpdateMessageBlock</Name>
+            <Path>Blocks/NIMUpdateMessageBlock.html</Path>
+            
+        </Node>
+        <Node id="138" type="file" documentType="reference">
+            <Name>NIMUploadCompleteBlock</Name>
+            <Path>Blocks/NIMUploadCompleteBlock.html</Path>
+            
+        </Node>
+        <Node id="139" type="file" documentType="reference">
+            <Name>NIMUserBlock</Name>
+            <Path>Blocks/NIMUserBlock.html</Path>
+            
+        </Node>
+        <Node id="140" type="file" documentType="reference">
+            <Name>NIMUserInfoBlock</Name>
+            <Path>Blocks/NIMUserInfoBlock.html</Path>
+            
+        </Node>
+        
+	</Library>
+</DocSetNodes>

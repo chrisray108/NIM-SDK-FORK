@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMNotificationObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMNotificationObject</TokenIdentifier>
+			<Abstract type="html">通知对象</Abstract>
+			<DeclaredIn>NIMNotificationObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMNotificationObject/setContent:</TokenIdentifier>
+			<Abstract type="html">通知内容</Abstract>
+			<DeclaredIn>NIMNotificationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NIMNotificationContent *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMNotificationObject/content</TokenIdentifier>
+			<Abstract type="html">通知内容</Abstract>
+			<DeclaredIn>NIMNotificationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NIMNotificationContent *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMNotificationObject/content</TokenIdentifier>
+			<Abstract type="html">通知内容</Abstract>
+			<DeclaredIn>NIMNotificationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NIMNotificationContent *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMNotificationObject/setNotificationType:</TokenIdentifier>
+			<Abstract type="html">通知类型</Abstract>
+			<DeclaredIn>NIMNotificationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMNotificationType notificationType</Declaration>
+			
+			
+			<Anchor>//api/name/notificationType</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMNotificationObject/notificationType</TokenIdentifier>
+			<Abstract type="html">通知类型</Abstract>
+			<DeclaredIn>NIMNotificationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMNotificationType notificationType</Declaration>
+			
+			
+			<Anchor>//api/name/notificationType</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMNotificationObject/notificationType</TokenIdentifier>
+			<Abstract type="html">通知类型</Abstract>
+			<DeclaredIn>NIMNotificationObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMNotificationType notificationType</Declaration>
+			
+			
+			<Anchor>//api/name/notificationType</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

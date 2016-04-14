@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMNotificationContent.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMNotificationContent</TokenIdentifier>
+			<Abstract type="html">系统通知内容基类</Abstract>
+			<DeclaredIn>NIMNotificationContent.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMNotificationContent/notificationType</TokenIdentifier>
+			<Abstract type="html">通知内容类型</Abstract>
+			<DeclaredIn>NIMNotificationContent.h</DeclaredIn>
+			
+			<Declaration>- (NIMNotificationType)notificationType</Declaration>
+			
+			<ReturnValue><Abstract type="html">通知内容类型</Abstract></ReturnValue>
+			<Anchor>//api/name/notificationType</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMVideoObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMVideoObject</TokenIdentifier>
+			<Abstract type="html">视频实例对象</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="49"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/initWithSourcePath:</TokenIdentifier>
+			<Abstract type="html">视频实例对象的初始化方法</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithSourcePath:(NSString *)sourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourcePath</Name>
+					<Abstract type="html">视频的文件路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">视频实例对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSourcePath:</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/initWithData:extension:</TokenIdentifier>
+			<Abstract type="html">视频实例对象的初始化方法</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithData:(NSData *)data extension:(NSString *)extension</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">视频数据</Abstract>
+				</Parameter><Parameter>
+					<Name>extension</Name>
+					<Abstract type="html">视频文件后缀</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">视频实例对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:extension:</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/setDisplayName:</TokenIdentifier>
+			<Abstract type="html">视频展示名</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *displayName</Declaration>
+			
+			
+			<Anchor>//api/name/displayName</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/displayName</TokenIdentifier>
+			<Abstract type="html">视频展示名</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *displayName</Declaration>
+			
+			
+			<Anchor>//api/name/displayName</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMVideoObject/displayName</TokenIdentifier>
+			<Abstract type="html">视频展示名</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *displayName</Declaration>
+			
+			
+			<Anchor>//api/name/displayName</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/setMd5:</TokenIdentifier>
+			<Abstract type="html">视频MD5</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *md5</Declaration>
+			
+			
+			<Anchor>//api/name/md5</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/md5</TokenIdentifier>
+			<Abstract type="html">视频MD5</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *md5</Declaration>
+			
+			
+			<Anchor>//api/name/md5</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMVideoObject/md5</TokenIdentifier>
+			<Abstract type="html">视频MD5</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *md5</Declaration>
+			
+			
+			<Anchor>//api/name/md5</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/setPath:</TokenIdentifier>
+			<Abstract type="html">视频的本地路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/path</TokenIdentifier>
+			<Abstract type="html">视频的本地路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMVideoObject/path</TokenIdentifier>
+			<Abstract type="html">视频的本地路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/setUrl:</TokenIdentifier>
+			<Abstract type="html">视频的远程路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/url</TokenIdentifier>
+			<Abstract type="html">视频的远程路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMVideoObject/url</TokenIdentifier>
+			<Abstract type="html">视频的远程路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/setCoverUrl:</TokenIdentifier>
+			<Abstract type="html">视频封面的远程路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *coverUrl</Declaration>
+			
+			
+			<Anchor>//api/name/coverUrl</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/coverUrl</TokenIdentifier>
+			<Abstract type="html">视频封面的远程路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *coverUrl</Declaration>
+			
+			
+			<Anchor>//api/name/coverUrl</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMVideoObject/coverUrl</TokenIdentifier>
+			<Abstract type="html">视频封面的远程路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *coverUrl</Declaration>
+			
+			
+			<Anchor>//api/name/coverUrl</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/setCoverPath:</TokenIdentifier>
+			<Abstract type="html">视频封面的本地路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *coverPath</Declaration>
+			
+			
+			<Anchor>//api/name/coverPath</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/coverPath</TokenIdentifier>
+			<Abstract type="html">视频封面的本地路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *coverPath</Declaration>
+			
+			
+			<Anchor>//api/name/coverPath</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMVideoObject/coverPath</TokenIdentifier>
+			<Abstract type="html">视频封面的本地路径</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *coverPath</Declaration>
+			
+			
+			<Anchor>//api/name/coverPath</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/setCoverSize:</TokenIdentifier>
+			<Abstract type="html">封面尺寸</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGSize coverSize</Declaration>
+			
+			
+			<Anchor>//api/name/coverSize</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/coverSize</TokenIdentifier>
+			<Abstract type="html">封面尺寸</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGSize coverSize</Declaration>
+			
+			
+			<Anchor>//api/name/coverSize</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMVideoObject/coverSize</TokenIdentifier>
+			<Abstract type="html">封面尺寸</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGSize coverSize</Declaration>
+			
+			
+			<Anchor>//api/name/coverSize</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/setDuration:</TokenIdentifier>
+			<Abstract type="html">视频时长，毫秒为单位</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/duration</TokenIdentifier>
+			<Abstract type="html">视频时长，毫秒为单位</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMVideoObject/duration</TokenIdentifier>
+			<Abstract type="html">视频时长，毫秒为单位</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/setFileLength:</TokenIdentifier>
+			<Abstract type="html">文件大小</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) long long fileLength</Declaration>
+			
+			
+			<Anchor>//api/name/fileLength</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMVideoObject/fileLength</TokenIdentifier>
+			<Abstract type="html">文件大小</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) long long fileLength</Declaration>
+			
+			
+			<Anchor>//api/name/fileLength</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMVideoObject/fileLength</TokenIdentifier>
+			<Abstract type="html">文件大小</Abstract>
+			<DeclaredIn>NIMVideoObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) long long fileLength</Declaration>
+			
+			
+			<Anchor>//api/name/fileLength</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

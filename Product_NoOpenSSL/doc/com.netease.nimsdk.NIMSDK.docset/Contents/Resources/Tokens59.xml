@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMLoginManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMLoginManagerDelegate</TokenIdentifier>
+			<Abstract type="html">登录相关回调</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="59"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManagerDelegate/onKick:clientType:</TokenIdentifier>
+			<Abstract type="html">被踢(服务器/其他端)回调</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onKick:(NIMKickReason)code clientType:(NIMLoginClientType)clientType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>code</Name>
+					<Abstract type="html">被踢原因</Abstract>
+				</Parameter><Parameter>
+					<Name>clientType</Name>
+					<Abstract type="html">发起踢出的客户端类型</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onKick:clientType:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManagerDelegate/onLogin:</TokenIdentifier>
+			<Abstract type="html">登录回调</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onLogin:(NIMLoginStep)step</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>step</Name>
+					<Abstract type="html">登录步骤</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onLogin:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManagerDelegate/onAutoLoginFailed:</TokenIdentifier>
+			<Abstract type="html">自动登录失败回调</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onAutoLoginFailed:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">失败原因</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onAutoLoginFailed:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMLoginManagerDelegate/onMultiLoginClientsChanged</TokenIdentifier>
+			<Abstract type="html">多端登录发生变化</Abstract>
+			<DeclaredIn>NIMLoginManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)onMultiLoginClientsChanged</Declaration>
+			
+			
+			<Anchor>//api/name/onMultiLoginClientsChanged</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

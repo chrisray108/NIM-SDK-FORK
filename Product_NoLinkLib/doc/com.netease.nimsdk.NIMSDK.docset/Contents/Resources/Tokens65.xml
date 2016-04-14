@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMRTSManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMRTSManager</TokenIdentifier>
+			<Abstract type="html">实时会话协议</Abstract>
+			<DeclaredIn>NIMRTSManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="65"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMRTSManager/requestRTS:services:option:completion:</TokenIdentifier>
+			<Abstract type="html">主叫发起实时会话请求</Abstract>
+			<DeclaredIn>NIMRTSManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)requestRTS:(NSArray *)callees services:(NSUInteger)types option:(NIMRTSOption *)option completion:(NIMRTSRequestHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callees</Name>
+					<Abstract type="html">被叫帐号列表, 当前版本只支持一个被叫</Abstract>
+				</Parameter><Parameter>
+					<Name>types</Name>
+					<Abstract type="html">实时会话服务类型, NIMRTSService的组合, 如果要同时发起可靠传输通道和音频通话, 使用 NIMRTSServiceReliableTransfer | NIMRTSServiceAudio</Abstract>
+				</Parameter><Parameter>
+					<Name>option</Name>
+					<Abstract type="html">发起会话附带的选项, 可以是nil</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">发起实时会话结果回调</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">发起的实时会话ID</Abstract></ReturnValue>
+			<Anchor>//api/name/requestRTS:services:option:completion:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMRTSManager/responseRTS:accept:option:completion:</TokenIdentifier>
+			<Abstract type="html">被叫响应实时会话请求</Abstract>
+			<DeclaredIn>NIMRTSManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)responseRTS:(NSString *)sessionID accept:(BOOL)accept option:(NIMRTSOption *)option completion:(NIMRTSResponseHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sessionID</Name>
+					<Abstract type="html">实时会话ID</Abstract>
+				</Parameter><Parameter>
+					<Name>accept</Name>
+					<Abstract type="html">是否接听</Abstract>
+				</Parameter><Parameter>
+					<Name>option</Name>
+					<Abstract type="html">接收会话附带的选项, 可以是nil</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">响应呼叫结果回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/responseRTS:accept:option:completion:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMRTSManager/terminateRTS:</TokenIdentifier>
+			<Abstract type="html">挂断实时会话</Abstract>
+			<DeclaredIn>NIMRTSManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)terminateRTS:(NSString *)sessionID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sessionID</Name>
+					<Abstract type="html">需要挂断的实时会话ID</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/terminateRTS:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMRTSManager/sendRTSData:from:to:with:</TokenIdentifier>
+			<Abstract type="html">从指定通道发送数据</Abstract>
+			<DeclaredIn>NIMRTSManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sendRTSData:(NSData *)data from:(NSString *)sessionID to:(NSString *)userID with:(NIMRTSService)service</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">需要发送的实时会话数据, 数据长度不允许超过50KB, 推荐不超过4KB; 发送数据的周期建议控制在50ms以上</Abstract>
+				</Parameter><Parameter>
+					<Name>sessionID</Name>
+					<Abstract type="html">实时会话ID</Abstract>
+				</Parameter><Parameter>
+					<Name>userID</Name>
+					<Abstract type="html">发送数据目标用户名, nil表示广播给所有用户</Abstract>
+				</Parameter><Parameter>
+					<Name>service</Name>
+					<Abstract type="html">实时会话服务类型</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendRTSData:from:to:with:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMRTSManager/sendRTSControl:forSession:</TokenIdentifier>
+			<Abstract type="html">发送实时会话控制指令</Abstract>
+			<DeclaredIn>NIMRTSManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)sendRTSControl:(NSString *)controlInfo forSession:(NSString *)sessionID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controlInfo</Name>
+					<Abstract type="html">控制信息, 自定义实现</Abstract>
+				</Parameter><Parameter>
+					<Name>sessionID</Name>
+					<Abstract type="html">实时会话ID</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendRTSControl:forSession:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMRTSManager/setMute:</TokenIdentifier>
+			<Abstract type="html">设置当前实时会话静音模式</Abstract>
+			<DeclaredIn>NIMRTSManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)setMute:(BOOL)mute</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mute</Name>
+					<Abstract type="html">是否开启静音</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setMute:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMRTSManager/setSpeaker:</TokenIdentifier>
+			<Abstract type="html">设置当前实时会话扬声器模式</Abstract>
+			<DeclaredIn>NIMRTSManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)setSpeaker:(BOOL)useSpeaker</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>useSpeaker</Name>
+					<Abstract type="html">是否开启扬声器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSpeaker:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMRTSManager/addDelegate:</TokenIdentifier>
+			<Abstract type="html">添加实时会话委托</Abstract>
+			<DeclaredIn>NIMRTSManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)addDelegate:(id&lt;NIMRTSManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">实时会话委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDelegate:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMRTSManager/removeDelegate:</TokenIdentifier>
+			<Abstract type="html">移除实时会话委托</Abstract>
+			<DeclaredIn>NIMRTSManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)removeDelegate:(id&lt;NIMRTSManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">实时会话委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeDelegate:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

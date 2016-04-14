@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMLoginClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMLoginClient</TokenIdentifier>
+			<Abstract type="html">登录客户端描述</Abstract>
+			<DeclaredIn>NIMLoginClient.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLoginClient/setType:</TokenIdentifier>
+			<Abstract type="html">类型</Abstract>
+			<DeclaredIn>NIMLoginClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMLoginClientType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLoginClient/type</TokenIdentifier>
+			<Abstract type="html">类型</Abstract>
+			<DeclaredIn>NIMLoginClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMLoginClientType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMLoginClient/type</TokenIdentifier>
+			<Abstract type="html">类型</Abstract>
+			<DeclaredIn>NIMLoginClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NIMLoginClientType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLoginClient/setOs:</TokenIdentifier>
+			<Abstract type="html">操作系统</Abstract>
+			<DeclaredIn>NIMLoginClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *os</Declaration>
+			
+			
+			<Anchor>//api/name/os</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLoginClient/os</TokenIdentifier>
+			<Abstract type="html">操作系统</Abstract>
+			<DeclaredIn>NIMLoginClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *os</Declaration>
+			
+			
+			<Anchor>//api/name/os</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMLoginClient/os</TokenIdentifier>
+			<Abstract type="html">操作系统</Abstract>
+			<DeclaredIn>NIMLoginClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *os</Declaration>
+			
+			
+			<Anchor>//api/name/os</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLoginClient/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">登录时间</Abstract>
+			<DeclaredIn>NIMLoginClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMLoginClient/timestamp</TokenIdentifier>
+			<Abstract type="html">登录时间</Abstract>
+			<DeclaredIn>NIMLoginClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMLoginClient/timestamp</TokenIdentifier>
+			<Abstract type="html">登录时间</Abstract>
+			<DeclaredIn>NIMLoginClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NIMChatroomMemberKickRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NIMChatroomMemberKickRequest</TokenIdentifier>
+			<Abstract type="html">聊天室踢人请求</Abstract>
+			<DeclaredIn>NIMChatroomMemberRequest.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMChatroomMemberKickRequest/setRoomId:</TokenIdentifier>
+			<Abstract type="html">聊天室ID</Abstract>
+			<DeclaredIn>NIMChatroomMemberRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *roomId</Declaration>
+			
+			
+			<Anchor>//api/name/roomId</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMChatroomMemberKickRequest/roomId</TokenIdentifier>
+			<Abstract type="html">聊天室ID</Abstract>
+			<DeclaredIn>NIMChatroomMemberRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *roomId</Declaration>
+			
+			
+			<Anchor>//api/name/roomId</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMChatroomMemberKickRequest/roomId</TokenIdentifier>
+			<Abstract type="html">聊天室ID</Abstract>
+			<DeclaredIn>NIMChatroomMemberRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *roomId</Declaration>
+			
+			
+			<Anchor>//api/name/roomId</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMChatroomMemberKickRequest/setUserId:</TokenIdentifier>
+			<Abstract type="html">用户ID，仅管理员可以踢人；如userId是管理员仅创建者可以踢.</Abstract>
+			<DeclaredIn>NIMChatroomMemberRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMChatroomMemberKickRequest/userId</TokenIdentifier>
+			<Abstract type="html">用户ID，仅管理员可以踢人；如userId是管理员仅创建者可以踢.</Abstract>
+			<DeclaredIn>NIMChatroomMemberRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMChatroomMemberKickRequest/userId</TokenIdentifier>
+			<Abstract type="html">用户ID，仅管理员可以踢人；如userId是管理员仅创建者可以踢.</Abstract>
+			<DeclaredIn>NIMChatroomMemberRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMChatroomMemberKickRequest/setNotifyExt:</TokenIdentifier>
+			<Abstract type="html">被踢通知扩展字段</Abstract>
+			<DeclaredIn>NIMChatroomMemberRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *notifyExt</Declaration>
+			
+			
+			<Anchor>//api/name/notifyExt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NIMChatroomMemberKickRequest/notifyExt</TokenIdentifier>
+			<Abstract type="html">被踢通知扩展字段</Abstract>
+			<DeclaredIn>NIMChatroomMemberRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *notifyExt</Declaration>
+			
+			
+			<Anchor>//api/name/notifyExt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NIMChatroomMemberKickRequest/notifyExt</TokenIdentifier>
+			<Abstract type="html">被踢通知扩展字段</Abstract>
+			<DeclaredIn>NIMChatroomMemberRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *notifyExt</Declaration>
+			
+			
+			<Anchor>//api/name/notifyExt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

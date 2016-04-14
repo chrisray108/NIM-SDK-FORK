@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NIMConversationManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NIMConversationManager</TokenIdentifier>
+			<Abstract type="html">会话管理器</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/deleteMessage:</TokenIdentifier>
+			<Abstract type="html">删除某条消息</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteMessage:(NIMMessage *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">待删除的聊天消息</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteMessage:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/deleteAllmessagesInSession:removeRecentSession:</TokenIdentifier>
+			<Abstract type="html">删除某个会话的所有消息</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteAllmessagesInSession:(NIMSession *)session removeRecentSession:(BOOL)removeRecentSession</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>session</Name>
+					<Abstract type="html">待删除会话</Abstract>
+				</Parameter><Parameter>
+					<Name>removeRecentSession</Name>
+					<Abstract type="html">是否移除对应的会话项  YES则移除,NO则不移除。</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteAllmessagesInSession:removeRecentSession:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/deleteAllMessages:</TokenIdentifier>
+			<Abstract type="html">删除所有会话消息</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteAllMessages:(BOOL)removeRecentSessions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>removeRecentSessions</Name>
+					<Abstract type="html">是否移除会话项,YES则移除,NO则不移除，但会将所有会话项设置成已删除状态</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteAllMessages:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/deleteRecentSession:</TokenIdentifier>
+			<Abstract type="html">删除某个最近会话</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteRecentSession:(NIMRecentSession *)recentSession</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recentSession</Name>
+					<Abstract type="html">待删除的最近会话</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteRecentSession:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/markAllMessagesReadInSession:</TokenIdentifier>
+			<Abstract type="html">设置一个会话里所有消息置为已读</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)markAllMessagesReadInSession:(NIMSession *)session</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>session</Name>
+					<Abstract type="html">需设置的会话</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/markAllMessagesReadInSession:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/updateMessage:forSession:completion:</TokenIdentifier>
+			<Abstract type="html">更新本地已存的消息记录</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)updateMessage:(NIMMessage *)message forSession:(NIMSession *)session completion:(NIMUpdateMessageBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">需要更新的消息</Abstract>
+				</Parameter><Parameter>
+					<Name>session</Name>
+					<Abstract type="html">需要更新的会话</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">完成后的回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateMessage:forSession:completion:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/saveMessage:forSession:completion:</TokenIdentifier>
+			<Abstract type="html">写入消息</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)saveMessage:(NIMMessage *)message forSession:(NIMSession *)session completion:(NIMUpdateMessageBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">需要更新的消息</Abstract>
+				</Parameter><Parameter>
+					<Name>session</Name>
+					<Abstract type="html">需要更新的消息</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">完成后的回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveMessage:forSession:completion:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/messagesInSession:message:limit:</TokenIdentifier>
+			<Abstract type="html">从本地db读取一个会话里某条消息之前的若干条的消息</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)messagesInSession:(NIMSession *)session message:(NIMMessage *)message limit:(NSInteger)limit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>session</Name>
+					<Abstract type="html">消息所属的会话</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">当前最早的消息,没有则传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>limit</Name>
+					<Abstract type="html">个数限制</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">消息列表，按时间从小到大排列</Abstract></ReturnValue>
+			<Anchor>//api/name/messagesInSession:message:limit:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/messagesInSession:messageIds:</TokenIdentifier>
+			<Abstract type="html">根据消息Id获取消息</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)messagesInSession:(NIMSession *)session messageIds:(NSArray *)messageIds</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>session</Name>
+					<Abstract type="html">消息所属会话结合</Abstract>
+				</Parameter><Parameter>
+					<Name>messageIds</Name>
+					<Abstract type="html">消息Id集合</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">消息列表,按时间从小到大排列</Abstract></ReturnValue>
+			<Anchor>//api/name/messagesInSession:messageIds:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/allUnreadCount</TokenIdentifier>
+			<Abstract type="html">获取所有未读数</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)allUnreadCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">未读数</Abstract></ReturnValue>
+			<Anchor>//api/name/allUnreadCount</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/allRecentSessions</TokenIdentifier>
+			<Abstract type="html">获取所有最近会话</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)allRecentSessions</Declaration>
+			
+			<ReturnValue><Abstract type="html">最近会话列表</Abstract></ReturnValue>
+			<Anchor>//api/name/allRecentSessions</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/fetchMessageHistory:option:result:</TokenIdentifier>
+			<Abstract type="html">从服务器上获取一个会话里某条消息之前的若干条的消息</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchMessageHistory:(NIMSession *)session option:(NIMHistoryMessageSearchOption *)option result:(NIMFetchMessageHistoryBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>session</Name>
+					<Abstract type="html">消息所属的会话</Abstract>
+				</Parameter><Parameter>
+					<Name>option</Name>
+					<Abstract type="html">搜索选项</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">读取的消息列表结果</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchMessageHistory:option:result:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/searchMessages:option:result:</TokenIdentifier>
+			<Abstract type="html">搜索本地消息</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)searchMessages:(NIMSession *)session option:(NIMMessageSearchOption *)option result:(NIMSearchMessageBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>session</Name>
+					<Abstract type="html">消息所属的会话</Abstract>
+				</Parameter><Parameter>
+					<Name>option</Name>
+					<Abstract type="html">搜索选项</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">读取的消息列表结果</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchMessages:option:result:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/deleteRemoteSessions:completion:</TokenIdentifier>
+			<Abstract type="html">删除服务器端最近会话</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteRemoteSessions:(NSArray *)sessions completion:(NIMRemoveRemoteSessionBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sessions</Name>
+					<Abstract type="html">需要删除的会话列表，内部只能是NIMSession</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">完成的回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteRemoteSessions:completion:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/addDelegate:</TokenIdentifier>
+			<Abstract type="html">添加通知对象</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)addDelegate:(id&lt;NIMConversationManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">通知对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDelegate:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NIMConversationManager/removeDelegate:</TokenIdentifier>
+			<Abstract type="html">删除通知对象</Abstract>
+			<DeclaredIn>NIMConversationManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)removeDelegate:(id&lt;NIMConversationManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">通知对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeDelegate:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
